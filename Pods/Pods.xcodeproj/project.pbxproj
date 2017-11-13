@@ -135,7 +135,7 @@
 		10A555464825610E39D61297EC599C40 /* NMSFTPFile.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NMSFTPFile.h; path = NMSSH/NMSFTPFile.h; sourceTree = "<group>"; };
 		10F8A9EE7768B19B702D3CC138A86028 /* NMSSHSession.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NMSSHSession.h; path = NMSSH/NMSSHSession.h; sourceTree = "<group>"; };
 		13AEB0CED638BD94CC0FF035237E0EB8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1593DD4AC57ED9E25B17D754EE147034 /* Pods-AquaDoor.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-AquaDoor.modulemap"; sourceTree = "<group>"; };
+		1593DD4AC57ED9E25B17D754EE147034 /* Pods-AquaDoor.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-AquaDoor.modulemap"; sourceTree = "<group>"; };
 		16D6FAFD0A56A2C5003912464C709A6C /* Pods-AquaDoor-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AquaDoor-dummy.m"; sourceTree = "<group>"; };
 		18D45E16B26FFAD4CE5D4C29056F2604 /* NMSSH-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NMSSH-dummy.m"; sourceTree = "<group>"; };
 		1A2DB17BA528C4208F32A3EE54912639 /* NMSSHChannelDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NMSSHChannelDelegate.h; path = NMSSH/Protocols/NMSSHChannelDelegate.h; sourceTree = "<group>"; };
@@ -148,7 +148,7 @@
 		2E51E9AF87261AEA2FA8CC3663FB574E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3260A62CDFCD285918CFF5E3BB4CE4C6 /* DateAndTimeFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateAndTimeFunctions.swift; path = Sources/SQLite/Typed/DateAndTimeFunctions.swift; sourceTree = "<group>"; };
 		32FD5223A0BB140F2A174B9A072F7817 /* Schema.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Schema.swift; path = Sources/SQLite/Typed/Schema.swift; sourceTree = "<group>"; };
-		357DF5D01D1CF8643CDDD9CDEF5EA4F7 /* NMSSH.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = NMSSH.modulemap; sourceTree = "<group>"; };
+		357DF5D01D1CF8643CDDD9CDEF5EA4F7 /* NMSSH.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = NMSSH.modulemap; sourceTree = "<group>"; };
 		374CBA2883E657CE9A8365E13BC337A8 /* libssh2_publickey.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = libssh2_publickey.h; path = "NMSSH-iOS/Libraries/include/libssh2/libssh2_publickey.h"; sourceTree = "<group>"; };
 		3874FE678DF3F5FC1CA0395CF90AC9EC /* KeychainSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KeychainSwift-prefix.pch"; sourceTree = "<group>"; };
 		3C3247686524FD520158FD1E96253846 /* KeychainSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KeychainSwift-umbrella.h"; sourceTree = "<group>"; };
@@ -162,7 +162,7 @@
 		4670446C545CE5DC14292ABCF4CF6171 /* NMSSH.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NMSSH.h; path = "NMSSH-iOS/NMSSH.h"; sourceTree = "<group>"; };
 		504BC456815100BF6DE141062079D14A /* SQLite.swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SQLite.swift-dummy.m"; sourceTree = "<group>"; };
 		5151C076F043D99FBB3C38E0D60B7E9D /* SQLite-Bridging.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "SQLite-Bridging.m"; path = "Sources/SQLiteObjc/SQLite-Bridging.m"; sourceTree = "<group>"; };
-		53B722E11BB1CF3CA1CACF248CB56154 /* KeychainSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KeychainSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		53B722E11BB1CF3CA1CACF248CB56154 /* KeychainSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = KeychainSwift.framework; path = KeychainSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		545BEA9B4ABAABCBFC32153C228A0218 /* UITextField+Shake-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UITextField+Shake-prefix.pch"; sourceTree = "<group>"; };
 		5A3626DD2AC794909B4BFA168C016E41 /* NMSSHConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NMSSHConfig.h; path = NMSSH/NMSSHConfig.h; sourceTree = "<group>"; };
 		5AAD8F853D28C1AAC1D4DA7ECB7DDA16 /* RTree.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RTree.swift; path = Sources/SQLite/Extensions/RTree.swift; sourceTree = "<group>"; };
@@ -173,7 +173,7 @@
 		6C61706EEAEE74919E6138C815089E9C /* MarqueeLabel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MarqueeLabel-dummy.m"; sourceTree = "<group>"; };
 		6F0318B94115D0E3A9F216D19FA995B1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		776FF0C3AD4D40FE70180254E22E6288 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		82C41684FAE9EF0C15935A2DA32664C2 /* SQLite.swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SQLite.swift.modulemap; sourceTree = "<group>"; };
+		82C41684FAE9EF0C15935A2DA32664C2 /* SQLite.swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SQLite.swift.modulemap; sourceTree = "<group>"; };
 		856DCB7A4345A49C142BE44AF461CBDA /* KeychainSwiftAccessOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeychainSwiftAccessOptions.swift; path = Sources/KeychainSwiftAccessOptions.swift; sourceTree = "<group>"; };
 		858ADA0D8639F5E5F24E8FCD0FEA6CED /* Value.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Value.swift; path = Sources/SQLite/Core/Value.swift; sourceTree = "<group>"; };
 		86FD06D4ED175ECBFA9B8084ED62D289 /* NMSSH-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NMSSH-prefix.pch"; sourceTree = "<group>"; };
@@ -181,7 +181,7 @@
 		8B065CC6D01DD908DC3EBC3325FCDAAB /* Pods-AquaDoor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AquaDoor.debug.xcconfig"; sourceTree = "<group>"; };
 		8D720B6AD728574367A00B94D8ED1C79 /* UITextField+Shake.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "UITextField+Shake.xcconfig"; sourceTree = "<group>"; };
 		8F25A95A4452047FB6F93711A6E53F23 /* libssl.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libssl.a; path = "NMSSH-iOS/Libraries/lib/libssl.a"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		95154E6DB9DEA80A40216837E6C57292 /* libcrypto.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libcrypto.a; path = "NMSSH-iOS/Libraries/lib/libcrypto.a"; sourceTree = "<group>"; };
 		96BE9ADB83BB7C5FB2C95E6CA8DEA189 /* Setter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Setter.swift; path = Sources/SQLite/Typed/Setter.swift; sourceTree = "<group>"; };
 		98ADC3C6E202BAF194668288BEE26530 /* SQLite.swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SQLite.swift-umbrella.h"; sourceTree = "<group>"; };
@@ -190,11 +190,11 @@
 		9EB31360CC871F957EE3909061405FE2 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		A07ADA135AF0D58EC003964AA4617096 /* NMSSHLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NMSSHLogger.m; path = NMSSH/Config/NMSSHLogger.m; sourceTree = "<group>"; };
 		A0916AD9BFFBBD1472BCA2C2D544295B /* MarqueeLabel-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MarqueeLabel-umbrella.h"; sourceTree = "<group>"; };
-		A3C3050764EEBDF19E93B4019F577334 /* KeychainSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = KeychainSwift.modulemap; sourceTree = "<group>"; };
-		A592D0F3C9DC1CF449D413056A36ECA6 /* SQLite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SQLite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AA39C32AF5505AD2DB8EFE668B4CC3BF /* MarqueeLabel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MarqueeLabel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3C3050764EEBDF19E93B4019F577334 /* KeychainSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = KeychainSwift.modulemap; sourceTree = "<group>"; };
+		A592D0F3C9DC1CF449D413056A36ECA6 /* SQLite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SQLite.framework; path = SQLite.swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA39C32AF5505AD2DB8EFE668B4CC3BF /* MarqueeLabel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MarqueeLabel.framework; path = MarqueeLabel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACC340BB46CAD4AF03BCA7438F3A7803 /* NMSSH.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NMSSH.xcconfig; sourceTree = "<group>"; };
-		ACFA0351F4777F7770146434A12F8281 /* UITextField+Shake.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "UITextField+Shake.modulemap"; sourceTree = "<group>"; };
+		ACFA0351F4777F7770146434A12F8281 /* UITextField+Shake.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "UITextField+Shake.modulemap"; sourceTree = "<group>"; };
 		B09AE670C9922311B16B966801A21736 /* KeychainSwift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KeychainSwift.xcconfig; sourceTree = "<group>"; };
 		B1B81EA2EDB90EA813739B54879DDBB6 /* Connection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Connection.swift; path = Sources/SQLite/Core/Connection.swift; sourceTree = "<group>"; };
 		B27241FDD3E151A9C90880B43DC42333 /* SQLite-Bridging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "SQLite-Bridging.h"; path = "Sources/SQLiteObjc/include/SQLite-Bridging.h"; sourceTree = "<group>"; };
@@ -202,16 +202,16 @@
 		B6126527F58F3A0398DD757531164EB4 /* socket_helper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = socket_helper.m; path = NMSSH/Config/socket_helper.m; sourceTree = "<group>"; };
 		B7D3FFC9B18346D16D6DD022B1C516E7 /* libssh2_sftp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = libssh2_sftp.h; path = "NMSSH-iOS/Libraries/include/libssh2/libssh2_sftp.h"; sourceTree = "<group>"; };
 		BB00D83FB634FA1DDDEE3F7712FDB638 /* NMSSHConfig.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NMSSHConfig.m; path = NMSSH/NMSSHConfig.m; sourceTree = "<group>"; };
-		BBEDC0D4BFE05C319D26A59F35231413 /* UITextField_Shake.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UITextField_Shake.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBEDC0D4BFE05C319D26A59F35231413 /* UITextField_Shake.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = UITextField_Shake.framework; path = "UITextField+Shake.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF83801E45A8922CBB2CFE79911B610C /* Pods-AquaDoor-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AquaDoor-acknowledgements.plist"; sourceTree = "<group>"; };
-		C2CC6C8E3BA398BFE4B10CE1D62259F2 /* Pods_AquaDoor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AquaDoor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2CC6C8E3BA398BFE4B10CE1D62259F2 /* Pods_AquaDoor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AquaDoor.framework; path = "Pods-AquaDoor.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3300A1981AAC82C2D6467A836A08D75 /* Blob.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Blob.swift; path = Sources/SQLite/Core/Blob.swift; sourceTree = "<group>"; };
 		C944625C5ACC0A3850F98C11EAA2E71C /* NMSFTP.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NMSFTP.m; path = NMSSH/NMSFTP.m; sourceTree = "<group>"; };
 		CA9D7D522465122D8AAF4F0A9364A847 /* NMSSHSession.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NMSSHSession.m; path = NMSSH/NMSSHSession.m; sourceTree = "<group>"; };
 		CC2081B364D11AC7D33013D0BA96249E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CEC4EFA363FFBF4AD0906160083F813C /* libssh2.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = libssh2.h; path = "NMSSH-iOS/Libraries/include/libssh2/libssh2.h"; sourceTree = "<group>"; };
 		CF8BBF90E8D4C0034E8B10DAFAEBD820 /* socket_helper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = socket_helper.h; path = NMSSH/Config/socket_helper.h; sourceTree = "<group>"; };
-		D1DE1764F10A0975CAA4092880D6889A /* MarqueeLabel.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = MarqueeLabel.modulemap; sourceTree = "<group>"; };
+		D1DE1764F10A0975CAA4092880D6889A /* MarqueeLabel.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = MarqueeLabel.modulemap; sourceTree = "<group>"; };
 		D1E83678E2DE9B9D3675C060316B5A8F /* SQLite.swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SQLite.swift-prefix.pch"; sourceTree = "<group>"; };
 		D2FF5C2EC73818133D90A7F1F36C3705 /* MarqueeLabel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MarqueeLabel-prefix.pch"; sourceTree = "<group>"; };
 		D3BE6E01D7B16A42BABE705F9D5CA395 /* FTS5.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FTS5.swift; path = Sources/SQLite/Extensions/FTS5.swift; sourceTree = "<group>"; };
@@ -224,7 +224,7 @@
 		E074AA98FA6CCCBF3EDC7315B05E3DEA /* Pods-AquaDoor-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AquaDoor-frameworks.sh"; sourceTree = "<group>"; };
 		E32D4499DE3A88D45B51B1CD2E5CB03B /* AggregateFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AggregateFunctions.swift; path = Sources/SQLite/Typed/AggregateFunctions.swift; sourceTree = "<group>"; };
 		E3A2461F96B588543F507AFBA3E6E1A7 /* Pods-AquaDoor-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AquaDoor-acknowledgements.markdown"; sourceTree = "<group>"; };
-		EBAA4CC95CEA54D1E980C715C3095FEF /* NMSSH.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NMSSH.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBAA4CC95CEA54D1E980C715C3095FEF /* NMSSH.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = NMSSH.framework; path = NMSSH.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF2A2E833A1CCFDC2804703B1D10A843 /* Pods-AquaDoor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AquaDoor.release.xcconfig"; sourceTree = "<group>"; };
 		EF9AB4D340C5879ACEF07E19547104E5 /* TegKeychainConstants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TegKeychainConstants.swift; path = Sources/TegKeychainConstants.swift; sourceTree = "<group>"; };
 		F1260506EA527974837283D664272C6E /* Expression.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Expression.swift; path = Sources/SQLite/Typed/Expression.swift; sourceTree = "<group>"; };
@@ -328,6 +328,7 @@
 				EF9AB4D340C5879ACEF07E19547104E5 /* TegKeychainConstants.swift */,
 				3FC902A69AE6D265C3186641AD5BF60B /* Support Files */,
 			);
+			name = KeychainSwift;
 			path = KeychainSwift;
 			sourceTree = "<group>";
 		};
@@ -361,6 +362,7 @@
 				5317C41021E11E3AE68212A76A90E00F /* Frameworks */,
 				9257E85C047B8177453F17890D97C003 /* Support Files */,
 			);
+			name = NMSSH;
 			path = NMSSH;
 			sourceTree = "<group>";
 		};
@@ -420,6 +422,7 @@
 				680843D4F269964EDFC7E14A6922D221 /* UITextField+Shake.m */,
 				0903ACF08C170F59C7A440EDAF029A74 /* Support Files */,
 			);
+			name = "UITextField+Shake";
 			path = "UITextField+Shake";
 			sourceTree = "<group>";
 		};
@@ -501,6 +504,7 @@
 				94E2836956FE0CE3CFA6934C9E7283B4 /* Support Files */,
 				0E075B61DA2CE8FD5C11E8F299D1AD55 /* Swift */,
 			);
+			name = MarqueeLabel;
 			path = MarqueeLabel;
 			sourceTree = "<group>";
 		};
@@ -560,6 +564,7 @@
 				EFF62811B62F86438DB60892A33C715E /* standard */,
 				79968BDE4A6919E5F9E274199EAAF648 /* Support Files */,
 			);
+			name = SQLite.swift;
 			path = SQLite.swift;
 			sourceTree = "<group>";
 		};
@@ -751,7 +756,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0910;
+				LastUpgradeCheck = 0700;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -1158,12 +1163,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
@@ -1347,7 +1351,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
