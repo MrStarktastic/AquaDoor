@@ -1,0 +1,899 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="67h-3z-JBs">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="rLQ-Cq-v9b">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="67h-3z-JBs" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" systemItem="favorites" id="ubm-vU-gTN"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="Kvr-Yi-tQH">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Arm-zK-3VF" kind="relationship" relationship="rootViewController" id="Rtk-iN-Mkq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gLq-Sj-WHX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1015.2" y="123.68815592203899"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="DwV-fY-pM2">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jga-0D-Jzd" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Settings" id="e9E-Yh-9cJ"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="zZa-L5-pFu">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="MZi-eh-6ay" kind="relationship" relationship="rootViewController" id="cbD-xa-lc2"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gf6-wX-p1U" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1014" y="1006"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="9e1-iv-Qy8">
+            <objects>
+                <tableViewController id="MZi-eh-6ay" customClass="SettingsTableViewController" customModule="AquaDoor" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" indicatorStyle="black" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="PId-wj-RG9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="separatorColor" white="1" alpha="0.10000000000000001" colorSpace="calibratedWhite"/>
+                        <sections>
+                            <tableViewSection footerTitle="Change the order of Quick Actions for opening favorite doors that appear when pressing the app icon." id="A8W-P5-dKD">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="G7r-U6-RDx" style="IBUITableViewCellStyleDefault" id="dzp-Mg-n22">
+                                        <rect key="frame" x="0.0" y="35" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dzp-Mg-n22" id="Tzg-ta-eaa">
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Quick Actions Order" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="G7r-U6-RDx">
+                                                    <rect key="frame" x="16" y="0.0" width="324" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.090196078431372548" green="0.090196078431372548" blue="0.090196078431372548" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <segue destination="8T1-qS-ubH" kind="show" id="9tc-cA-qPF"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection footerTitle="User-friendly description of what the hell this is." id="QeC-qe-GNc">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="cnq-3M-3Mx" style="IBUITableViewCellStyleDefault" id="Z0h-39-sbQ" customClass="TableViewCellSwitch" customModule="AquaDoor" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="143" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Z0h-39-sbQ" id="oMh-nN-27h">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Developer Mode" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="cnq-3M-3Mx">
+                                                    <rect key="frame" x="16" y="0.0" width="344" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.090196078431372548" green="0.090196078431372548" blue="0.090196078431372548" alpha="1" colorSpace="calibratedRGB"/>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection id="eGy-d0-I3v">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="BiH-VD-5xT">
+                                        <rect key="frame" x="0.0" y="235" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="BiH-VD-5xT" id="drg-ZA-1R4">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mbi-zr-Fda">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <state key="normal" title="Edit Credentials"/>
+                                                    <connections>
+                                                        <action selector="didTapEditCredentials" destination="MZi-eh-6ay" eventType="touchUpInside" id="2zU-c7-8QU"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="mbi-zr-Fda" secondAttribute="trailing" id="1vt-Fw-jbD"/>
+                                                <constraint firstItem="mbi-zr-Fda" firstAttribute="top" secondItem="drg-ZA-1R4" secondAttribute="top" id="42F-NW-jEl"/>
+                                                <constraint firstItem="mbi-zr-Fda" firstAttribute="centerY" secondItem="drg-ZA-1R4" secondAttribute="centerY" id="6YY-Vh-Oyt"/>
+                                                <constraint firstItem="mbi-zr-Fda" firstAttribute="leading" secondItem="drg-ZA-1R4" secondAttribute="leading" id="VzS-i5-f0n"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.090196078431372548" green="0.090196078431372548" blue="0.090196078431372548" alpha="1" colorSpace="calibratedRGB"/>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="MZi-eh-6ay" id="RvE-v4-hDY"/>
+                            <outlet property="delegate" destination="MZi-eh-6ay" id="5L3-VL-aZd"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Settings" id="uT5-RW-1yf">
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="UQ8-Kq-y42">
+                            <connections>
+                                <action selector="didTapDone:" destination="MZi-eh-6ay" id="EKG-TA-anY"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="developerModeCell" destination="Z0h-39-sbQ" id="jLG-vS-Stg"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xDO-ZM-n5Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1924" y="1176"/>
+        </scene>
+        <!--Quick Actions Order-->
+        <scene sceneID="ZbB-nJ-HuR">
+            <objects>
+                <tableViewController id="8T1-qS-ubH" customClass="QuickActionsTableViewController" customModule="AquaDoor" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" indicatorStyle="black" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="Sd1-GZ-fBE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="separatorColor" white="1" alpha="0.10000000000000001" colorSpace="calibratedWhite"/>
+                        <sections>
+                            <tableViewSection headerTitle="Assigned" footerTitle="There can be up to 3 doors assigned to Quick Actions." id="Cov-b6-eLo">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="7ND-4c-CY6">
+                                        <rect key="frame" x="0.0" y="55.5" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7ND-4c-CY6" id="6Ed-4Z-TNX">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Door 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bkB-xV-p7v">
+                                                    <rect key="frame" x="15" y="-0.5" width="345" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="ClA-GH-uaM">
+                                        <rect key="frame" x="0.0" y="99.5" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ClA-GH-uaM" id="eOS-VD-VNA">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Door 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GqN-wi-uLJ">
+                                                    <rect key="frame" x="15" y="-0.5" width="345" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="xUH-KK-Zaj">
+                                        <rect key="frame" x="0.0" y="143.5" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="xUH-KK-Zaj" id="ZJK-pe-zXZ">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Door 3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q8w-wx-eCJ">
+                                                    <rect key="frame" x="15" y="-0.5" width="345" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Unasigned" id="HnN-9n-qq5">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="vEz-di-XIB">
+                                        <rect key="frame" x="0.0" y="255.5" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vEz-di-XIB" id="o1T-Bu-0gq">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Door 4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sMt-kV-g0j">
+                                                    <rect key="frame" x="15" y="-0.5" width="345" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="vpQ-DW-lBJ">
+                                        <rect key="frame" x="0.0" y="299.5" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vpQ-DW-lBJ" id="h6g-bR-mPg">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Door 5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bOI-ez-eso">
+                                                    <rect key="frame" x="15" y="-0.5" width="345" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="H3d-eG-ALm">
+                                        <rect key="frame" x="0.0" y="343.5" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="H3d-eG-ALm" id="9Ye-fa-3FG">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Door 6" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="glC-dJ-bjn">
+                                                    <rect key="frame" x="15" y="-0.5" width="345" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="8T1-qS-ubH" id="gMJ-Z1-JwE"/>
+                            <outlet property="delegate" destination="8T1-qS-ubH" id="Lja-NZ-E1T"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Quick Actions Order" id="nhH-Oe-Low"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YA7-PX-cp6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2813" y="1526"/>
+        </scene>
+        <!--Edit Favorite Door-->
+        <scene sceneID="Prf-Ub-Xca">
+            <objects>
+                <viewController id="g4v-Kk-FAq" customClass="EditFavoriteViewController" customModule="AquaDoor" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gy8-fB-a7U"/>
+                        <viewControllerLayoutGuide type="bottom" id="XxQ-VH-KHh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kpt-1c-nGA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="qwx-Mw-Krz">
+                                <rect key="frame" x="16" y="80" width="343" height="30"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="door ID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AyP-h4-eG5">
+                                        <rect key="frame" x="0.0" y="0.0" width="163.5" height="30"/>
+                                        <color key="backgroundColor" red="0.090196078430000007" green="0.090196078430000007" blue="0.090196078430000007" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardAppearance="alert"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="nickname (optional)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="L2J-KA-kLM">
+                                        <rect key="frame" x="179.5" y="0.0" width="163.5" height="30"/>
+                                        <color key="backgroundColor" red="0.090196078430000007" green="0.090196078430000007" blue="0.090196078430000007" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardAppearance="alert"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="h3E-4M-PQh">
+                                <rect key="frame" x="16" y="130" width="343" height="50"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mUH-n9-NOs" customClass="GradientView" customModule="AquaDoor" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="BEQ-e0-cfz"/>
+                                            <constraint firstAttribute="width" constant="50" id="QGO-mV-CJM"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="colorTop">
+                                                <color key="value" red="0.87058823529999996" green="0.87058823529999996" blue="0.87058823529999996" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="colorBottom">
+                                                <color key="value" red="0.54117647059999996" green="0.54117647059999996" blue="0.57254901960000004" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S5J-Go-1hO" customClass="GradientView" customModule="AquaDoor" customModuleProvider="target">
+                                        <rect key="frame" x="97.5" y="0.0" width="50" height="50"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="9zn-2I-m38"/>
+                                            <constraint firstAttribute="height" constant="50" id="yYP-If-p14"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="colorTop">
+                                                <color key="value" red="0.87058823529999996" green="0.87058823529999996" blue="0.87058823529999996" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="colorBottom">
+                                                <color key="value" red="0.54117647059999996" green="0.54117647059999996" blue="0.57254901960000004" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cF0-vC-EPW" customClass="GradientView" customModule="AquaDoor" customModuleProvider="target">
+                                        <rect key="frame" x="195.5" y="0.0" width="50" height="50"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="5EB-VL-wuj"/>
+                                            <constraint firstAttribute="width" constant="50" id="nhF-CC-kXW"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="colorTop">
+                                                <color key="value" red="0.87058823529999996" green="0.87058823529999996" blue="0.87058823529999996" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="colorBottom">
+                                                <color key="value" red="0.54117647059999996" green="0.54117647059999996" blue="0.57254901960000004" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y9x-Hk-7dP" customClass="GradientView" customModule="AquaDoor" customModuleProvider="target">
+                                        <rect key="frame" x="293" y="0.0" width="50" height="50"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="1vW-hn-c3P"/>
+                                            <constraint firstAttribute="width" constant="50" id="ugG-zj-aeV"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="colorTop">
+                                                <color key="value" red="0.87058823529999996" green="0.87058823529999996" blue="0.87058823529999996" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="colorBottom">
+                                                <color key="value" red="0.54117647059999996" green="0.54117647059999996" blue="0.57254901960000004" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="A7H-mN-NJS">
+                                <rect key="frame" x="16" y="190" width="343" height="50"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UdO-AY-dE9" customClass="GradientView" customModule="AquaDoor" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="GQi-6M-SDk"/>
+                                            <constraint firstAttribute="width" constant="50" id="NY5-gh-cq2"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="colorTop">
+                                                <color key="value" red="0.87058823529999996" green="0.87058823529999996" blue="0.87058823529999996" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="colorBottom">
+                                                <color key="value" red="0.54117647059999996" green="0.54117647059999996" blue="0.57254901960000004" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EbJ-Tc-Ptb" customClass="GradientView" customModule="AquaDoor" customModuleProvider="target">
+                                        <rect key="frame" x="97.5" y="0.0" width="50" height="50"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="jTr-Fn-R9s"/>
+                                            <constraint firstAttribute="width" constant="50" id="thd-Ie-c4S"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="colorTop">
+                                                <color key="value" red="0.87058823529999996" green="0.87058823529999996" blue="0.87058823529999996" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="colorBottom">
+                                                <color key="value" red="0.54117647059999996" green="0.54117647059999996" blue="0.57254901960000004" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O19-sa-xLU" customClass="GradientView" customModule="AquaDoor" customModuleProvider="target">
+                                        <rect key="frame" x="195.5" y="0.0" width="50" height="50"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="XoN-WE-Dqn"/>
+                                            <constraint firstAttribute="height" constant="50" id="uG8-cS-ll1"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="colorTop">
+                                                <color key="value" red="0.87058823529999996" green="0.87058823529999996" blue="0.87058823529999996" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="colorBottom">
+                                                <color key="value" red="0.54117647059999996" green="0.54117647059999996" blue="0.57254901960000004" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i7S-p7-Ayl" customClass="GradientView" customModule="AquaDoor" customModuleProvider="target">
+                                        <rect key="frame" x="293" y="0.0" width="50" height="50"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="prh-2w-CrT"/>
+                                            <constraint firstAttribute="width" constant="50" id="tIl-d5-7u9"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="colorTop">
+                                                <color key="value" red="0.87058823529999996" green="0.87058823529999996" blue="0.87058823529999996" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="colorBottom">
+                                                <color key="value" red="0.54117647059999996" green="0.54117647059999996" blue="0.57254901960000004" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="h3E-4M-PQh" secondAttribute="trailing" constant="16" id="37K-wF-Sda"/>
+                            <constraint firstItem="qwx-Mw-Krz" firstAttribute="top" secondItem="gy8-fB-a7U" secondAttribute="bottom" constant="16" id="9bg-PU-hY2"/>
+                            <constraint firstItem="A7H-mN-NJS" firstAttribute="leading" secondItem="kpt-1c-nGA" secondAttribute="leading" constant="16" id="AwT-el-c97"/>
+                            <constraint firstAttribute="trailing" secondItem="A7H-mN-NJS" secondAttribute="trailing" constant="16" id="EdJ-gl-ZKc"/>
+                            <constraint firstAttribute="trailing" secondItem="qwx-Mw-Krz" secondAttribute="trailing" constant="16" id="F7L-5u-cto"/>
+                            <constraint firstItem="A7H-mN-NJS" firstAttribute="top" secondItem="h3E-4M-PQh" secondAttribute="bottom" constant="10" id="FoN-Yn-flV"/>
+                            <constraint firstItem="h3E-4M-PQh" firstAttribute="top" secondItem="qwx-Mw-Krz" secondAttribute="bottom" constant="20" id="G0e-e0-U8E"/>
+                            <constraint firstItem="qwx-Mw-Krz" firstAttribute="leading" secondItem="kpt-1c-nGA" secondAttribute="leading" constant="16" id="XdF-WR-iuN"/>
+                            <constraint firstItem="h3E-4M-PQh" firstAttribute="leading" secondItem="kpt-1c-nGA" secondAttribute="leading" constant="16" id="sPK-Ye-6Sv"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Edit Favorite Door" id="iJN-Sa-Vi8">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="gTE-Gm-8H7"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="i5C-vI-Lp2">
+                            <connections>
+                                <action selector="didTapDone:" destination="g4v-Kk-FAq" id="SKm-mX-fN7"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tvq-jP-hsa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3714" y="-632"/>
+        </scene>
+        <!--Empty Favorites View Controller-->
+        <scene sceneID="M2i-NO-SVY">
+            <objects>
+                <viewController storyboardIdentifier="EmptyFavorites" id="p6k-PW-mU4" customClass="EmptyFavoritesViewController" customModule="AquaDoor" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Hkg-E5-mwj"/>
+                        <viewControllerLayoutGuide type="bottom" id="iHM-Y2-sUI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="AKM-NG-vPW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="LUk-zc-iGp">
+                                <rect key="frame" x="42.5" y="242" width="290" height="183"/>
+                                <subviews>
+                                    <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="E0F-Jd-fkE" customClass="AVPlayerView" customModule="AquaDoor" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="290" height="96.5"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="290" id="lDM-gw-T9o"/>
+                                        </constraints>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="5uR-8p-JZY">
+                                        <rect key="frame" x="28.5" y="106.5" width="233.5" height="76.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="No favorite doors" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cag-X6-wSs">
+                                                <rect key="frame" x="50.5" y="0.0" width="132" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Show your love for the aquarium..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x1M-NI-xNl">
+                                                <rect key="frame" x="0.0" y="30.5" width="233.5" height="18"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <color key="textColor" red="0.5490196078431373" green="0.5490196078431373" blue="0.5490196078431373" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap 🔍 and start adding some!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fnM-nc-Bsk">
+                                                <rect key="frame" x="10.5" y="58.5" width="212" height="18"/>
+                                                <accessibility key="accessibilityConfiguration">
+                                                    <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
+                                                </accessibility>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <color key="textColor" red="0.54901960780000003" green="0.54901960780000003" blue="0.54901960780000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="E0F-Jd-fkE" firstAttribute="width" secondItem="E0F-Jd-fkE" secondAttribute="height" multiplier="3:1" id="eTA-BD-5UI"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="LUk-zc-iGp" firstAttribute="centerX" secondItem="AKM-NG-vPW" secondAttribute="centerX" id="fo7-3e-EiO"/>
+                            <constraint firstItem="LUk-zc-iGp" firstAttribute="centerY" secondItem="AKM-NG-vPW" secondAttribute="centerY" id="rGY-Cx-UXp"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="instructionLabel" destination="fnM-nc-Bsk" id="K1e-r6-zR4"/>
+                        <outlet property="playerView" destination="E0F-Jd-fkE" id="uLg-v8-Hs0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YNK-LX-6Ue" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2813" y="889"/>
+        </scene>
+        <!--Favorites-->
+        <scene sceneID="HBt-Iv-DdW">
+            <objects>
+                <collectionViewController storyboardIdentifier="FavoritesCollectionViewController" id="Arm-zK-3VF" customClass="FavoritesViewController" customModule="AquaDoor" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" indicatorStyle="black" dataMode="prototypes" id="lzT-H8-M9J">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="9T7-mD-XkS">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="3L9-Z3-zgD" customClass="FavoriteCollectionViewCell" customModule="AquaDoor" customModuleProvider="target">
+                                <rect key="frame" x="87.5" y="0.0" width="200" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                    <rect key="frame" x="0.0" y="0.0" width="200" height="100"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Mkx-nN-rWK">
+                                            <rect key="frame" x="76" y="0.0" width="103" height="114"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jqm-xU-jAa" customClass="MarqueeLabel" customModule="MarqueeLabel">
+                                                    <rect key="frame" x="76.5" y="0.0" width="37.5" height="24"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="fadeLength">
+                                                            <real key="value" value="10"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BzJ-fz-eQ5" customClass="MarqueeLabel" customModule="MarqueeLabel">
+                                                    <rect key="frame" x="68.5" y="24" width="53" height="18"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                                    <color key="textColor" white="1" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="fadeLength">
+                                                            <real key="value" value="10"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                </view>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Mkx-nN-rWK" firstAttribute="centerX" secondItem="3L9-Z3-zgD" secondAttribute="centerX" id="36e-lf-jRx"/>
+                                    <constraint firstItem="Mkx-nN-rWK" firstAttribute="width" secondItem="3L9-Z3-zgD" secondAttribute="width" constant="-10" id="BAZ-X4-VHV"/>
+                                    <constraint firstItem="Mkx-nN-rWK" firstAttribute="centerY" secondItem="3L9-Z3-zgD" secondAttribute="centerY" id="bVJ-3e-7rv"/>
+                                </constraints>
+                                <size key="customSize" width="200" height="100"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="subtitle" destination="BzJ-fz-eQ5" id="8P2-i7-NsQ"/>
+                                    <outlet property="title" destination="jqm-xU-jAa" id="JLl-UV-3Qd"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="Arm-zK-3VF" id="FJ6-9I-A8a"/>
+                            <outlet property="delegate" destination="Arm-zK-3VF" id="46P-Qu-BnC"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" title="Favorites" largeTitleDisplayMode="never" id="S1k-El-8C5">
+                        <leftBarButtonItems>
+                            <barButtonItem image="Gear" id="zwa-Pl-7yY">
+                                <connections>
+                                    <segue destination="jga-0D-Jzd" kind="presentation" id="Ads-cw-4ce"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem systemItem="edit" id="7Fp-nu-dEC">
+                                <connections>
+                                    <segue destination="e3T-Nz-uZy" kind="presentation" id="7T4-oD-hHL"/>
+                                </connections>
+                            </barButtonItem>
+                        </leftBarButtonItems>
+                        <barButtonItem key="rightBarButtonItem" systemItem="search" id="Imb-yN-1tP">
+                            <connections>
+                                <action selector="didTapSearchButton:" destination="Arm-zK-3VF" id="28G-TZ-Fuw"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AsU-eb-QCe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1923.75" y="123.59154929577466"/>
+        </scene>
+        <!--Door Action-->
+        <scene sceneID="GXP-Vm-ZyX">
+            <objects>
+                <viewController storyboardIdentifier="DoorAction" title="Door Action" id="Ode-77-3ie" customClass="ActionViewController" customModule="AquaDoor" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rcI-0t-1ST"/>
+                        <viewControllerLayoutGuide type="bottom" id="tWi-zP-Oz7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gan-vC-dRb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0vg-aS-DnD">
+                                <rect key="frame" x="0.0" y="505" width="30" height="162"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wEb-Zk-qIo">
+                                <rect key="frame" x="345" y="505" width="30" height="162"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EIh-RB-jKX">
+                                <rect key="frame" x="30" y="652" width="315" height="15"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="dTX-nM-di4"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A2Q-yh-AK7">
+                                <rect key="frame" x="30.5" y="505" width="314.5" height="147"/>
+                                <subviews>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LW2-3m-kPy" customClass="BorderedRectButton" customModule="AquaDoor" customModuleProvider="target">
+                                        <rect key="frame" x="11" y="12" width="73" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="73" id="J9X-or-UJD"/>
+                                            <constraint firstAttribute="height" constant="30" id="Rd6-gD-t6m"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <state key="normal" title="Status"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="didTapDoorActionButton:" destination="Ode-77-3ie" eventType="touchUpInside" id="j9c-Yh-c5W"/>
+                                        </connections>
+                                    </button>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Door ID" textAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="N20-rm-iOf">
+                                        <rect key="frame" x="119.5" y="12" width="75" height="30"/>
+                                        <color key="backgroundColor" red="0.090196078430000007" green="0.090196078430000007" blue="0.090196078430000007" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="75" id="qfL-vV-7kk"/>
+                                        </constraints>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="namePhonePad" keyboardAppearance="alert" returnKeyType="done"/>
+                                    </textField>
+                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eaO-xV-b6w" customClass="BorderedRectButton" customModule="AquaDoor" customModuleProvider="target">
+                                        <rect key="frame" x="231" y="12" width="73" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="73" id="g1r-WZ-xq1"/>
+                                            <constraint firstAttribute="height" constant="30" id="jmo-H3-3dw"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <state key="normal" title="Add"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="didTapAddButton" destination="Ode-77-3ie" eventType="touchUpInside" id="UZY-Go-er7"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="dQq-Cb-b9H" customClass="RoundProgressButton" customModule="AquaDoor" customModuleProvider="target">
+                                        <rect key="frame" x="10" y="62" width="75" height="75"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="75" id="TV5-iD-meu"/>
+                                            <constraint firstAttribute="height" constant="75" id="eex-KJ-2K8"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                                        <state key="normal" title="Close">
+                                            <color key="titleColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                                <color key="value" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="0.25" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="progressRingColor">
+                                                <color key="value" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="0.75" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="didTapDoorActionButton:" destination="Ode-77-3ie" eventType="touchUpInside" id="ROy-nX-GDx"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8HO-HJ-Xys" customClass="RoundProgressButton" customModule="AquaDoor" customModuleProvider="target">
+                                        <rect key="frame" x="120" y="62" width="75" height="75"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="75" id="c8t-85-Aqd"/>
+                                            <constraint firstAttribute="width" constant="75" id="jtp-Xg-iEY"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <state key="normal" title="Open">
+                                            <color key="titleColor" red="0.29803921570000003" green="0.85098039219999999" blue="0.3921568627" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                                <color key="value" red="0.29803921570000003" green="0.85098039219999999" blue="0.3921568627" alpha="0.25" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="progressRingColor">
+                                                <color key="value" red="0.29803921570000003" green="0.85098039219999999" blue="0.3921568627" alpha="0.75" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="didTapDoorActionButton:" destination="Ode-77-3ie" eventType="touchUpInside" id="mph-Bk-LQX"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sEk-qm-LiN" customClass="RoundProgressButton" customModule="AquaDoor" customModuleProvider="target">
+                                        <rect key="frame" x="230" y="62" width="75" height="75"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="75" id="gZ1-8O-ijZ"/>
+                                            <constraint firstAttribute="height" constant="75" id="nBO-fl-IJQ"/>
+                                        </constraints>
+                                        <state key="normal">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Leave Open">
+                                                    <attributes>
+                                                        <color key="NSColor" red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <font key="NSFont" size="15" name=".AppleSystemUIFont"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                                <color key="value" red="1" green="0.58431372550000005" blue="0.0" alpha="0.25" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="progressRingColor">
+                                                <color key="value" red="1" green="0.58431372550000005" blue="0.0" alpha="0.75" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="didTapDoorActionButton:" destination="Ode-77-3ie" eventType="touchUpInside" id="Iey-PN-n89"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="8HO-HJ-Xys" secondAttribute="bottom" constant="10" id="AEL-gT-Rkq"/>
+                                    <constraint firstItem="eaO-xV-b6w" firstAttribute="centerY" secondItem="N20-rm-iOf" secondAttribute="centerY" id="Aki-fw-pjb"/>
+                                    <constraint firstItem="dQq-Cb-b9H" firstAttribute="centerY" secondItem="8HO-HJ-Xys" secondAttribute="centerY" id="D0U-12-qFc"/>
+                                    <constraint firstItem="8HO-HJ-Xys" firstAttribute="top" secondItem="N20-rm-iOf" secondAttribute="bottom" constant="20" id="EeI-BW-d47"/>
+                                    <constraint firstItem="N20-rm-iOf" firstAttribute="centerX" secondItem="A2Q-yh-AK7" secondAttribute="centerX" id="FgP-XZ-eU1"/>
+                                    <constraint firstItem="8HO-HJ-Xys" firstAttribute="leading" secondItem="dQq-Cb-b9H" secondAttribute="trailing" constant="35" id="K8W-sA-a8G"/>
+                                    <constraint firstItem="LW2-3m-kPy" firstAttribute="centerY" secondItem="N20-rm-iOf" secondAttribute="centerY" id="O0C-5e-5LL"/>
+                                    <constraint firstAttribute="trailing" secondItem="sEk-qm-LiN" secondAttribute="trailing" constant="10" id="Trk-ZK-kOV"/>
+                                    <constraint firstItem="LW2-3m-kPy" firstAttribute="centerX" secondItem="dQq-Cb-b9H" secondAttribute="centerX" id="aCJ-0J-9rJ"/>
+                                    <constraint firstItem="sEk-qm-LiN" firstAttribute="centerY" secondItem="8HO-HJ-Xys" secondAttribute="centerY" id="d8c-k0-oYV"/>
+                                    <constraint firstItem="8HO-HJ-Xys" firstAttribute="centerX" secondItem="A2Q-yh-AK7" secondAttribute="centerX" id="dAK-Hw-xoM"/>
+                                    <constraint firstItem="sEk-qm-LiN" firstAttribute="leading" secondItem="8HO-HJ-Xys" secondAttribute="trailing" constant="35" id="itK-LD-9cI"/>
+                                    <constraint firstItem="N20-rm-iOf" firstAttribute="top" secondItem="A2Q-yh-AK7" secondAttribute="top" constant="12" id="rW1-Ej-9oz"/>
+                                    <constraint firstItem="eaO-xV-b6w" firstAttribute="centerX" secondItem="sEk-qm-LiN" secondAttribute="centerX" id="wQc-CC-U5w"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zB4-2S-5wY">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="505"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="wEb-Zk-qIo" firstAttribute="leading" secondItem="EIh-RB-jKX" secondAttribute="trailing" id="20B-2p-h2O"/>
+                            <constraint firstItem="0vg-aS-DnD" firstAttribute="top" secondItem="zB4-2S-5wY" secondAttribute="bottom" id="4n5-8c-DAE"/>
+                            <constraint firstItem="A2Q-yh-AK7" firstAttribute="bottom" secondItem="EIh-RB-jKX" secondAttribute="top" id="4vO-nh-tDR"/>
+                            <constraint firstAttribute="trailing" secondItem="zB4-2S-5wY" secondAttribute="trailing" id="6cE-dC-0ye"/>
+                            <constraint firstItem="A2Q-yh-AK7" firstAttribute="leading" secondItem="0vg-aS-DnD" secondAttribute="trailing" id="7db-V3-wOE"/>
+                            <constraint firstItem="A2Q-yh-AK7" firstAttribute="centerX" secondItem="gan-vC-dRb" secondAttribute="centerX" id="KDX-lf-yVn"/>
+                            <constraint firstItem="0vg-aS-DnD" firstAttribute="leading" secondItem="gan-vC-dRb" secondAttribute="leading" id="UUP-4D-j5v"/>
+                            <constraint firstAttribute="trailing" secondItem="wEb-Zk-qIo" secondAttribute="trailing" id="VQX-KX-wfo"/>
+                            <constraint firstItem="wEb-Zk-qIo" firstAttribute="top" secondItem="zB4-2S-5wY" secondAttribute="bottom" id="WpD-T9-kxc"/>
+                            <constraint firstAttribute="bottom" secondItem="0vg-aS-DnD" secondAttribute="bottom" id="anC-2J-PGh"/>
+                            <constraint firstItem="EIh-RB-jKX" firstAttribute="bottom" secondItem="gan-vC-dRb" secondAttribute="bottom" id="clJ-IH-ZLf"/>
+                            <constraint firstItem="A2Q-yh-AK7" firstAttribute="top" secondItem="zB4-2S-5wY" secondAttribute="bottom" id="kGX-Sp-AD5"/>
+                            <constraint firstItem="zB4-2S-5wY" firstAttribute="leading" secondItem="gan-vC-dRb" secondAttribute="leading" id="kTj-jU-u0Y"/>
+                            <constraint firstItem="zB4-2S-5wY" firstAttribute="top" secondItem="gan-vC-dRb" secondAttribute="top" id="p9l-lZ-Vy7"/>
+                            <constraint firstItem="EIh-RB-jKX" firstAttribute="leading" secondItem="0vg-aS-DnD" secondAttribute="trailing" id="qIA-B1-D5s"/>
+                            <constraint firstItem="wEb-Zk-qIo" firstAttribute="leading" secondItem="A2Q-yh-AK7" secondAttribute="trailing" id="sxS-9D-Afl"/>
+                            <constraint firstAttribute="bottom" secondItem="wEb-Zk-qIo" secondAttribute="bottom" id="t8I-II-4uM"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="actionArea" destination="A2Q-yh-AK7" id="Nsm-a5-QmQ"/>
+                        <outlet property="addToFavoritesButton" destination="eaO-xV-b6w" id="0eW-vo-ch0"/>
+                        <outlet property="doorIdTextField" destination="N20-rm-iOf" id="75N-eX-yKr"/>
+                        <outlet property="statusButton" destination="LW2-3m-kPy" id="jJt-7r-6TP"/>
+                        <outletCollection property="progressButtons" destination="dQq-Cb-b9H" collectionClass="NSMutableArray" id="V9p-lp-iCH"/>
+                        <outletCollection property="progressButtons" destination="8HO-HJ-Xys" collectionClass="NSMutableArray" id="Ai5-aL-7S7"/>
+                        <outletCollection property="progressButtons" destination="sEk-qm-LiN" collectionClass="NSMutableArray" id="u3y-oY-B5V"/>
+                        <outletCollection property="voidViews" destination="zB4-2S-5wY" collectionClass="NSMutableArray" id="x2d-yB-dax"/>
+                        <outletCollection property="voidViews" destination="wEb-Zk-qIo" collectionClass="NSMutableArray" id="gan-hH-oME"/>
+                        <outletCollection property="voidViews" destination="0vg-aS-DnD" collectionClass="NSMutableArray" id="HA8-hk-TRx"/>
+                        <outletCollection property="voidViews" destination="EIh-RB-jKX" collectionClass="NSMutableArray" id="NWj-DE-RDh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PbG-ef-LxO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2813" y="124"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="5wu-qJ-TEQ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="e3T-Nz-uZy" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="diX-RK-45A">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="g4v-Kk-FAq" kind="relationship" relationship="rootViewController" id="R1D-OU-Dae"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UdP-lL-iu3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2814" y="-631"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Gear" width="19" height="19"/>
+    </resources>
+</document>
