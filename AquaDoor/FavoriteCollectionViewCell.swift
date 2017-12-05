@@ -59,4 +59,21 @@ class FavoriteCollectionViewCell: UICollectionViewCell {
 	}
 
 	var titleText: String { get { return title.text! }}
+
+	var delegate: FavoriteCollectionViewCellDelegate?
+
+	override func layoutSubviews() {
+		super.layoutSubviews()
+		addGestureRecognizer(UILongPressGestureRecognizer(target: self, action: #selector(didLongPress)))
+	}
+
+	@objc private func didLongPress(_ recognizer: UILongPressGestureRecognizer) {
+		if recognizer.state == .began {
+			delegate?.didLongPress(cell: self)
+		}
+	}
+}
+
+protocol FavoriteCollectionViewCellDelegate {
+	func didLongPress(cell: FavoriteCollectionViewCell)
 }

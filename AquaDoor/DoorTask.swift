@@ -17,6 +17,9 @@ class DoorTask {
 	private var start: (() -> Void)?
 	private var completion: ((Result) -> Void)?
 
+	private var tryingAgain = false
+	private var lastCommand: String!
+
 	private var delegate: LeaveDoorOpenDelegate?
 
 	public init(delegate: LeaveDoorOpenDelegate?) {
@@ -39,15 +42,26 @@ class DoorTask {
 
 	private func sendCommand(_ command: String) {
 		start?()
+		start = nil
+		lastCommand = command
 
 		SSHCommander.prepare(success: { instance in
 			instance.execute(command: command, completion: self.parseOutput)
-		}) { error in self.completion?(.error(error)) }
+		}, failure: { error in
+			self.completion?(.error(error)) }, force: tryingAgain)
 	}
 
 	private func parseOutput(_ output: String?) {
 		guard let output = output else {
-			completion?(.error(.executionFailed))
+			if tryingAgain {
+				tryingAgain = false
+				completion?(.error(.executionFailed))
+				return
+			}
+
+			tryingAgain = true
+			sendCommand(lastCommand)
+
 			return
 		}
 

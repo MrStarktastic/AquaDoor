@@ -39,6 +39,11 @@ public extension ImplicitlyUnwrappedOptional where Wrapped == Int {
 		defer { x = x + 1 }
 		return x
 	}
+
+	static prefix func --(x: inout Int!) -> Int! {
+		x = x - 1
+		return x
+	}
 }
 
 public extension UIImage {

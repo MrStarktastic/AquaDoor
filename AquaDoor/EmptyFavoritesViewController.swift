@@ -20,11 +20,13 @@ class EmptyFavoritesViewController: UIViewController {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 
+		// TODO: Consider using a gif. [Gifu](https://github.com/kaishin/Gifu)
 		player = AVPlayer(url: Bundle.main.url(forResource: "fish_and_doors_anim",
 		                                       withExtension: "mov")!)
 		(playerView.layer as! AVPlayerLayer).player = player
 		player.volume = 0
 		player.actionAtItemEnd = .none
+		try? AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback, with: .mixWithOthers)
 
 		instructionLabel.isUserInteractionEnabled = true
 		instructionLabel.addGestureRecognizer(UITapGestureRecognizer(
@@ -32,6 +34,7 @@ class EmptyFavoritesViewController: UIViewController {
 	}
 
 	override func viewDidDisappear(_ animated: Bool) {
+
 		super.viewDidDisappear(animated)
 
 		NotificationCenter.default.removeObserver(self)

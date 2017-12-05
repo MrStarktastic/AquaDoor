@@ -9,7 +9,7 @@
 import UIKit
 
 class FavoritesViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout,
-CredentialAlertDelegate, DoorActionDelegate, EmptyStateDelegate {
+CredentialAlertDelegate, DoorActionDelegate, EmptyStateDelegate, FavoriteCollectionViewCellDelegate {
 	private let sectionCount = 1
 	private let itemsPerRow: CGFloat = 2
 	private let cellInsets = UIEdgeInsets(top: 15, left: 15, bottom: 15, right: 15)
@@ -65,6 +65,8 @@ CredentialAlertDelegate, DoorActionDelegate, EmptyStateDelegate {
 			cell.gradient = .get(byId: door.colorId)
 		}
 
+		if cell.delegate == nil { cell.delegate = self }
+
 		return cell
 	}
 
@@ -84,10 +86,21 @@ CredentialAlertDelegate, DoorActionDelegate, EmptyStateDelegate {
 		return cellInsets.left
 	}
 
+	internal func didLongPress(cell: FavoriteCollectionViewCell) {
+		do { try database.delete(doorWithId: cell.doorId) }
+		catch { return }
+
+		if --doorCount == 0 { presentChildViewController(withIdentifier: "EmptyFavorites") }
+
+		if let indexPath = collectionView?.indexPath(for: cell) {
+			collectionView!.deleteItems(at: [indexPath])
+		}
+	}
+
 	/// Makes sure that an SSH session is created (if possible) before actual usage
 	/// and does not care if the error is not related to credentials.
 	private func prepareSSHCommander() {
-		SSHCommander.prepare(success: nil, failure: credentialErrorDidOccur)
+		SSHCommander.prepare(success: nil, failure: credentialErrorDidOccur, force: false)
 	}
 
 	private func presentCredentialsAlertController(withTitle title: String) {

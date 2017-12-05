@@ -22,14 +22,14 @@ class SSHCommander {
 
 	private init() {}
 
-	public static func prepare(success: ((SSHCommander) -> Void)?, failure: @escaping (SSHError) -> Void) {
+	public static func prepare(success: ((SSHCommander) -> Void)?, failure: @escaping (SSHError) -> Void, force: Bool) {
 		guard credentials != nil else {
 			failure(.credentialsNotFound)
 			return
 		}
 
 		shared.sshQueue.async {
-			if let session = shared.session, session.isConnected && session.isAuthorized {
+			if !force, let session = shared.session, session.isConnected && session.isAuthorized {
 				shared.mainQueue.async { success?(shared) }
 				return
 			}
@@ -41,7 +41,7 @@ class SSHCommander {
 	private func connect(_ success: ((SSHCommander) -> Void)?, _ failure: @escaping (SSHError) -> Void) {
 		let (username, password) = SSHCommander.credentials!
 
-		if let oldSession = self.session { if oldSession.isConnected { oldSession.disconnect() }}
+		if let oldSession = session { if oldSession.isConnected { oldSession.disconnect(); session = nil }}
 		let newSession = NMSSHSession(host: host, andUsername: username)!
 
 		do {
@@ -62,7 +62,7 @@ class SSHCommander {
 			return
 		}
 
-		self.session = newSession
+		session = newSession
 		mainQueue.async { success?(.shared) }
 	}
 
