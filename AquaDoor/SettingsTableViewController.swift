@@ -40,6 +40,7 @@ class SettingsTableViewController: UITableViewController, CredentialAlertDelegat
 
 	func didSetCredentials(username: String, password: String) {
 		SSHCommander.credentials = (username, password)
+		// TODO: Reset SSH session.
 	}
 
 	@IBAction func didTapDone(_ sender: UIBarButtonItem) {

@@ -20,41 +20,29 @@ class EmptyFavoritesViewController: UIViewController {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 
-		// TODO: Consider using a gif. [Gifu](https://github.com/kaishin/Gifu)
 		player = AVPlayer(url: Bundle.main.url(forResource: "fish_and_doors_anim",
 		                                       withExtension: "mov")!)
 		(playerView.layer as! AVPlayerLayer).player = player
-		player.volume = 0
+		player.isMuted = true
 		player.actionAtItemEnd = .none
 		try? AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback, with: .mixWithOthers)
+
+		let notifCenter = NotificationCenter.default
+		notifCenter.addObserver(forName: .AVPlayerItemDidPlayToEndTime, object: player.currentItem, queue: nil)
+		{ _ in
+			self.player.seek(to: kCMTimeZero)
+		}
+
+		notifCenter.addObserver(self, selector: #selector(appWillEnterForeground),
+														name: .UIApplicationWillEnterForeground, object: nil)
 
 		instructionLabel.isUserInteractionEnabled = true
 		instructionLabel.addGestureRecognizer(UITapGestureRecognizer(
 			target: self, action: #selector(didTapInstructionLabel)))
 	}
 
-	override func viewDidDisappear(_ animated: Bool) {
-
-		super.viewDidDisappear(animated)
-
-		NotificationCenter.default.removeObserver(self)
-		player.pause()
-	}
-
 	override func viewWillAppear(_ animated: Bool) {
 		super.viewWillAppear(animated)
-
-		let notifCenter = NotificationCenter.default
-		notifCenter.addObserver(forName: .AVPlayerItemDidPlayToEndTime, object: player.currentItem, queue: nil)
-		{ _ in
-			self.player.seek(to: kCMTimeZero)
-			self.player.play()
-		}
-		notifCenter.addObserver(self, selector: #selector(appWillEnterForeground),
-		                        name: .UIApplicationWillEnterForeground, object: nil)
-		notifCenter.addObserver(self, selector: #selector(appDidEnterBackground),
-		                        name: .UIApplicationDidEnterBackground, object: nil)
-
 		player.play()
 	}
 
@@ -64,13 +52,11 @@ class EmptyFavoritesViewController: UIViewController {
 			return
 		}
 
+		NotificationCenter.default.removeObserver(self)
+
 		UIView.animate(withDuration: 0.3, animations: {
 			self.view.transform = CGAffineTransform(translationX: 0, y: self.view.frame.size.height)
 		}, completion: { _ in self.view.removeFromSuperview() })
-	}
-
-	@objc func appDidEnterBackground() {
-		player.pause()
 	}
 
 	@objc func appWillEnterForeground() {

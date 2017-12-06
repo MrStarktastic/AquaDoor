@@ -25,6 +25,8 @@ CredentialAlertDelegate, DoorActionDelegate, EmptyStateDelegate, FavoriteCollect
 		database = .shared
 		doorCount = database.count
 		if doorCount == 0 { presentChildViewController(withIdentifier: "EmptyFavorites") }
+
+		prepareSSHCommander()
 	}
 
 	override func viewWillAppear(_ animated: Bool) {
@@ -34,10 +36,6 @@ CredentialAlertDelegate, DoorActionDelegate, EmptyStateDelegate, FavoriteCollect
 			navigationController?.navigationBar.prefersLargeTitles = true
 			navigationItem.largeTitleDisplayMode = .always
 		}
-
-		// This is done here so that it also happens after returning from
-		// SettingsTableViewController where credentials might be editted
-		prepareSSHCommander()
 	}
 
 	override func numberOfSections(in collectionView: UICollectionView) -> Int {
@@ -71,18 +69,18 @@ CredentialAlertDelegate, DoorActionDelegate, EmptyStateDelegate, FavoriteCollect
 	}
 
 	func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout,
-	                    sizeForItemAt indexPath: IndexPath) -> CGSize {
+											sizeForItemAt indexPath: IndexPath) -> CGSize {
 		let widthPerItem = (view.frame.width - cellInsets.left * (itemsPerRow + 1)) / itemsPerRow
 		return CGSize(width: widthPerItem, height: widthPerItem / 2)
 	}
 
 	func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout,
-	                    insetForSectionAt section: Int) -> UIEdgeInsets {
+											insetForSectionAt section: Int) -> UIEdgeInsets {
 		return cellInsets
 	}
 
 	func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout,
-	                    minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+											minimumLineSpacingForSectionAt section: Int) -> CGFloat {
 		return cellInsets.left
 	}
 
@@ -105,8 +103,8 @@ CredentialAlertDelegate, DoorActionDelegate, EmptyStateDelegate, FavoriteCollect
 
 	private func presentCredentialsAlertController(withTitle title: String) {
 		let dialog = CredentialAlertControllerWrapper(title: title,
-		                                              message: "To proceed, please enter your CSE username and password",
-		                                              delegate: self, cancellable: false).controller
+																									message: "To proceed, please enter your CSE username and password",
+																									delegate: self, cancellable: false).controller
 
 		if let (username, password) = SSHCommander.credentials {
 			let textFields = dialog.textFields!
