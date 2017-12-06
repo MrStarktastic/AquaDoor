@@ -13,6 +13,7 @@ class EmptyFavoritesViewController: UIViewController {
 	@IBOutlet weak private var playerView: AVPlayerView!
 	@IBOutlet weak private var instructionLabel: UILabel!
 
+	// TODO: Consider using AVKit.AVPlayerViewController
 	private var player: AVPlayer!
 
 	var delegate: EmptyStateDelegate!
