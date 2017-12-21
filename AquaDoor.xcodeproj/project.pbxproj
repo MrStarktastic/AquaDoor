@@ -6,217 +6,148 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		"AquaDoor::AquaDoorPackageTests::ProductTarget" /* AquaDoorPackageTests */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = OBJ_43 /* Build configuration list for PBXAggregateTarget "AquaDoorPackageTests" */;
+			buildPhases = (
+			);
+			dependencies = (
+				OBJ_46 /* PBXTargetDependency */,
+			);
+			name = AquaDoorPackageTests;
+			productName = AquaDoorPackageTests;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
-		F75DCCFA7E996C02CA0A664A /* Pods_AquaDoor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EF814C6E8E9622EC7E51D5C /* Pods_AquaDoor.framework */; };
-		FD0C76061F8CD81E00E322D3 /* ActivityIndicatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0C76041F8CD81E00E322D3 /* ActivityIndicatorViewController.swift */; };
-		FD0C76071F8CD81E00E322D3 /* ActivityIndicatorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD0C76051F8CD81E00E322D3 /* ActivityIndicatorViewController.xib */; };
-		FD0DB7A71F3A853500EEF361 /* CredentialAlertControllerWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0DB7A61F3A853500EEF361 /* CredentialAlertControllerWrapper.swift */; };
-		FD0DB7A91F3A8BCD00EEF361 /* CredentialManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0DB7A81F3A8BCD00EEF361 /* CredentialManager.swift */; };
-		FD3C904C1F86E6D900E39FFE /* SSHCommander.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3C904B1F86E6D900E39FFE /* SSHCommander.swift */; };
-		FD3FF5D61F4E4FE700353D39 /* RoundProgressButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3FF5D51F4E4FE700353D39 /* RoundProgressButton.swift */; };
-		FD407E671F7ED5A400BEF2DA /* ActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD407E661F7ED5A400BEF2DA /* ActionViewController.swift */; };
-		FD5E0C721F857CDB00979C8B /* DoorTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5E0C711F857CDB00979C8B /* DoorTask.swift */; };
-		FD6F504A1F3C711F00A18F07 /* TableViewCellSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6F50491F3C711F00A18F07 /* TableViewCellSwitch.swift */; };
-		FD7F62571F3AE23600F1D8E9 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7F62561F3AE23600F1D8E9 /* SettingsTableViewController.swift */; };
-		FD8173E51F8058C800AE786D /* FavoriteCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8173E41F8058C800AE786D /* FavoriteCollectionViewCell.swift */; };
-		FD836C3C1F3D0E26005018E3 /* QuickActionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD836C3B1F3D0E26005018E3 /* QuickActionsTableViewController.swift */; };
-		FD9E500B1F76FA7B0027597C /* EditFavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9E50091F76FA7B0027597C /* EditFavoriteViewController.swift */; };
-		FD9E500E1F77AD310027597C /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9E500D1F77AD310027597C /* FavoritesViewController.swift */; };
-		FD9E50101F77AD8D0027597C /* FavoriteDoor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9E500F1F77AD8D0027597C /* FavoriteDoor.swift */; };
-		FD9E50121F77D6000027597C /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9E50111F77D6000027597C /* Database.swift */; };
-		FDA408791F3A346800075E9D /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA408781F3A346800075E9D /* Extensions.swift */; };
-		FDAB27501F75CB9B009B8168 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDAB274F1F75CB9B009B8168 /* GradientView.swift */; };
-		FDAF2D371F7CE451003890A8 /* BorderedRectButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDAF2D361F7CE451003890A8 /* BorderedRectButton.swift */; };
-		FDCE05BA1F3985EC00D8FCB6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCE05B91F3985EC00D8FCB6 /* AppDelegate.swift */; };
-		FDCE05BF1F3985EC00D8FCB6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDCE05BD1F3985EC00D8FCB6 /* Main.storyboard */; };
-		FDCE05C11F3985EC00D8FCB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDCE05C01F3985EC00D8FCB6 /* Assets.xcassets */; };
-		FDCE05C41F3985EC00D8FCB6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDCE05C21F3985EC00D8FCB6 /* LaunchScreen.storyboard */; };
-		FDE28AF01F40B7C700C84422 /* fish_and_doors_anim.mov in Resources */ = {isa = PBXBuildFile; fileRef = FDE28AEF1F40B7C700C84422 /* fish_and_doors_anim.mov */; };
-		FDE28AF21F40B7D900C84422 /* AVPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE28AF11F40B7D900C84422 /* AVPlayerView.swift */; };
-		FDE28AF41F40B80D00C84422 /* EmptyFavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE28AF31F40B80D00C84422 /* EmptyFavoritesViewController.swift */; };
+		OBJ_25 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
+		OBJ_31 /* AquaDoorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* AquaDoorTests.swift */; };
+		OBJ_33 /* AquaDoor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "AquaDoor::AquaDoor::Product" /* AquaDoor.framework */; };
+		OBJ_40 /* AquaDoor.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* AquaDoor.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		FDCE05D21F39883C00D8FCB6 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
+/* Begin PBXContainerItemProxy section */
+		FD1122411FEB376A00A2B64E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "AquaDoor::AquaDoor";
+			remoteInfo = AquaDoor;
 		};
-/* End PBXCopyFilesBuildPhase section */
+		FD1122421FEB376A00A2B64E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "AquaDoor::AquaDoorTests";
+			remoteInfo = AquaDoorTests;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2D46890702035ECC9AE9D6CF /* Pods-AquaDoor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AquaDoor.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AquaDoor/Pods-AquaDoor.debug.xcconfig"; sourceTree = "<group>"; };
-		9EF814C6E8E9622EC7E51D5C /* Pods_AquaDoor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AquaDoor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FD0C76041F8CD81E00E322D3 /* ActivityIndicatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorViewController.swift; sourceTree = "<group>"; };
-		FD0C76051F8CD81E00E322D3 /* ActivityIndicatorViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActivityIndicatorViewController.xib; sourceTree = "<group>"; };
-		FD0DB7A61F3A853500EEF361 /* CredentialAlertControllerWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CredentialAlertControllerWrapper.swift; sourceTree = "<group>"; };
-		FD0DB7A81F3A8BCD00EEF361 /* CredentialManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CredentialManager.swift; sourceTree = "<group>"; };
-		FD3C904B1F86E6D900E39FFE /* SSHCommander.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSHCommander.swift; sourceTree = "<group>"; };
-		FD3FF5D51F4E4FE700353D39 /* RoundProgressButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundProgressButton.swift; sourceTree = "<group>"; };
-		FD407E661F7ED5A400BEF2DA /* ActionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionViewController.swift; sourceTree = "<group>"; };
-		FD5E0C711F857CDB00979C8B /* DoorTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoorTask.swift; sourceTree = "<group>"; };
-		FD6F50491F3C711F00A18F07 /* TableViewCellSwitch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCellSwitch.swift; sourceTree = "<group>"; };
-		FD7F62561F3AE23600F1D8E9 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
-		FD8173E41F8058C800AE786D /* FavoriteCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteCollectionViewCell.swift; sourceTree = "<group>"; };
-		FD836C3B1F3D0E26005018E3 /* QuickActionsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuickActionsTableViewController.swift; sourceTree = "<group>"; };
-		FD9E50091F76FA7B0027597C /* EditFavoriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditFavoriteViewController.swift; sourceTree = "<group>"; };
-		FD9E500D1F77AD310027597C /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
-		FD9E500F1F77AD8D0027597C /* FavoriteDoor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteDoor.swift; sourceTree = "<group>"; };
-		FD9E50111F77D6000027597C /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
-		FDA408781F3A346800075E9D /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
-		FDAB274F1F75CB9B009B8168 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
-		FDAF2D361F7CE451003890A8 /* BorderedRectButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderedRectButton.swift; sourceTree = "<group>"; };
-		FDCE05B61F3985EC00D8FCB6 /* AquaDoor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AquaDoor.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		FDCE05B91F3985EC00D8FCB6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FDCE05BE1F3985EC00D8FCB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		FDCE05C01F3985EC00D8FCB6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		FDCE05C31F3985EC00D8FCB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		FDCE05C51F3985EC00D8FCB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FDE28AEF1F40B7C700C84422 /* fish_and_doors_anim.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = fish_and_doors_anim.mov; sourceTree = "<group>"; };
-		FDE28AF11F40B7D900C84422 /* AVPlayerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVPlayerView.swift; sourceTree = "<group>"; };
-		FDE28AF31F40B80D00C84422 /* EmptyFavoritesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyFavoritesViewController.swift; sourceTree = "<group>"; };
-		FE795345D3FF8CBAFDAF7C53 /* Pods-AquaDoor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AquaDoor.release.xcconfig"; path = "Pods/Target Support Files/Pods-AquaDoor/Pods-AquaDoor.release.xcconfig"; sourceTree = "<group>"; };
+		"AquaDoor::AquaDoor::Product" /* AquaDoor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AquaDoor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"AquaDoor::AquaDoorTests::Product" /* AquaDoorTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = AquaDoorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		OBJ_12 /* AquaDoorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AquaDoorTests.swift; sourceTree = "<group>"; };
+		OBJ_13 /* AquaDoor */ = {isa = PBXFileReference; lastKnownFileType = folder; path = AquaDoor; sourceTree = SOURCE_ROOT; };
+		OBJ_14 /* AquaDoor.xcworkspace */ = {isa = PBXFileReference; lastKnownFileType = wrapper.workspace; path = AquaDoor.xcworkspace; sourceTree = SOURCE_ROOT; };
+		OBJ_15 /* Pods */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Pods; sourceTree = SOURCE_ROOT; };
+		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		OBJ_9 /* AquaDoor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AquaDoor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		FDCE05B31F3985EC00D8FCB6 /* Frameworks */ = {
+		OBJ_32 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 0;
 			files = (
-				F75DCCFA7E996C02CA0A664A /* Pods_AquaDoor.framework in Frameworks */,
+				OBJ_33 /* AquaDoor.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_41 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		57A05D8561A43FB567869A48 /* Pods */ = {
+		OBJ_10 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				2D46890702035ECC9AE9D6CF /* Pods-AquaDoor.debug.xcconfig */,
-				FE795345D3FF8CBAFDAF7C53 /* Pods-AquaDoor.release.xcconfig */,
+				OBJ_11 /* AquaDoorTests */,
 			);
-			name = Pods;
+			name = Tests;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_11 /* AquaDoorTests */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_12 /* AquaDoorTests.swift */,
+			);
+			name = AquaDoorTests;
+			path = Tests/AquaDoorTests;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_16 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Dependencies;
 			sourceTree = "<group>";
 		};
-		FD29CEF31F4424D600A0A4B3 /* Models */ = {
+		OBJ_17 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FD9E50111F77D6000027597C /* Database.swift */,
-				FD9E500F1F77AD8D0027597C /* FavoriteDoor.swift */,
-				FD0DB7A81F3A8BCD00EEF361 /* CredentialManager.swift */,
-				FD3C904B1F86E6D900E39FFE /* SSHCommander.swift */,
-				FD5E0C711F857CDB00979C8B /* DoorTask.swift */,
-			);
-			name = Models;
-			sourceTree = "<group>";
-		};
-		FD29CEF41F4424DD00A0A4B3 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				FD29CEF81F44275200A0A4B3 /* InterfaceBuilders */,
-				FDAF2D361F7CE451003890A8 /* BorderedRectButton.swift */,
-				FD3FF5D51F4E4FE700353D39 /* RoundProgressButton.swift */,
-				FD6F50491F3C711F00A18F07 /* TableViewCellSwitch.swift */,
-				FDE28AF11F40B7D900C84422 /* AVPlayerView.swift */,
-				FDAB274F1F75CB9B009B8168 /* GradientView.swift */,
-				FD8173E41F8058C800AE786D /* FavoriteCollectionViewCell.swift */,
-			);
-			name = Views;
-			sourceTree = "<group>";
-		};
-		FD29CEF51F4424EC00A0A4B3 /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				FD0DB7A61F3A853500EEF361 /* CredentialAlertControllerWrapper.swift */,
-				FD9E500D1F77AD310027597C /* FavoritesViewController.swift */,
-				FDE28AF31F40B80D00C84422 /* EmptyFavoritesViewController.swift */,
-				FD407E661F7ED5A400BEF2DA /* ActionViewController.swift */,
-				FD9E50091F76FA7B0027597C /* EditFavoriteViewController.swift */,
-				FD7F62561F3AE23600F1D8E9 /* SettingsTableViewController.swift */,
-				FD836C3B1F3D0E26005018E3 /* QuickActionsTableViewController.swift */,
-				FD0C76041F8CD81E00E322D3 /* ActivityIndicatorViewController.swift */,
-			);
-			name = Controllers;
-			sourceTree = "<group>";
-		};
-		FD29CEF61F4425D500A0A4B3 /* SupportFiles */ = {
-			isa = PBXGroup;
-			children = (
-				FDCE05B91F3985EC00D8FCB6 /* AppDelegate.swift */,
-				FDA408781F3A346800075E9D /* Extensions.swift */,
-				FDCE05C01F3985EC00D8FCB6 /* Assets.xcassets */,
-				FDE28AEF1F40B7C700C84422 /* fish_and_doors_anim.mov */,
-				FDCE05C51F3985EC00D8FCB6 /* Info.plist */,
-			);
-			name = SupportFiles;
-			sourceTree = "<group>";
-		};
-		FD29CEF81F44275200A0A4B3 /* InterfaceBuilders */ = {
-			isa = PBXGroup;
-			children = (
-				FDCE05BD1F3985EC00D8FCB6 /* Main.storyboard */,
-				FDCE05C21F3985EC00D8FCB6 /* LaunchScreen.storyboard */,
-				FD0C76051F8CD81E00E322D3 /* ActivityIndicatorViewController.xib */,
-			);
-			name = InterfaceBuilders;
-			sourceTree = "<group>";
-		};
-		FDCE05AD1F3985EC00D8FCB6 = {
-			isa = PBXGroup;
-			children = (
-				FDCE05B81F3985EC00D8FCB6 /* AquaDoor */,
-				FDCE05CB1F39862200D8FCB6 /* Frameworks */,
-				FDCE05B71F3985EC00D8FCB6 /* Products */,
-				57A05D8561A43FB567869A48 /* Pods */,
-			);
-			sourceTree = "<group>";
-		};
-		FDCE05B71F3985EC00D8FCB6 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				FDCE05B61F3985EC00D8FCB6 /* AquaDoor.app */,
+				"AquaDoor::AquaDoorTests::Product" /* AquaDoorTests.xctest */,
+				"AquaDoor::AquaDoor::Product" /* AquaDoor.framework */,
 			);
 			name = Products;
-			sourceTree = "<group>";
+			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		FDCE05B81F3985EC00D8FCB6 /* AquaDoor */ = {
+		OBJ_5 /*  */ = {
 			isa = PBXGroup;
 			children = (
-				FD29CEF31F4424D600A0A4B3 /* Models */,
-				FD29CEF41F4424DD00A0A4B3 /* Views */,
-				FD29CEF51F4424EC00A0A4B3 /* Controllers */,
-				FD29CEF61F4425D500A0A4B3 /* SupportFiles */,
+				OBJ_6 /* Package.swift */,
+				OBJ_7 /* Sources */,
+				OBJ_10 /* Tests */,
+				OBJ_13 /* AquaDoor */,
+				OBJ_14 /* AquaDoor.xcworkspace */,
+				OBJ_15 /* Pods */,
+				OBJ_16 /* Dependencies */,
+				OBJ_17 /* Products */,
 			);
-			path = AquaDoor;
+			name = "";
 			sourceTree = "<group>";
 		};
-		FDCE05CB1F39862200D8FCB6 /* Frameworks */ = {
+		OBJ_7 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				9EF814C6E8E9622EC7E51D5C /* Pods_AquaDoor.framework */,
+				OBJ_8 /* AquaDoor */,
 			);
-			name = Frameworks;
-			sourceTree = "<group>";
+			name = Sources;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_8 /* AquaDoor */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_9 /* AquaDoor.swift */,
+			);
+			name = AquaDoor;
+			path = Sources/AquaDoor;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		FDCE05B51F3985EC00D8FCB6 /* AquaDoor */ = {
+		"AquaDoor::AquaDoor" /* AquaDoor */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FDCE05C81F3985EC00D8FCB6 /* Build configuration list for PBXNativeTarget "AquaDoor" */;
+			buildConfigurationList = OBJ_36 /* Build configuration list for PBXNativeTarget "AquaDoor" */;
 			buildPhases = (
-				C6E816514C6233571D95AE31 /* [CP] Check Pods Manifest.lock */,
-				FDCE05B21F3985EC00D8FCB6 /* Sources */,
-				FDCE05B31F3985EC00D8FCB6 /* Frameworks */,
-				FDCE05B41F3985EC00D8FCB6 /* Resources */,
-				FDCE05D21F39883C00D8FCB6 /* CopyFiles */,
-				7660B1D0D56EE0C3DC24536B /* [CP] Embed Pods Frameworks */,
-				2B9BE986C81D84AA8033584D /* [CP] Copy Pods Resources */,
+				OBJ_39 /* Sources */,
+				OBJ_41 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -224,369 +155,310 @@
 			);
 			name = AquaDoor;
 			productName = AquaDoor;
-			productReference = FDCE05B61F3985EC00D8FCB6 /* AquaDoor.app */;
-			productType = "com.apple.product-type.application";
+			productReference = "AquaDoor::AquaDoor::Product" /* AquaDoor.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"AquaDoor::AquaDoorTests" /* AquaDoorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_27 /* Build configuration list for PBXNativeTarget "AquaDoorTests" */;
+			buildPhases = (
+				OBJ_30 /* Sources */,
+				OBJ_32 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_34 /* PBXTargetDependency */,
+			);
+			name = AquaDoorTests;
+			productName = AquaDoorTests;
+			productReference = "AquaDoor::AquaDoorTests::Product" /* AquaDoorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		"AquaDoor::SwiftPMPackageDescription" /* AquaDoorPackageDescription */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_21 /* Build configuration list for PBXNativeTarget "AquaDoorPackageDescription" */;
+			buildPhases = (
+				OBJ_24 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AquaDoorPackageDescription;
+			productName = AquaDoorPackageDescription;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		FDCE05AE1F3985EC00D8FCB6 /* Project object */ = {
+		OBJ_1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0900;
-				ORGANIZATIONNAME = "Ben Faingold and Yossi Konstantinovsky";
-				TargetAttributes = {
-					FDCE05B51F3985EC00D8FCB6 = {
-						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = SGVRR6BKW7;
-						LastSwiftMigration = 0900;
-						ProvisioningStyle = Automatic;
-					};
-				};
+				LastUpgradeCheck = 9999;
 			};
-			buildConfigurationList = FDCE05B11F3985EC00D8FCB6 /* Build configuration list for PBXProject "AquaDoor" */;
+			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "AquaDoor" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
-				Base,
 			);
-			mainGroup = FDCE05AD1F3985EC00D8FCB6;
-			productRefGroup = FDCE05B71F3985EC00D8FCB6 /* Products */;
+			mainGroup = OBJ_5 /*  */;
+			productRefGroup = OBJ_17 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FDCE05B51F3985EC00D8FCB6 /* AquaDoor */,
+				"AquaDoor::SwiftPMPackageDescription" /* AquaDoorPackageDescription */,
+				"AquaDoor::AquaDoorTests" /* AquaDoorTests */,
+				"AquaDoor::AquaDoor" /* AquaDoor */,
+				"AquaDoor::AquaDoorPackageTests::ProductTarget" /* AquaDoorPackageTests */,
 			);
 		};
 /* End PBXProject section */
 
-/* Begin PBXResourcesBuildPhase section */
-		FDCE05B41F3985EC00D8FCB6 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FD0C76071F8CD81E00E322D3 /* ActivityIndicatorViewController.xib in Resources */,
-				FDE28AF01F40B7C700C84422 /* fish_and_doors_anim.mov in Resources */,
-				FDCE05C41F3985EC00D8FCB6 /* LaunchScreen.storyboard in Resources */,
-				FDCE05C11F3985EC00D8FCB6 /* Assets.xcassets in Resources */,
-				FDCE05BF1F3985EC00D8FCB6 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		2B9BE986C81D84AA8033584D /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AquaDoor/Pods-AquaDoor-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		7660B1D0D56EE0C3DC24536B /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-AquaDoor/Pods-AquaDoor-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/KeychainSwift/KeychainSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/MarqueeLabel/MarqueeLabel.framework",
-				"${BUILT_PRODUCTS_DIR}/NMSSH/NMSSH.framework",
-				"${BUILT_PRODUCTS_DIR}/SQLite.swift/SQLite.framework",
-				"${BUILT_PRODUCTS_DIR}/UITextField+Shake/UITextField_Shake.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeychainSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MarqueeLabel.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NMSSH.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SQLite.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UITextField_Shake.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AquaDoor/Pods-AquaDoor-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C6E816514C6233571D95AE31 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-AquaDoor-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		FDCE05B21F3985EC00D8FCB6 /* Sources */ = {
+		OBJ_24 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 0;
 			files = (
-				FDAF2D371F7CE451003890A8 /* BorderedRectButton.swift in Sources */,
-				FD0DB7A71F3A853500EEF361 /* CredentialAlertControllerWrapper.swift in Sources */,
-				FD8173E51F8058C800AE786D /* FavoriteCollectionViewCell.swift in Sources */,
-				FD0DB7A91F3A8BCD00EEF361 /* CredentialManager.swift in Sources */,
-				FD0C76061F8CD81E00E322D3 /* ActivityIndicatorViewController.swift in Sources */,
-				FD9E500E1F77AD310027597C /* FavoritesViewController.swift in Sources */,
-				FDAB27501F75CB9B009B8168 /* GradientView.swift in Sources */,
-				FD407E671F7ED5A400BEF2DA /* ActionViewController.swift in Sources */,
-				FD836C3C1F3D0E26005018E3 /* QuickActionsTableViewController.swift in Sources */,
-				FD5E0C721F857CDB00979C8B /* DoorTask.swift in Sources */,
-				FD3C904C1F86E6D900E39FFE /* SSHCommander.swift in Sources */,
-				FDE28AF41F40B80D00C84422 /* EmptyFavoritesViewController.swift in Sources */,
-				FD6F504A1F3C711F00A18F07 /* TableViewCellSwitch.swift in Sources */,
-				FD9E500B1F76FA7B0027597C /* EditFavoriteViewController.swift in Sources */,
-				FD7F62571F3AE23600F1D8E9 /* SettingsTableViewController.swift in Sources */,
-				FDE28AF21F40B7D900C84422 /* AVPlayerView.swift in Sources */,
-				FDCE05BA1F3985EC00D8FCB6 /* AppDelegate.swift in Sources */,
-				FD9E50101F77AD8D0027597C /* FavoriteDoor.swift in Sources */,
-				FD3FF5D61F4E4FE700353D39 /* RoundProgressButton.swift in Sources */,
-				FD9E50121F77D6000027597C /* Database.swift in Sources */,
-				FDA408791F3A346800075E9D /* Extensions.swift in Sources */,
+				OBJ_25 /* Package.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_30 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_31 /* AquaDoorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_39 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_40 /* AquaDoor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXVariantGroup section */
-		FDCE05BD1F3985EC00D8FCB6 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FDCE05BE1F3985EC00D8FCB6 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
+/* Begin PBXTargetDependency section */
+		OBJ_34 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "AquaDoor::AquaDoor" /* AquaDoor */;
+			targetProxy = FD1122411FEB376A00A2B64E /* PBXContainerItemProxy */;
 		};
-		FDCE05C21F3985EC00D8FCB6 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FDCE05C31F3985EC00D8FCB6 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
+		OBJ_46 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "AquaDoor::AquaDoorTests" /* AquaDoorTests */;
+			targetProxy = FD1122421FEB376A00A2B64E /* PBXContainerItemProxy */;
 		};
-/* End PBXVariantGroup section */
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		FDCE05C61F3985EC00D8FCB6 /* Debug */ = {
+		OBJ_22 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 4 -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
-		FDCE05C71F3985EC00D8FCB6 /* Release */ = {
+		OBJ_23 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 4 -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
-		FDCE05C91F3985EC00D8FCB6 /* Debug */ = {
+		OBJ_28 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2D46890702035ECC9AE9D6CF /* Pods-AquaDoor.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEVELOPMENT_TEAM = SGVRR6BKW7;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 				);
-				INFOPLIST_FILE = AquaDoor/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					"-ObjC",
-					"-framework",
-					"\"KeychainSwift\"",
-					"-framework",
-					"\"NMSSH\"",
-					"-all_load",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ben.AquaDoor;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = AquaDoor.xcodeproj/AquaDoorTests_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
 				SWIFT_VERSION = 4.0;
-				USER_HEADER_SEARCH_PATHS = "";
+				TARGET_NAME = AquaDoorTests;
 			};
 			name = Debug;
 		};
-		FDCE05CA1F3985EC00D8FCB6 /* Release */ = {
+		OBJ_29 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FE795345D3FF8CBAFDAF7C53 /* Pods-AquaDoor.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEVELOPMENT_TEAM = SGVRR6BKW7;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 				);
-				INFOPLIST_FILE = AquaDoor/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					"-ObjC",
-					"-framework",
-					"\"KeychainSwift\"",
-					"-framework",
-					"\"NMSSH\"",
-					"-all_load",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ben.AquaDoor;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = AquaDoor.xcodeproj/AquaDoorTests_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
 				SWIFT_VERSION = 4.0;
-				USER_HEADER_SEARCH_PATHS = "";
+				TARGET_NAME = AquaDoorTests;
+			};
+			name = Release;
+		};
+		OBJ_3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_SWIFT_FLAGS = "-DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = SWIFT_PACKAGE;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				USE_HEADERMAP = NO;
+			};
+			name = Debug;
+		};
+		OBJ_37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = AquaDoor.xcodeproj/AquaDoor_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = AquaDoor;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGET_NAME = AquaDoor;
+			};
+			name = Debug;
+		};
+		OBJ_38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = AquaDoor.xcodeproj/AquaDoor_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = AquaDoor;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGET_NAME = AquaDoor;
+			};
+			name = Release;
+		};
+		OBJ_4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_OPTIMIZATION_LEVEL = s;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_SWIFT_FLAGS = "-DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = SWIFT_PACKAGE;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				USE_HEADERMAP = NO;
+			};
+			name = Release;
+		};
+		OBJ_44 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		OBJ_45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		FDCE05B11F3985EC00D8FCB6 /* Build configuration list for PBXProject "AquaDoor" */ = {
+		OBJ_2 /* Build configuration list for PBXProject "AquaDoor" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FDCE05C61F3985EC00D8FCB6 /* Debug */,
-				FDCE05C71F3985EC00D8FCB6 /* Release */,
+				OBJ_3 /* Debug */,
+				OBJ_4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
-		FDCE05C81F3985EC00D8FCB6 /* Build configuration list for PBXNativeTarget "AquaDoor" */ = {
+		OBJ_21 /* Build configuration list for PBXNativeTarget "AquaDoorPackageDescription" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FDCE05C91F3985EC00D8FCB6 /* Debug */,
-				FDCE05CA1F3985EC00D8FCB6 /* Release */,
+				OBJ_22 /* Debug */,
+				OBJ_23 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
+		};
+		OBJ_27 /* Build configuration list for PBXNativeTarget "AquaDoorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_28 /* Debug */,
+				OBJ_29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		OBJ_36 /* Build configuration list for PBXNativeTarget "AquaDoor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_37 /* Debug */,
+				OBJ_38 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		OBJ_43 /* Build configuration list for PBXAggregateTarget "AquaDoorPackageTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_44 /* Debug */,
+				OBJ_45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = FDCE05AE1F3985EC00D8FCB6 /* Project object */;
+	rootObject = OBJ_1 /* Project object */;
 }

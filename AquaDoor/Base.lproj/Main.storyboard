@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="67h-3z-JBs">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="67h-3z-JBs">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -65,7 +65,7 @@
                                         <rect key="frame" x="0.0" y="35" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dzp-Mg-n22" id="Tzg-ta-eaa">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="341" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Quick Actions Order" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="G7r-U6-RDx">
@@ -94,7 +94,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Developer Mode" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="cnq-3M-3Mx">
-                                                    <rect key="frame" x="16" y="0.0" width="344" height="43.5"/>
+                                                    <rect key="frame" x="16" y="0.0" width="343" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -664,26 +664,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0vg-aS-DnD">
-                                <rect key="frame" x="0.0" y="505" width="30" height="162"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wEb-Zk-qIo">
-                                <rect key="frame" x="345" y="505" width="30" height="162"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EIh-RB-jKX">
-                                <rect key="frame" x="30" y="652" width="315" height="15"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="15" id="dTX-nM-di4"/>
-                                </constraints>
-                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A2Q-yh-AK7">
-                                <rect key="frame" x="30.5" y="505" width="314.5" height="147"/>
+                                <rect key="frame" x="30.5" y="509" width="314.5" height="143"/>
                                 <subviews>
                                     <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LW2-3m-kPy" customClass="BorderedRectButton" customModule="AquaDoor" customModuleProvider="target">
-                                        <rect key="frame" x="11" y="12" width="73" height="30"/>
+                                        <rect key="frame" x="11" y="10" width="73" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="73" id="J9X-or-UJD"/>
                                             <constraint firstAttribute="height" constant="30" id="Rd6-gD-t6m"/>
@@ -706,7 +691,7 @@
                                         </connections>
                                     </button>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Door ID" textAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="N20-rm-iOf">
-                                        <rect key="frame" x="119.5" y="12" width="75" height="30"/>
+                                        <rect key="frame" x="119.5" y="10" width="75" height="30"/>
                                         <color key="backgroundColor" red="0.090196078430000007" green="0.090196078430000007" blue="0.090196078430000007" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="75" id="qfL-vV-7kk"/>
@@ -716,7 +701,7 @@
                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="namePhonePad" keyboardAppearance="alert" returnKeyType="done"/>
                                     </textField>
                                     <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eaO-xV-b6w" customClass="BorderedRectButton" customModule="AquaDoor" customModuleProvider="target">
-                                        <rect key="frame" x="231" y="12" width="73" height="30"/>
+                                        <rect key="frame" x="231" y="10" width="73" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="73" id="g1r-WZ-xq1"/>
                                             <constraint firstAttribute="height" constant="30" id="jmo-H3-3dw"/>
@@ -739,7 +724,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="dQq-Cb-b9H" customClass="RoundProgressButton" customModule="AquaDoor" customModuleProvider="target">
-                                        <rect key="frame" x="10" y="62" width="75" height="75"/>
+                                        <rect key="frame" x="10" y="60" width="75" height="75"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="75" id="TV5-iD-meu"/>
                                             <constraint firstAttribute="height" constant="75" id="eex-KJ-2K8"/>
@@ -761,7 +746,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8HO-HJ-Xys" customClass="RoundProgressButton" customModule="AquaDoor" customModuleProvider="target">
-                                        <rect key="frame" x="120" y="62" width="75" height="75"/>
+                                        <rect key="frame" x="120" y="60" width="75" height="75"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="75" id="c8t-85-Aqd"/>
                                             <constraint firstAttribute="width" constant="75" id="jtp-Xg-iEY"/>
@@ -783,7 +768,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sEk-qm-LiN" customClass="RoundProgressButton" customModule="AquaDoor" customModuleProvider="target">
-                                        <rect key="frame" x="230" y="62" width="75" height="75"/>
+                                        <rect key="frame" x="230" y="60" width="75" height="75"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="75" id="gZ1-8O-ijZ"/>
                                             <constraint firstAttribute="height" constant="75" id="nBO-fl-IJQ"/>
@@ -814,46 +799,28 @@
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="8HO-HJ-Xys" secondAttribute="bottom" constant="10" id="AEL-gT-Rkq"/>
+                                    <constraint firstAttribute="bottom" secondItem="8HO-HJ-Xys" secondAttribute="bottom" constant="8" id="AEL-gT-Rkq"/>
                                     <constraint firstItem="eaO-xV-b6w" firstAttribute="centerY" secondItem="N20-rm-iOf" secondAttribute="centerY" id="Aki-fw-pjb"/>
                                     <constraint firstItem="dQq-Cb-b9H" firstAttribute="centerY" secondItem="8HO-HJ-Xys" secondAttribute="centerY" id="D0U-12-qFc"/>
+                                    <constraint firstItem="dQq-Cb-b9H" firstAttribute="leading" secondItem="A2Q-yh-AK7" secondAttribute="leading" constant="10" id="DJM-ra-2xe"/>
                                     <constraint firstItem="8HO-HJ-Xys" firstAttribute="top" secondItem="N20-rm-iOf" secondAttribute="bottom" constant="20" id="EeI-BW-d47"/>
                                     <constraint firstItem="N20-rm-iOf" firstAttribute="centerX" secondItem="A2Q-yh-AK7" secondAttribute="centerX" id="FgP-XZ-eU1"/>
                                     <constraint firstItem="8HO-HJ-Xys" firstAttribute="leading" secondItem="dQq-Cb-b9H" secondAttribute="trailing" constant="35" id="K8W-sA-a8G"/>
                                     <constraint firstItem="LW2-3m-kPy" firstAttribute="centerY" secondItem="N20-rm-iOf" secondAttribute="centerY" id="O0C-5e-5LL"/>
-                                    <constraint firstAttribute="trailing" secondItem="sEk-qm-LiN" secondAttribute="trailing" constant="10" id="Trk-ZK-kOV"/>
+                                    <constraint firstAttribute="trailing" secondItem="sEk-qm-LiN" secondAttribute="trailing" constant="10" id="WBg-oT-SMO"/>
                                     <constraint firstItem="LW2-3m-kPy" firstAttribute="centerX" secondItem="dQq-Cb-b9H" secondAttribute="centerX" id="aCJ-0J-9rJ"/>
                                     <constraint firstItem="sEk-qm-LiN" firstAttribute="centerY" secondItem="8HO-HJ-Xys" secondAttribute="centerY" id="d8c-k0-oYV"/>
                                     <constraint firstItem="8HO-HJ-Xys" firstAttribute="centerX" secondItem="A2Q-yh-AK7" secondAttribute="centerX" id="dAK-Hw-xoM"/>
                                     <constraint firstItem="sEk-qm-LiN" firstAttribute="leading" secondItem="8HO-HJ-Xys" secondAttribute="trailing" constant="35" id="itK-LD-9cI"/>
-                                    <constraint firstItem="N20-rm-iOf" firstAttribute="top" secondItem="A2Q-yh-AK7" secondAttribute="top" constant="12" id="rW1-Ej-9oz"/>
+                                    <constraint firstItem="N20-rm-iOf" firstAttribute="top" secondItem="A2Q-yh-AK7" secondAttribute="top" constant="10" id="rW1-Ej-9oz"/>
                                     <constraint firstItem="eaO-xV-b6w" firstAttribute="centerX" secondItem="sEk-qm-LiN" secondAttribute="centerX" id="wQc-CC-U5w"/>
                                 </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zB4-2S-5wY">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="505"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="wEb-Zk-qIo" firstAttribute="leading" secondItem="EIh-RB-jKX" secondAttribute="trailing" id="20B-2p-h2O"/>
-                            <constraint firstItem="0vg-aS-DnD" firstAttribute="top" secondItem="zB4-2S-5wY" secondAttribute="bottom" id="4n5-8c-DAE"/>
-                            <constraint firstItem="A2Q-yh-AK7" firstAttribute="bottom" secondItem="EIh-RB-jKX" secondAttribute="top" id="4vO-nh-tDR"/>
-                            <constraint firstAttribute="trailing" secondItem="zB4-2S-5wY" secondAttribute="trailing" id="6cE-dC-0ye"/>
-                            <constraint firstItem="A2Q-yh-AK7" firstAttribute="leading" secondItem="0vg-aS-DnD" secondAttribute="trailing" id="7db-V3-wOE"/>
+                            <constraint firstItem="tWi-zP-Oz7" firstAttribute="top" secondItem="A2Q-yh-AK7" secondAttribute="bottom" constant="15" placeholder="YES" id="I0Y-fW-yka"/>
                             <constraint firstItem="A2Q-yh-AK7" firstAttribute="centerX" secondItem="gan-vC-dRb" secondAttribute="centerX" id="KDX-lf-yVn"/>
-                            <constraint firstItem="0vg-aS-DnD" firstAttribute="leading" secondItem="gan-vC-dRb" secondAttribute="leading" id="UUP-4D-j5v"/>
-                            <constraint firstAttribute="trailing" secondItem="wEb-Zk-qIo" secondAttribute="trailing" id="VQX-KX-wfo"/>
-                            <constraint firstItem="wEb-Zk-qIo" firstAttribute="top" secondItem="zB4-2S-5wY" secondAttribute="bottom" id="WpD-T9-kxc"/>
-                            <constraint firstAttribute="bottom" secondItem="0vg-aS-DnD" secondAttribute="bottom" id="anC-2J-PGh"/>
-                            <constraint firstItem="EIh-RB-jKX" firstAttribute="bottom" secondItem="gan-vC-dRb" secondAttribute="bottom" id="clJ-IH-ZLf"/>
-                            <constraint firstItem="A2Q-yh-AK7" firstAttribute="top" secondItem="zB4-2S-5wY" secondAttribute="bottom" id="kGX-Sp-AD5"/>
-                            <constraint firstItem="zB4-2S-5wY" firstAttribute="leading" secondItem="gan-vC-dRb" secondAttribute="leading" id="kTj-jU-u0Y"/>
-                            <constraint firstItem="zB4-2S-5wY" firstAttribute="top" secondItem="gan-vC-dRb" secondAttribute="top" id="p9l-lZ-Vy7"/>
-                            <constraint firstItem="EIh-RB-jKX" firstAttribute="leading" secondItem="0vg-aS-DnD" secondAttribute="trailing" id="qIA-B1-D5s"/>
-                            <constraint firstItem="wEb-Zk-qIo" firstAttribute="leading" secondItem="A2Q-yh-AK7" secondAttribute="trailing" id="sxS-9D-Afl"/>
-                            <constraint firstAttribute="bottom" secondItem="wEb-Zk-qIo" secondAttribute="bottom" id="t8I-II-4uM"/>
                         </constraints>
                     </view>
                     <connections>
@@ -864,10 +831,6 @@
                         <outletCollection property="progressButtons" destination="dQq-Cb-b9H" collectionClass="NSMutableArray" id="V9p-lp-iCH"/>
                         <outletCollection property="progressButtons" destination="8HO-HJ-Xys" collectionClass="NSMutableArray" id="Ai5-aL-7S7"/>
                         <outletCollection property="progressButtons" destination="sEk-qm-LiN" collectionClass="NSMutableArray" id="u3y-oY-B5V"/>
-                        <outletCollection property="voidViews" destination="zB4-2S-5wY" collectionClass="NSMutableArray" id="x2d-yB-dax"/>
-                        <outletCollection property="voidViews" destination="wEb-Zk-qIo" collectionClass="NSMutableArray" id="gan-hH-oME"/>
-                        <outletCollection property="voidViews" destination="0vg-aS-DnD" collectionClass="NSMutableArray" id="HA8-hk-TRx"/>
-                        <outletCollection property="voidViews" destination="EIh-RB-jKX" collectionClass="NSMutableArray" id="NWj-DE-RDh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PbG-ef-LxO" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -7,232 +7,251 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		08AA89D020B5C4FD74D1529A3E972AB9 /* KeychainSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C3247686524FD520158FD1E96253846 /* KeychainSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		09DE75B190EE5892D92F929F2BABFAD8 /* NMSSHSession.m in Sources */ = {isa = PBXBuildFile; fileRef = CA9D7D522465122D8AAF4F0A9364A847 /* NMSSHSession.m */; };
-		0B0B71DDB4B5A31F6B0BCCA53779BA80 /* DateAndTimeFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3260A62CDFCD285918CFF5E3BB4CE4C6 /* DateAndTimeFunctions.swift */; };
+		04A9312A2DC8DD9F6437FB8FF5AE5CED /* SQLite-Bridging.h in Headers */ = {isa = PBXBuildFile; fileRef = CD674D85B0B5D059363803D229236428 /* SQLite-Bridging.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		04D28652B377F08E5FCAAB42CD468B3D /* Statement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2002CCC1C742EC5FCD95A6DE1CD18438 /* Statement.swift */; };
+		071D3B0519C65AF22B81EC65EF5577B7 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E15E8F2577F9D372D681AE7AEDC7739 /* Operators.swift */; };
+		08AA89D020B5C4FD74D1529A3E972AB9 /* KeychainSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F80DFF93716C3D801C1B378FCE45E879 /* KeychainSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		09DE75B190EE5892D92F929F2BABFAD8 /* NMSSHSession.m in Sources */ = {isa = PBXBuildFile; fileRef = F8BB21BB547BF387DD49ACFC6D20D6DB /* NMSSHSession.m */; };
+		0D231C4DF999107591B440747F35B8DC /* FTS4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CEA41177460F15DBB99094BE5BD297 /* FTS4.swift */; };
+		0E05DFEC7BDA07BA914354A99F099BEF /* SQLite.swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E4BF6CC93F5AE89C4A809ED29EA3CE08 /* SQLite.swift-dummy.m */; };
 		0F850C133F6F9412546FB4603F512F6D /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E319831CA1ABB2EB2424A119A18B4B1 /* CFNetwork.framework */; };
-		1CD220C0C5CB0A23E19C2C2B0B7F41E9 /* NMSSHChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = 453DB02B64F11B6CFD69423C03AA0209 /* NMSSHChannel.m */; };
-		21BB009BD854FE3D760FE0449F95DC5D /* NMSSHChannel.h in Headers */ = {isa = PBXBuildFile; fileRef = FF6D7031FB893E578D544A0FA5B22056 /* NMSSHChannel.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		21DF99E5732E1C6E7F6E284135F6099D /* Value.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858ADA0D8639F5E5F24E8FCD0FEA6CED /* Value.swift */; };
-		26CA7B69A74106A07B78FA1990F7FE88 /* SQLite-Bridging.m in Sources */ = {isa = PBXBuildFile; fileRef = 5151C076F043D99FBB3C38E0D60B7E9D /* SQLite-Bridging.m */; };
-		2773911979B38F916EAF9755B9237273 /* libssh2.h in Headers */ = {isa = PBXBuildFile; fileRef = CEC4EFA363FFBF4AD0906160083F813C /* libssh2.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2CFC9885B7E0952E7DE87F6500290481 /* NMSFTP.h in Headers */ = {isa = PBXBuildFile; fileRef = FEF84D727C01729F038173A9571B0BB7 /* NMSFTP.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3014724009F4E05BFFCDC9E56BDFAF74 /* FTS4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDB47CF8069834E1BA7D3BDCF5169BD /* FTS4.swift */; };
-		31443DCC66DC90B752CF8468FC34D593 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42CD99C27616A096D143086EC1DCD4AE /* Foundation.framework */; };
-		3242E934FAF93BA944D0CE38D5DC555A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42CD99C27616A096D143086EC1DCD4AE /* Foundation.framework */; };
-		36B93F2A2C4145C1C82A8E0B9CC30632 /* NMSFTPFile.h in Headers */ = {isa = PBXBuildFile; fileRef = 10A555464825610E39D61297EC599C40 /* NMSFTPFile.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		381DCF0B2F439F677F1AB441CFC08AC2 /* NMSFTPFile.m in Sources */ = {isa = PBXBuildFile; fileRef = FDC2EF0DE2D8701A1B5D08C63F0E81FA /* NMSFTPFile.m */; };
-		38C23F80C08B3D94A304DA24E9E15DEA /* libssh2_publickey.h in Headers */ = {isa = PBXBuildFile; fileRef = 374CBA2883E657CE9A8365E13BC337A8 /* libssh2_publickey.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3953E5E5B87B0DC728263D7E8EB25DA0 /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B81EA2EDB90EA813739B54879DDBB6 /* Connection.swift */; };
-		3CCF20DCB88F20DD59966E0BEDAA14E9 /* NMSSH.h in Headers */ = {isa = PBXBuildFile; fileRef = 4670446C545CE5DC14292ABCF4CF6171 /* NMSSH.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1485D9ACBFD6699D4DB15FF5E6F179D7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42CD99C27616A096D143086EC1DCD4AE /* Foundation.framework */; };
+		18CC54952347E2D45740BA3463AC4173 /* Coding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9762337A9F143EF892BDE1649AB7F3E1 /* Coding.swift */; };
+		1A392C508212090F99379B040EE5CCA5 /* DateAndTimeFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1EE35DE60056C8392775E20B74D30AF /* DateAndTimeFunctions.swift */; };
+		1CD220C0C5CB0A23E19C2C2B0B7F41E9 /* NMSSHChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FE7D7C2EAA0FAE98A5BB219305A8815 /* NMSSHChannel.m */; };
+		20FF8525692D756C9C4E33039FE80CB5 /* UITextField+Shake-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 993755C42784449F24035AF39C976197 /* UITextField+Shake-dummy.m */; };
+		21BB009BD854FE3D760FE0449F95DC5D /* NMSSHChannel.h in Headers */ = {isa = PBXBuildFile; fileRef = A865758E4B58041497711141148CC1CA /* NMSSHChannel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2773911979B38F916EAF9755B9237273 /* libssh2.h in Headers */ = {isa = PBXBuildFile; fileRef = BA74211E8C57B06306C6963C0CB53CE0 /* libssh2.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2CFC9885B7E0952E7DE87F6500290481 /* NMSFTP.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E6B14576F4928708F8095E7C7F5C86C /* NMSFTP.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2F149FFD3E06A0019ADD5A41F1FC1633 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B996A3DCAF8B5147DB4970C8609A0ADE /* Helpers.swift */; };
+		3003927196CFDE501C29B193AEA24BD3 /* SQLite-Bridging.m in Sources */ = {isa = PBXBuildFile; fileRef = F2DC8BBAE51A7B59919FB0475BD7E458 /* SQLite-Bridging.m */; };
+		31C7E240A146E6F25D0767D9921E67EC /* UITextField+Shake.m in Sources */ = {isa = PBXBuildFile; fileRef = 33227C7DF68406536D3F832504484A8D /* UITextField+Shake.m */; };
+		35B92C303EDAC9AA3EE0984C21C33B84 /* Pods-AquaDoor-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FF76EA0A1A1A642A210F8D63786DCBD /* Pods-AquaDoor-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		36B93F2A2C4145C1C82A8E0B9CC30632 /* NMSFTPFile.h in Headers */ = {isa = PBXBuildFile; fileRef = D332EDECC810182A8578E8C51C1CFB60 /* NMSFTPFile.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		381DCF0B2F439F677F1AB441CFC08AC2 /* NMSFTPFile.m in Sources */ = {isa = PBXBuildFile; fileRef = EBB0A19A7969E8411AE656D54F363F02 /* NMSFTPFile.m */; };
+		38C23F80C08B3D94A304DA24E9E15DEA /* libssh2_publickey.h in Headers */ = {isa = PBXBuildFile; fileRef = DE2269A70645EBAAFEACF985CCD9059A /* libssh2_publickey.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3CCF20DCB88F20DD59966E0BEDAA14E9 /* NMSSH.h in Headers */ = {isa = PBXBuildFile; fileRef = DE6CC5BF5657AC0D2F6479968AB04C1F /* NMSSH.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4024C0E04E64E6FC3501CA440713589A /* Setter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0827B5D745B9F34C3031BDC95C314714 /* Setter.swift */; };
+		42C8A8DCC5266CB6FDC0E64BAF5C370D /* Keyboard+LayoutGuide-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 254F357E314C10BAB18D02E5A5156BCE /* Keyboard+LayoutGuide-dummy.m */; };
 		442A7B4EF448F321028FFF9DEE47B7A0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42CD99C27616A096D143086EC1DCD4AE /* Foundation.framework */; };
-		4C44C206073B3C57C714DB61921057F5 /* SQLite-Bridging.h in Headers */ = {isa = PBXBuildFile; fileRef = B27241FDD3E151A9C90880B43DC42333 /* SQLite-Bridging.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4D076EC7044C3A81E77E7D2D4F5FF5F2 /* Pods-AquaDoor-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FF76EA0A1A1A642A210F8D63786DCBD /* Pods-AquaDoor-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4DB42BAC2F55B72DD3DF5105E021F608 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB799393FCC2791C3BE8848E7C451161 /* Errors.swift */; };
-		502CFF5323F58A3B9A026EF2A46A315A /* NMSSH-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DF4F2DF4E6FC84C8C3CC9970E3BF4D26 /* NMSSH-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		57D91B6D9B862978E52565D33F8FCBEF /* Blob.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3300A1981AAC82C2D6467A836A08D75 /* Blob.swift */; };
-		5BFE34936B673E3800863193391DF092 /* socket_helper.h in Headers */ = {isa = PBXBuildFile; fileRef = CF8BBF90E8D4C0034E8B10DAFAEBD820 /* socket_helper.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		4AA9A185DCE138148403BFEDA306D428 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42CD99C27616A096D143086EC1DCD4AE /* Foundation.framework */; };
+		502CFF5323F58A3B9A026EF2A46A315A /* NMSSH-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FCEC9B81520A8B07FA5E2F2E747E3867 /* NMSSH-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5187857987D77B3412F188C15A86CAE9 /* CoreFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC0D44711249E15809E8012DDC83E4B /* CoreFunctions.swift */; };
+		5BFE34936B673E3800863193391DF092 /* socket_helper.h in Headers */ = {isa = PBXBuildFile; fileRef = 03EF18B328060955B245B2340FD0D075 /* socket_helper.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		63E3E54D78ECF2A2C25FB5F202B96D40 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42CD99C27616A096D143086EC1DCD4AE /* Foundation.framework */; };
-		646577B03E696CBE3F414CA9B717ECDE /* NMSSH.h in Headers */ = {isa = PBXBuildFile; fileRef = D3F68904A22195C9C6B536C13939494E /* NMSSH.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		647185EE96E0B4F08A9925C90C371F23 /* NMSSHConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = BB00D83FB634FA1DDDEE3F7712FDB638 /* NMSSHConfig.m */; };
-		6939375257BC8421D9238BD5A6D04495 /* FTS5.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3BE6E01D7B16A42BABE705F9D5CA395 /* FTS5.swift */; };
-		69612E6DF2B759DDBA0234EFD94B0A49 /* Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32FD5223A0BB140F2A174B9A072F7817 /* Schema.swift */; };
-		6B739BF0D8A41E2F7A11DC0C65C4B535 /* UITextField+Shake.m in Sources */ = {isa = PBXBuildFile; fileRef = 680843D4F269964EDFC7E14A6922D221 /* UITextField+Shake.m */; };
-		6C3F8B6354D298F01F300D05F8322893 /* CustomFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F80A62B13A5DF818130F7D5DDE1436F /* CustomFunctions.swift */; };
-		6E1E4C6667889F677F6A1CC7C0D66FE1 /* RTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAD8F853D28C1AAC1D4DA7ECB7DDA16 /* RTree.swift */; };
-		6E979220FD7F4202CC8665708B831C11 /* NMSSH+Protected.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E4346770B555004C59E845135D9338A /* NMSSH+Protected.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		74CDCC6E9AE244DC50DE93FA111DE384 /* NMSFTP.m in Sources */ = {isa = PBXBuildFile; fileRef = C944625C5ACC0A3850F98C11EAA2E71C /* NMSFTP.m */; };
-		754404FB000330D5A0F9F78C1E93A276 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC9CE5085D06839C9C9D2577D5F9C2B /* Operators.swift */; };
-		7640505CDB0CD0F37B5A51DF7B865EFF /* NMSSHLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = A07ADA135AF0D58EC003964AA4617096 /* NMSSHLogger.m */; };
-		76B264D29AEFD72817E4958CF15578A9 /* Query.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB84F00C96BE9D31FF9490A0DDB78EB /* Query.swift */; };
-		79170C34CD3FD85CA45CBB3DA7AC46F4 /* Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD6C970BEB181B7F8F60AE504FDB396 /* Foundation.swift */; };
+		646577B03E696CBE3F414CA9B717ECDE /* NMSSH.h in Headers */ = {isa = PBXBuildFile; fileRef = F7B2B1FEBAD6147C2E1682C0926A634A /* NMSSH.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		647185EE96E0B4F08A9925C90C371F23 /* NMSSHConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = F234E96ADB145B64374D2C520B97CCD4 /* NMSSHConfig.m */; };
+		6ABA04A67EAE6DFB11223EA621F5062D /* UITextField+Shake.h in Headers */ = {isa = PBXBuildFile; fileRef = A73F38C1DF3FDA8F324CF3A219723943 /* UITextField+Shake.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6E979220FD7F4202CC8665708B831C11 /* NMSSH+Protected.h in Headers */ = {isa = PBXBuildFile; fileRef = FEE946F53E3DDABCBD0202B70B61C893 /* NMSSH+Protected.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		74CDCC6E9AE244DC50DE93FA111DE384 /* NMSFTP.m in Sources */ = {isa = PBXBuildFile; fileRef = A27617B27FDB515EEEC7B2C36F4D25BF /* NMSFTP.m */; };
+		7640505CDB0CD0F37B5A51DF7B865EFF /* NMSSHLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = C286953D425BE0E6A1E20BA9E78CBCEC /* NMSSHLogger.m */; };
 		7A85DDA82105465191090E1CD3FCDC00 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 776FF0C3AD4D40FE70180254E22E6288 /* UIKit.framework */; };
-		7C0F17488B3552EAAFC074CFC4491DD5 /* TegKeychainConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9AB4D340C5879ACEF07E19547104E5 /* TegKeychainConstants.swift */; };
-		7D4F79610AD450FB8160B1D2903C6522 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F9DC9A1F0193BBB3F2FD4A90E6E009 /* Helpers.swift */; };
-		7E6A3D9B0ABC84B21B3C5A46DFFEB0A4 /* Pods-AquaDoor-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 16D6FAFD0A56A2C5003912464C709A6C /* Pods-AquaDoor-dummy.m */; };
-		81757F684D084AC69DAE797488D314F2 /* MarqueeLabel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C61706EEAEE74919E6138C815089E9C /* MarqueeLabel-dummy.m */; };
-		88BBD4CEE5FAAF363AFC903326752285 /* Collation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AAAA72649548C2886F763EBFADD056 /* Collation.swift */; };
-		8F91F2B443813BBC44B4A805F04A39C4 /* NMSSHHostConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BCF609392C769FA42864C81F5E9EA0F /* NMSSHHostConfig.m */; };
-		922868FC8545055AF825BCB9BC287432 /* NMSSHConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A3626DD2AC794909B4BFA168C016E41 /* NMSSHConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A1AC2F79AC6D408C31686D8A17FA9C5C /* SQLite.h in Headers */ = {isa = PBXBuildFile; fileRef = 8798A8B5FDB30D2314D4A934C00D993C /* SQLite.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A1CF6147C39B06C952257A20496C4ED7 /* UITextField+Shake.h in Headers */ = {isa = PBXBuildFile; fileRef = 413288FADA8A33589CE945DF18CA33CA /* UITextField+Shake.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A895CDB443513D0B2181752D1D0C4876 /* SQLite.swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 504BC456815100BF6DE141062079D14A /* SQLite.swift-dummy.m */; };
-		ACEC00A871883E648AA2BB17B1FCAE6A /* UITextField+Shake-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6651E1CCA173DD0B5164F0756693E1CF /* UITextField+Shake-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AD0E8D5F58B0B824D2631BDA9D541DFE /* KeychainSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D53A3E16EEFFF7A587E2BA90D671AB6 /* KeychainSwift-dummy.m */; };
-		AD1AB85EB7D93EC8C57E155CD47818DC /* AggregateFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32D4499DE3A88D45B51B1CD2E5CB03B /* AggregateFunctions.swift */; };
-		ADF01EDE5F8A21D3858F466A3A67347A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42CD99C27616A096D143086EC1DCD4AE /* Foundation.framework */; };
-		AF766E616C7548F74C8E8AA48CE8F501 /* NMSSHChannelDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A2DB17BA528C4208F32A3EE54912639 /* NMSSHChannelDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B39B270DD03752F5028E6A056831032C /* Statement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026B2859B929F43176287F0A4D80A3EE /* Statement.swift */; };
-		B40C5DFF7E01C15D738FBFB1641F683E /* socket_helper.m in Sources */ = {isa = PBXBuildFile; fileRef = B6126527F58F3A0398DD757531164EB4 /* socket_helper.m */; };
-		B812F90DB775AFDF1DFA13480D844916 /* MarqueeLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243F548970FF7EC5CC345026AD9B9B95 /* MarqueeLabel.swift */; };
+		7C0F17488B3552EAAFC074CFC4491DD5 /* TegKeychainConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73947CCBB55E0C1C63C47D98A09AC74D /* TegKeychainConstants.swift */; };
+		814FCE38DF8037067CD6B221C41B4900 /* Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB33ECAF5A9678B8ABA2BC1A638AE0E /* Schema.swift */; };
+		81757F684D084AC69DAE797488D314F2 /* MarqueeLabel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E42794C87E2F132DF937CCFD5380C3EA /* MarqueeLabel-dummy.m */; };
+		87C20837E7BB8F6503318EC4C8FEFF10 /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CEB979EC63F8E9C020571DE1142443 /* Connection.swift */; };
+		8F91F2B443813BBC44B4A805F04A39C4 /* NMSSHHostConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 3887F10AB94005A39591C95ABFC5DA58 /* NMSSHHostConfig.m */; };
+		917A7EDAD61332B26132C085E4B68881 /* FTS5.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59A587CD186007FFB3DF4B8A76337D0 /* FTS5.swift */; };
+		922868FC8545055AF825BCB9BC287432 /* NMSSHConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C42E2A6441366393781A804B8100B5D /* NMSSHConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9A25D4419C48AED40D937744D0AF78AA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42CD99C27616A096D143086EC1DCD4AE /* Foundation.framework */; };
+		ACF3DC33FEF64BCC3D305541BB50699A /* Pods-AquaDoor-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 16D6FAFD0A56A2C5003912464C709A6C /* Pods-AquaDoor-dummy.m */; };
+		AD0E8D5F58B0B824D2631BDA9D541DFE /* KeychainSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 71ACDFEA4C323F03486A3005E7D16072 /* KeychainSwift-dummy.m */; };
+		AF766E616C7548F74C8E8AA48CE8F501 /* NMSSHChannelDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 297473CFBDC9BC815AB679E14B5A08FD /* NMSSHChannelDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B40C5DFF7E01C15D738FBFB1641F683E /* socket_helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 97940DF297C73A6B601F527881F3FE9B /* socket_helper.m */; };
+		B7D8B6DE674BE406A1D27ABF84E520F4 /* Query.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4FE0504C0CE5B23B11B85A438A8FDD /* Query.swift */; };
+		B812F90DB775AFDF1DFA13480D844916 /* MarqueeLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B67457C48F1D5A019CAB8981F5BDF2 /* MarqueeLabel.swift */; };
+		BA551826E329F502D066158067059F97 /* AggregateFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F7873140940AF5C0504F9A3C58DF82 /* AggregateFunctions.swift */; };
 		BE64F09C3FD8A8D6792060FA5E10381A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EB31360CC871F957EE3909061405FE2 /* QuartzCore.framework */; };
-		CCBE57237E9F0DBAAF02A5575244F3BE /* KeychainSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E946CDDFE1B2C729909058EDB6DAAFB /* KeychainSwift.swift */; };
-		D0103D2E66D03C0BA07BE4BD53DECAEF /* NMSSHSessionDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = D987A0D848DFC0E6C944129E46D7D2A6 /* NMSSHSessionDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D2BCE653114367E7DA5DDCF122C10C86 /* CoreFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF2821D297D9784D26663348414ACCF /* CoreFunctions.swift */; };
-		DA85BB3FC6D0E25EAE9AABACEDEA2A40 /* NMSSHLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E53C622BD033EF3D66100FA26E15B96 /* NMSSHLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DB923051D121B166B855AF1C0809BAEF /* MarqueeLabel-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A0916AD9BFFBBD1472BCA2C2D544295B /* MarqueeLabel-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C109A6B41297856D3B260E6BCABBB5EC /* Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DDAF2D42DAC843B9D69D0A8AF4D413A /* Foundation.swift */; };
+		C3931D0B984033AC29712176B3999863 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A224DAC9CCD675C6E0CF19A41396052 /* Errors.swift */; };
+		C44F7FED68E574BC72B3395C2DF14DE4 /* Expression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576249EA702EC7D4A6356B7AD88A3D10 /* Expression.swift */; };
+		CBC1293F071163FC62E8E28DB7DA38FE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42CD99C27616A096D143086EC1DCD4AE /* Foundation.framework */; };
+		CCBE57237E9F0DBAAF02A5575244F3BE /* KeychainSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0814C7A0AF944CA0291D085BFE3462A6 /* KeychainSwift.swift */; };
+		D0070633C01E7754C47F8618A80C395D /* Blob.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFB7DDBC1F5AC365846A208389F6B67 /* Blob.swift */; };
+		D0103D2E66D03C0BA07BE4BD53DECAEF /* NMSSHSessionDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EE0F7FCA41E75CB77C8EF0F0A457C9D /* NMSSHSessionDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D07CFFCF954DAA2F89986BA5DD6E1B0C /* SQLite.swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DE6D08126D94933566BBB589976F99B0 /* SQLite.swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D5B6D40354CBCD1B4F9C2C63B0B318E4 /* Keyboard+LayoutGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C4CD4F36EC03479D9EB6A63ECC2BE9 /* Keyboard+LayoutGuide.swift */; };
+		D74BB8C0768DE181C40E3E4EE315E3DE /* SQLite.h in Headers */ = {isa = PBXBuildFile; fileRef = AF0DD8440B6D0C777FD99369AF2F1DF5 /* SQLite.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DA85BB3FC6D0E25EAE9AABACEDEA2A40 /* NMSSHLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = A76DF3ED2B4B71E397570140537B6829 /* NMSSHLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DB923051D121B166B855AF1C0809BAEF /* MarqueeLabel-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3970130607E7F9FED32ACB8D2557122B /* MarqueeLabel-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DF84F0DFDCDE2DF12929757861B5EA7F /* CustomFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9159892BB82C92866A1D9C3FE98DEF13 /* CustomFunctions.swift */; };
 		E12F2F4AB46F2B8AF5E38C1A05C89C0D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42CD99C27616A096D143086EC1DCD4AE /* Foundation.framework */; };
-		E325B473256B452B23D808FAE16ED00B /* NMSSHHostConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B96DDAC3BB896CCC1505FD15FB2ED93 /* NMSSHHostConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E492F9301A28A6F0E197558C25C8493D /* NMSSH-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D45E16B26FFAD4CE5D4C29056F2604 /* NMSSH-dummy.m */; };
-		E60800DAEAC29E4608FAA1B87E8F5821 /* UITextField+Shake-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FC8F15D579C0F429596D93D892B335C0 /* UITextField+Shake-dummy.m */; };
-		E736E0B5E05E143CC1AF42D21FF3B695 /* Coding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B00D0924DE6DCC564A710CBD8EEF155 /* Coding.swift */; };
-		E97ADF23492D5DA94C8B7059775AC796 /* fts3_tokenizer.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C406AD28CEAD5FDFB9BA7EF3A573684 /* fts3_tokenizer.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		EBA8B955A11296BD7AA307752FE82ED4 /* KeychainSwiftAccessOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856DCB7A4345A49C142BE44AF461CBDA /* KeychainSwiftAccessOptions.swift */; };
-		F35E5B12B7147BA6561903BA05C38E06 /* Setter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BE9ADB83BB7C5FB2C95E6CA8DEA189 /* Setter.swift */; };
-		F45E543EA311E6D1F1926F2F645D736D /* libssh2_sftp.h in Headers */ = {isa = PBXBuildFile; fileRef = B7D3FFC9B18346D16D6DD022B1C516E7 /* libssh2_sftp.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F4A51BE9918E2947CB51A36F6041E53E /* Expression.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1260506EA527974837283D664272C6E /* Expression.swift */; };
-		F6B850B1698595B56B18D19A974042A7 /* SQLite.swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 98ADC3C6E202BAF194668288BEE26530 /* SQLite.swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FC4041E14EC85D5FF3060D606C31E5CA /* NMSSHSession.h in Headers */ = {isa = PBXBuildFile; fileRef = 10F8A9EE7768B19B702D3CC138A86028 /* NMSSHSession.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E325B473256B452B23D808FAE16ED00B /* NMSSHHostConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 76255394B37E52F9B7F3BF9C39E7AD31 /* NMSSHHostConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E492F9301A28A6F0E197558C25C8493D /* NMSSH-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2995745726D9ACE62D831EB0B2526C43 /* NMSSH-dummy.m */; };
+		E7A712BDF4A05F151B8D38BF0314F5E8 /* UITextField+Shake-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E2B77B70D671701FFA030157D2AC674C /* UITextField+Shake-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E9F596AE3E5A9475E5CF7952D9A39E82 /* fts3_tokenizer.h in Headers */ = {isa = PBXBuildFile; fileRef = 7ED74E31F8FBC41C1CF8237587723C4C /* fts3_tokenizer.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		EBA8B955A11296BD7AA307752FE82ED4 /* KeychainSwiftAccessOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652629198843CD294E166B31FDF4372D /* KeychainSwiftAccessOptions.swift */; };
+		F45E543EA311E6D1F1926F2F645D736D /* libssh2_sftp.h in Headers */ = {isa = PBXBuildFile; fileRef = 75BC7DF20BF94AB4CD042DB8A81CB06C /* libssh2_sftp.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F5E4D95731770C7E4C034085733DCB07 /* Value.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A81FE4182FE5FBDC5DCD4BA4F4C55F /* Value.swift */; };
+		F87B40B39D62F1F5C4FC58C8A9010DE3 /* RTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABEDBB7BE76D80A1F4B44A21965D9514 /* RTree.swift */; };
+		FA5F5E092DD924192761464FBBE17AEF /* Keyboard+LayoutGuide-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D0C316B0BDC33560955FCF799FD2A0EA /* Keyboard+LayoutGuide-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FB30A75A4B4598D4216BD364D46E507E /* Collation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0262258693A7AA86AC7426FFC2CB1952 /* Collation.swift */; };
+		FC4041E14EC85D5FF3060D606C31E5CA /* NMSSHSession.h in Headers */ = {isa = PBXBuildFile; fileRef = CAF16531EE72BFDB456C651B1C1D82F0 /* NMSSHSession.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		195FBB690EB33F9FFC0F7706F937DFD7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 215D3232F1F6549F2E898A121973AED8;
-			remoteInfo = NMSSH;
-		};
-		6D1A7D8FAECD087A7F4EE5AACC32F429 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1447AC95C46ED8B6CDD555C61F468E97;
-			remoteInfo = SQLite.swift;
-		};
-		82D747ED921062D51C591C5641D4516E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 38ACA430605AFB4229712A18BDDF5086;
-			remoteInfo = KeychainSwift;
-		};
-		8E48485477186499730C9482608EFC8C /* PBXContainerItemProxy */ = {
+		6BAEF84BC57B6DE9CF12E9557711A99C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 320AD47B0C6BA014D301395D3BFC8FB6;
 			remoteInfo = MarqueeLabel;
 		};
-		F67B6A42ADC44FA8BDD9079E129B60EF /* PBXContainerItemProxy */ = {
+		82C4CB31113289E8EE47E94D24E078A6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = FB4943900BA8C32A8F673F63B7A2531D;
+			remoteGlobalIDString = 542753F81CF59DFE31A908D70A8AA9D8;
+			remoteInfo = "Keyboard+LayoutGuide";
+		};
+		A4F9135355293BF46DDFA8DFC11E7DA5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DF340FC3CF0FD3F13D5C2010510F96C5;
+			remoteInfo = SQLite.swift;
+		};
+		C952E8F18849217B6A4434CE393D9564 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 67EC4FED4C5DACD13E591B7BB2EF9A80;
 			remoteInfo = "UITextField+Shake";
+		};
+		CE687F806CE79F4D5AC958601846F0A9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 215D3232F1F6549F2E898A121973AED8;
+			remoteInfo = NMSSH;
+		};
+		F95491DE31DDFE857784EB7D65C30503 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 38ACA430605AFB4229712A18BDDF5086;
+			remoteInfo = KeychainSwift;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		026B2859B929F43176287F0A4D80A3EE /* Statement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Statement.swift; path = Sources/SQLite/Core/Statement.swift; sourceTree = "<group>"; };
-		04AAAA72649548C2886F763EBFADD056 /* Collation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Collation.swift; path = Sources/SQLite/Typed/Collation.swift; sourceTree = "<group>"; };
+		0262258693A7AA86AC7426FFC2CB1952 /* Collation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Collation.swift; path = Sources/SQLite/Typed/Collation.swift; sourceTree = "<group>"; };
+		0313BD5BEB3E9EECC5191E9FA79C22DA /* UITextField+Shake.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "UITextField+Shake.xcconfig"; sourceTree = "<group>"; };
+		03EF18B328060955B245B2340FD0D075 /* socket_helper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = socket_helper.h; path = NMSSH/Config/socket_helper.h; sourceTree = "<group>"; };
+		0814C7A0AF944CA0291D085BFE3462A6 /* KeychainSwift.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeychainSwift.swift; path = Sources/KeychainSwift.swift; sourceTree = "<group>"; };
+		0827B5D745B9F34C3031BDC95C314714 /* Setter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Setter.swift; path = Sources/SQLite/Typed/Setter.swift; sourceTree = "<group>"; };
 		091D6DFD946F697BA2C79F9265A554A3 /* Pods-AquaDoor-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AquaDoor-resources.sh"; sourceTree = "<group>"; };
-		0B00D0924DE6DCC564A710CBD8EEF155 /* Coding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Coding.swift; path = Sources/SQLite/Typed/Coding.swift; sourceTree = "<group>"; };
-		0BCF609392C769FA42864C81F5E9EA0F /* NMSSHHostConfig.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NMSSHHostConfig.m; path = NMSSH/NMSSHHostConfig.m; sourceTree = "<group>"; };
-		0DDB47CF8069834E1BA7D3BDCF5169BD /* FTS4.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FTS4.swift; path = Sources/SQLite/Extensions/FTS4.swift; sourceTree = "<group>"; };
-		0E4346770B555004C59E845135D9338A /* NMSSH+Protected.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NMSSH+Protected.h"; path = "NMSSH/Config/NMSSH+Protected.h"; sourceTree = "<group>"; };
-		0FD6C970BEB181B7F8F60AE504FDB396 /* Foundation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Foundation.swift; path = Sources/SQLite/Foundation.swift; sourceTree = "<group>"; };
-		10A555464825610E39D61297EC599C40 /* NMSFTPFile.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NMSFTPFile.h; path = NMSSH/NMSFTPFile.h; sourceTree = "<group>"; };
-		10F8A9EE7768B19B702D3CC138A86028 /* NMSSHSession.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NMSSHSession.h; path = NMSSH/NMSSHSession.h; sourceTree = "<group>"; };
-		13AEB0CED638BD94CC0FF035237E0EB8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11AF84D2374D257033334F386CA3908A /* MarqueeLabel.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = MarqueeLabel.modulemap; sourceTree = "<group>"; };
+		11CEA41177460F15DBB99094BE5BD297 /* FTS4.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FTS4.swift; path = Sources/SQLite/Extensions/FTS4.swift; sourceTree = "<group>"; };
+		1556ED1A5069E27431A2F153A9C2AB43 /* Keyboard+LayoutGuide.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Keyboard+LayoutGuide.xcconfig"; sourceTree = "<group>"; };
 		1593DD4AC57ED9E25B17D754EE147034 /* Pods-AquaDoor.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-AquaDoor.modulemap"; sourceTree = "<group>"; };
 		16D6FAFD0A56A2C5003912464C709A6C /* Pods-AquaDoor-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AquaDoor-dummy.m"; sourceTree = "<group>"; };
-		18D45E16B26FFAD4CE5D4C29056F2604 /* NMSSH-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NMSSH-dummy.m"; sourceTree = "<group>"; };
-		1A2DB17BA528C4208F32A3EE54912639 /* NMSSHChannelDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NMSSHChannelDelegate.h; path = NMSSH/Protocols/NMSSHChannelDelegate.h; sourceTree = "<group>"; };
+		1B5550AFEDD323BD35926D612C890FB7 /* MarqueeLabel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MarqueeLabel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2002CCC1C742EC5FCD95A6DE1CD18438 /* Statement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Statement.swift; path = Sources/SQLite/Core/Statement.swift; sourceTree = "<group>"; };
+		22B6FBD3188DFCC1563F069E588F832E /* NMSSH.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NMSSH.xcconfig; sourceTree = "<group>"; };
 		232888A814FAA8DC40B95245051878AF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		243F548970FF7EC5CC345026AD9B9B95 /* MarqueeLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MarqueeLabel.swift; path = Sources/Swift/MarqueeLabel.swift; sourceTree = "<group>"; };
-		24AAA83C2DBFFD0F84B9AD1E145721E7 /* libssh2.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libssh2.a; path = "NMSSH-iOS/Libraries/lib/libssh2.a"; sourceTree = "<group>"; };
-		2CC9CE5085D06839C9C9D2577D5F9C2B /* Operators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Operators.swift; path = Sources/SQLite/Typed/Operators.swift; sourceTree = "<group>"; };
-		2D53A3E16EEFFF7A587E2BA90D671AB6 /* KeychainSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KeychainSwift-dummy.m"; sourceTree = "<group>"; };
+		247DF9DED6DD61F370B04648ACA853AB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		254F357E314C10BAB18D02E5A5156BCE /* Keyboard+LayoutGuide-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Keyboard+LayoutGuide-dummy.m"; sourceTree = "<group>"; };
+		26C2722C1C808F57AB1DB1561191E576 /* SQLite.swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SQLite.swift-prefix.pch"; sourceTree = "<group>"; };
+		2797B47A967B1C9A37713EF42D1398C6 /* UITextField+Shake.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "UITextField+Shake.modulemap"; sourceTree = "<group>"; };
+		297473CFBDC9BC815AB679E14B5A08FD /* NMSSHChannelDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NMSSHChannelDelegate.h; path = NMSSH/Protocols/NMSSHChannelDelegate.h; sourceTree = "<group>"; };
+		2995745726D9ACE62D831EB0B2526C43 /* NMSSH-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NMSSH-dummy.m"; sourceTree = "<group>"; };
+		2AADA125743F2BFA4DE2630DC484D031 /* NMSSH-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NMSSH-prefix.pch"; sourceTree = "<group>"; };
+		2CB33ECAF5A9678B8ABA2BC1A638AE0E /* Schema.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Schema.swift; path = Sources/SQLite/Typed/Schema.swift; sourceTree = "<group>"; };
+		2DDAF2D42DAC843B9D69D0A8AF4D413A /* Foundation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Foundation.swift; path = Sources/SQLite/Foundation.swift; sourceTree = "<group>"; };
 		2E319831CA1ABB2EB2424A119A18B4B1 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
-		2E51E9AF87261AEA2FA8CC3663FB574E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3260A62CDFCD285918CFF5E3BB4CE4C6 /* DateAndTimeFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateAndTimeFunctions.swift; path = Sources/SQLite/Typed/DateAndTimeFunctions.swift; sourceTree = "<group>"; };
-		32FD5223A0BB140F2A174B9A072F7817 /* Schema.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Schema.swift; path = Sources/SQLite/Typed/Schema.swift; sourceTree = "<group>"; };
-		357DF5D01D1CF8643CDDD9CDEF5EA4F7 /* NMSSH.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = NMSSH.modulemap; sourceTree = "<group>"; };
-		374CBA2883E657CE9A8365E13BC337A8 /* libssh2_publickey.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = libssh2_publickey.h; path = "NMSSH-iOS/Libraries/include/libssh2/libssh2_publickey.h"; sourceTree = "<group>"; };
-		3874FE678DF3F5FC1CA0395CF90AC9EC /* KeychainSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KeychainSwift-prefix.pch"; sourceTree = "<group>"; };
-		3C3247686524FD520158FD1E96253846 /* KeychainSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KeychainSwift-umbrella.h"; sourceTree = "<group>"; };
-		3C406AD28CEAD5FDFB9BA7EF3A573684 /* fts3_tokenizer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = fts3_tokenizer.h; path = Sources/SQLiteObjc/fts3_tokenizer.h; sourceTree = "<group>"; };
-		3E946CDDFE1B2C729909058EDB6DAAFB /* KeychainSwift.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeychainSwift.swift; path = Sources/KeychainSwift.swift; sourceTree = "<group>"; };
-		3F80A62B13A5DF818130F7D5DDE1436F /* CustomFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CustomFunctions.swift; path = Sources/SQLite/Typed/CustomFunctions.swift; sourceTree = "<group>"; };
-		413288FADA8A33589CE945DF18CA33CA /* UITextField+Shake.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITextField+Shake.h"; path = "Source/UITextField+Shake.h"; sourceTree = "<group>"; };
-		4231D3ED3474DE6C716A453A14B25C4A /* MarqueeLabel.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MarqueeLabel.xcconfig; sourceTree = "<group>"; };
+		3311A9AB6C43402EEB987A5281844FAA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33227C7DF68406536D3F832504484A8D /* UITextField+Shake.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITextField+Shake.m"; path = "Source/UITextField+Shake.m"; sourceTree = "<group>"; };
+		3544939A854CDF383B254124394C81AD /* KeychainSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = KeychainSwift.modulemap; sourceTree = "<group>"; };
+		379783335F90F4E12368572392E32DD5 /* KeyboardLayoutGuide.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KeyboardLayoutGuide.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3887F10AB94005A39591C95ABFC5DA58 /* NMSSHHostConfig.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NMSSHHostConfig.m; path = NMSSH/NMSSHHostConfig.m; sourceTree = "<group>"; };
+		3970130607E7F9FED32ACB8D2557122B /* MarqueeLabel-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MarqueeLabel-umbrella.h"; sourceTree = "<group>"; };
+		3E6B14576F4928708F8095E7C7F5C86C /* NMSFTP.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NMSFTP.h; path = NMSSH/NMSFTP.h; sourceTree = "<group>"; };
+		3FE7D7C2EAA0FAE98A5BB219305A8815 /* NMSSHChannel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NMSSHChannel.m; path = NMSSH/NMSSHChannel.m; sourceTree = "<group>"; };
 		42CD99C27616A096D143086EC1DCD4AE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		453DB02B64F11B6CFD69423C03AA0209 /* NMSSHChannel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NMSSHChannel.m; path = NMSSH/NMSSHChannel.m; sourceTree = "<group>"; };
-		4670446C545CE5DC14292ABCF4CF6171 /* NMSSH.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NMSSH.h; path = "NMSSH-iOS/NMSSH.h"; sourceTree = "<group>"; };
-		504BC456815100BF6DE141062079D14A /* SQLite.swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SQLite.swift-dummy.m"; sourceTree = "<group>"; };
-		5151C076F043D99FBB3C38E0D60B7E9D /* SQLite-Bridging.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "SQLite-Bridging.m"; path = "Sources/SQLiteObjc/SQLite-Bridging.m"; sourceTree = "<group>"; };
-		53B722E11BB1CF3CA1CACF248CB56154 /* KeychainSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KeychainSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		545BEA9B4ABAABCBFC32153C228A0218 /* UITextField+Shake-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UITextField+Shake-prefix.pch"; sourceTree = "<group>"; };
-		5A3626DD2AC794909B4BFA168C016E41 /* NMSSHConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NMSSHConfig.h; path = NMSSH/NMSSHConfig.h; sourceTree = "<group>"; };
-		5AAD8F853D28C1AAC1D4DA7ECB7DDA16 /* RTree.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RTree.swift; path = Sources/SQLite/Extensions/RTree.swift; sourceTree = "<group>"; };
+		45B67457C48F1D5A019CAB8981F5BDF2 /* MarqueeLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MarqueeLabel.swift; path = Sources/Swift/MarqueeLabel.swift; sourceTree = "<group>"; };
+		4D6B1A335275DBCB53969D62DD474756 /* SQLite.swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SQLite.swift.modulemap; sourceTree = "<group>"; };
+		4E15E8F2577F9D372D681AE7AEDC7739 /* Operators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Operators.swift; path = Sources/SQLite/Typed/Operators.swift; sourceTree = "<group>"; };
+		576249EA702EC7D4A6356B7AD88A3D10 /* Expression.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Expression.swift; path = Sources/SQLite/Typed/Expression.swift; sourceTree = "<group>"; };
+		58F7873140940AF5C0504F9A3C58DF82 /* AggregateFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AggregateFunctions.swift; path = Sources/SQLite/Typed/AggregateFunctions.swift; sourceTree = "<group>"; };
 		5FF76EA0A1A1A642A210F8D63786DCBD /* Pods-AquaDoor-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AquaDoor-umbrella.h"; sourceTree = "<group>"; };
-		6651E1CCA173DD0B5164F0756693E1CF /* UITextField+Shake-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UITextField+Shake-umbrella.h"; sourceTree = "<group>"; };
-		680843D4F269964EDFC7E14A6922D221 /* UITextField+Shake.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITextField+Shake.m"; path = "Source/UITextField+Shake.m"; sourceTree = "<group>"; };
-		6AB84F00C96BE9D31FF9490A0DDB78EB /* Query.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Query.swift; path = Sources/SQLite/Typed/Query.swift; sourceTree = "<group>"; };
-		6C61706EEAEE74919E6138C815089E9C /* MarqueeLabel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MarqueeLabel-dummy.m"; sourceTree = "<group>"; };
-		6F0318B94115D0E3A9F216D19FA995B1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		60A0C733FFA888EE04CBC6AB0A8489C0 /* SQLite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SQLite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		613DDF7F3FD1A1F98ABD7136BD9C6959 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		652629198843CD294E166B31FDF4372D /* KeychainSwiftAccessOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeychainSwiftAccessOptions.swift; path = Sources/KeychainSwiftAccessOptions.swift; sourceTree = "<group>"; };
+		68261201968D3FD944C5E19E8BB876C7 /* libcrypto.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libcrypto.a; path = "NMSSH-iOS/Libraries/lib/libcrypto.a"; sourceTree = "<group>"; };
+		6A224DAC9CCD675C6E0CF19A41396052 /* Errors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Errors.swift; path = Sources/SQLite/Core/Errors.swift; sourceTree = "<group>"; };
+		6DFB7DDBC1F5AC365846A208389F6B67 /* Blob.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Blob.swift; path = Sources/SQLite/Core/Blob.swift; sourceTree = "<group>"; };
+		71ACDFEA4C323F03486A3005E7D16072 /* KeychainSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KeychainSwift-dummy.m"; sourceTree = "<group>"; };
+		73947CCBB55E0C1C63C47D98A09AC74D /* TegKeychainConstants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TegKeychainConstants.swift; path = Sources/TegKeychainConstants.swift; sourceTree = "<group>"; };
+		75BC7DF20BF94AB4CD042DB8A81CB06C /* libssh2_sftp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = libssh2_sftp.h; path = "NMSSH-iOS/Libraries/include/libssh2/libssh2_sftp.h"; sourceTree = "<group>"; };
+		76255394B37E52F9B7F3BF9C39E7AD31 /* NMSSHHostConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NMSSHHostConfig.h; path = NMSSH/NMSSHHostConfig.h; sourceTree = "<group>"; };
 		776FF0C3AD4D40FE70180254E22E6288 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		82C41684FAE9EF0C15935A2DA32664C2 /* SQLite.swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SQLite.swift.modulemap; sourceTree = "<group>"; };
-		856DCB7A4345A49C142BE44AF461CBDA /* KeychainSwiftAccessOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeychainSwiftAccessOptions.swift; path = Sources/KeychainSwiftAccessOptions.swift; sourceTree = "<group>"; };
-		858ADA0D8639F5E5F24E8FCD0FEA6CED /* Value.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Value.swift; path = Sources/SQLite/Core/Value.swift; sourceTree = "<group>"; };
-		86FD06D4ED175ECBFA9B8084ED62D289 /* NMSSH-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NMSSH-prefix.pch"; sourceTree = "<group>"; };
-		8798A8B5FDB30D2314D4A934C00D993C /* SQLite.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SQLite.h; path = Sources/SQLite/SQLite.h; sourceTree = "<group>"; };
+		779E1526E436BDE117FC6B07B2EC5EED /* NMSSH.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = NMSSH.modulemap; sourceTree = "<group>"; };
+		7C42E2A6441366393781A804B8100B5D /* NMSSHConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NMSSHConfig.h; path = NMSSH/NMSSHConfig.h; sourceTree = "<group>"; };
+		7ED74E31F8FBC41C1CF8237587723C4C /* fts3_tokenizer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = fts3_tokenizer.h; path = Sources/SQLiteObjc/fts3_tokenizer.h; sourceTree = "<group>"; };
+		7F4FE0504C0CE5B23B11B85A438A8FDD /* Query.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Query.swift; path = Sources/SQLite/Typed/Query.swift; sourceTree = "<group>"; };
+		844E7D00B9CA76C8345E4A9ABF9700C5 /* Keyboard+LayoutGuide-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Keyboard+LayoutGuide-prefix.pch"; sourceTree = "<group>"; };
+		8677FAC4C6EACF519BA6515F38474774 /* SQLite.swift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SQLite.swift.xcconfig; sourceTree = "<group>"; };
+		89CEB979EC63F8E9C020571DE1142443 /* Connection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Connection.swift; path = Sources/SQLite/Core/Connection.swift; sourceTree = "<group>"; };
 		8B065CC6D01DD908DC3EBC3325FCDAAB /* Pods-AquaDoor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AquaDoor.debug.xcconfig"; sourceTree = "<group>"; };
-		8D720B6AD728574367A00B94D8ED1C79 /* UITextField+Shake.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "UITextField+Shake.xcconfig"; sourceTree = "<group>"; };
-		8F25A95A4452047FB6F93711A6E53F23 /* libssl.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libssl.a; path = "NMSSH-iOS/Libraries/lib/libssl.a"; sourceTree = "<group>"; };
+		9159892BB82C92866A1D9C3FE98DEF13 /* CustomFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CustomFunctions.swift; path = Sources/SQLite/Typed/CustomFunctions.swift; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		95154E6DB9DEA80A40216837E6C57292 /* libcrypto.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libcrypto.a; path = "NMSSH-iOS/Libraries/lib/libcrypto.a"; sourceTree = "<group>"; };
-		96BE9ADB83BB7C5FB2C95E6CA8DEA189 /* Setter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Setter.swift; path = Sources/SQLite/Typed/Setter.swift; sourceTree = "<group>"; };
-		98ADC3C6E202BAF194668288BEE26530 /* SQLite.swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SQLite.swift-umbrella.h"; sourceTree = "<group>"; };
-		9B96DDAC3BB896CCC1505FD15FB2ED93 /* NMSSHHostConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NMSSHHostConfig.h; path = NMSSH/NMSSHHostConfig.h; sourceTree = "<group>"; };
-		9E53C622BD033EF3D66100FA26E15B96 /* NMSSHLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NMSSHLogger.h; path = NMSSH/Config/NMSSHLogger.h; sourceTree = "<group>"; };
+		93F977832C20EF03020286950ECA9865 /* UITextField+Shake-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UITextField+Shake-prefix.pch"; sourceTree = "<group>"; };
+		9762337A9F143EF892BDE1649AB7F3E1 /* Coding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Coding.swift; path = Sources/SQLite/Typed/Coding.swift; sourceTree = "<group>"; };
+		97940DF297C73A6B601F527881F3FE9B /* socket_helper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = socket_helper.m; path = NMSSH/Config/socket_helper.m; sourceTree = "<group>"; };
+		993755C42784449F24035AF39C976197 /* UITextField+Shake-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UITextField+Shake-dummy.m"; sourceTree = "<group>"; };
 		9EB31360CC871F957EE3909061405FE2 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
-		A07ADA135AF0D58EC003964AA4617096 /* NMSSHLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NMSSHLogger.m; path = NMSSH/Config/NMSSHLogger.m; sourceTree = "<group>"; };
-		A0916AD9BFFBBD1472BCA2C2D544295B /* MarqueeLabel-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MarqueeLabel-umbrella.h"; sourceTree = "<group>"; };
-		A3C3050764EEBDF19E93B4019F577334 /* KeychainSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = KeychainSwift.modulemap; sourceTree = "<group>"; };
-		A592D0F3C9DC1CF449D413056A36ECA6 /* SQLite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SQLite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AA39C32AF5505AD2DB8EFE668B4CC3BF /* MarqueeLabel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MarqueeLabel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		ACC340BB46CAD4AF03BCA7438F3A7803 /* NMSSH.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NMSSH.xcconfig; sourceTree = "<group>"; };
-		ACFA0351F4777F7770146434A12F8281 /* UITextField+Shake.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "UITextField+Shake.modulemap"; sourceTree = "<group>"; };
-		B09AE670C9922311B16B966801A21736 /* KeychainSwift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KeychainSwift.xcconfig; sourceTree = "<group>"; };
-		B1B81EA2EDB90EA813739B54879DDBB6 /* Connection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Connection.swift; path = Sources/SQLite/Core/Connection.swift; sourceTree = "<group>"; };
-		B27241FDD3E151A9C90880B43DC42333 /* SQLite-Bridging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "SQLite-Bridging.h"; path = "Sources/SQLiteObjc/include/SQLite-Bridging.h"; sourceTree = "<group>"; };
-		B4E45B10C6B83A6F0407E80FA291E55D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B6126527F58F3A0398DD757531164EB4 /* socket_helper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = socket_helper.m; path = NMSSH/Config/socket_helper.m; sourceTree = "<group>"; };
-		B7D3FFC9B18346D16D6DD022B1C516E7 /* libssh2_sftp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = libssh2_sftp.h; path = "NMSSH-iOS/Libraries/include/libssh2/libssh2_sftp.h"; sourceTree = "<group>"; };
-		BB00D83FB634FA1DDDEE3F7712FDB638 /* NMSSHConfig.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NMSSHConfig.m; path = NMSSH/NMSSHConfig.m; sourceTree = "<group>"; };
-		BBEDC0D4BFE05C319D26A59F35231413 /* UITextField_Shake.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UITextField_Shake.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9EE0F7FCA41E75CB77C8EF0F0A457C9D /* NMSSHSessionDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NMSSHSessionDelegate.h; path = NMSSH/Protocols/NMSSHSessionDelegate.h; sourceTree = "<group>"; };
+		A27617B27FDB515EEEC7B2C36F4D25BF /* NMSFTP.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NMSFTP.m; path = NMSSH/NMSFTP.m; sourceTree = "<group>"; };
+		A73F38C1DF3FDA8F324CF3A219723943 /* UITextField+Shake.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITextField+Shake.h"; path = "Source/UITextField+Shake.h"; sourceTree = "<group>"; };
+		A76DF3ED2B4B71E397570140537B6829 /* NMSSHLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NMSSHLogger.h; path = NMSSH/Config/NMSSHLogger.h; sourceTree = "<group>"; };
+		A865758E4B58041497711141148CC1CA /* NMSSHChannel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NMSSHChannel.h; path = NMSSH/NMSSHChannel.h; sourceTree = "<group>"; };
+		ABEDBB7BE76D80A1F4B44A21965D9514 /* RTree.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RTree.swift; path = Sources/SQLite/Extensions/RTree.swift; sourceTree = "<group>"; };
+		ADD60256C6FD0BF36CF927D0E71BCA45 /* UITextField_Shake.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UITextField_Shake.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF0DD8440B6D0C777FD99369AF2F1DF5 /* SQLite.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SQLite.h; path = Sources/SQLite/SQLite.h; sourceTree = "<group>"; };
+		B08D24D7A527DC3AC1CF67956B0E8942 /* Pods_AquaDoor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AquaDoor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B59A587CD186007FFB3DF4B8A76337D0 /* FTS5.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FTS5.swift; path = Sources/SQLite/Extensions/FTS5.swift; sourceTree = "<group>"; };
+		B6C37A79915C6C557D81640FABE4D79E /* Keyboard+LayoutGuide.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Keyboard+LayoutGuide.modulemap"; sourceTree = "<group>"; };
+		B83C63DD56EB8C8C4A6AC6797BEC093C /* KeychainSwift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KeychainSwift.xcconfig; sourceTree = "<group>"; };
+		B996A3DCAF8B5147DB4970C8609A0ADE /* Helpers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Helpers.swift; path = Sources/SQLite/Helpers.swift; sourceTree = "<group>"; };
+		BA74211E8C57B06306C6963C0CB53CE0 /* libssh2.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = libssh2.h; path = "NMSSH-iOS/Libraries/include/libssh2/libssh2.h"; sourceTree = "<group>"; };
+		BBE00EC65EEC4137307BD915ABEBA918 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF83801E45A8922CBB2CFE79911B610C /* Pods-AquaDoor-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AquaDoor-acknowledgements.plist"; sourceTree = "<group>"; };
-		C2CC6C8E3BA398BFE4B10CE1D62259F2 /* Pods_AquaDoor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AquaDoor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C3300A1981AAC82C2D6467A836A08D75 /* Blob.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Blob.swift; path = Sources/SQLite/Core/Blob.swift; sourceTree = "<group>"; };
-		C944625C5ACC0A3850F98C11EAA2E71C /* NMSFTP.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NMSFTP.m; path = NMSSH/NMSFTP.m; sourceTree = "<group>"; };
-		CA9D7D522465122D8AAF4F0A9364A847 /* NMSSHSession.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NMSSHSession.m; path = NMSSH/NMSSHSession.m; sourceTree = "<group>"; };
-		CC2081B364D11AC7D33013D0BA96249E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CEC4EFA363FFBF4AD0906160083F813C /* libssh2.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = libssh2.h; path = "NMSSH-iOS/Libraries/include/libssh2/libssh2.h"; sourceTree = "<group>"; };
-		CF8BBF90E8D4C0034E8B10DAFAEBD820 /* socket_helper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = socket_helper.h; path = NMSSH/Config/socket_helper.h; sourceTree = "<group>"; };
-		D1DE1764F10A0975CAA4092880D6889A /* MarqueeLabel.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = MarqueeLabel.modulemap; sourceTree = "<group>"; };
-		D1E83678E2DE9B9D3675C060316B5A8F /* SQLite.swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SQLite.swift-prefix.pch"; sourceTree = "<group>"; };
-		D2FF5C2EC73818133D90A7F1F36C3705 /* MarqueeLabel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MarqueeLabel-prefix.pch"; sourceTree = "<group>"; };
-		D3BE6E01D7B16A42BABE705F9D5CA395 /* FTS5.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FTS5.swift; path = Sources/SQLite/Extensions/FTS5.swift; sourceTree = "<group>"; };
-		D3F68904A22195C9C6B536C13939494E /* NMSSH.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NMSSH.h; path = NMSSH/NMSSH.h; sourceTree = "<group>"; };
-		D8F9DC9A1F0193BBB3F2FD4A90E6E009 /* Helpers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Helpers.swift; path = Sources/SQLite/Helpers.swift; sourceTree = "<group>"; };
-		D987A0D848DFC0E6C944129E46D7D2A6 /* NMSSHSessionDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NMSSHSessionDelegate.h; path = NMSSH/Protocols/NMSSHSessionDelegate.h; sourceTree = "<group>"; };
-		DAF2821D297D9784D26663348414ACCF /* CoreFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CoreFunctions.swift; path = Sources/SQLite/Typed/CoreFunctions.swift; sourceTree = "<group>"; };
-		DB799393FCC2791C3BE8848E7C451161 /* Errors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Errors.swift; path = Sources/SQLite/Core/Errors.swift; sourceTree = "<group>"; };
-		DF4F2DF4E6FC84C8C3CC9970E3BF4D26 /* NMSSH-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NMSSH-umbrella.h"; sourceTree = "<group>"; };
+		C1EE35DE60056C8392775E20B74D30AF /* DateAndTimeFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateAndTimeFunctions.swift; path = Sources/SQLite/Typed/DateAndTimeFunctions.swift; sourceTree = "<group>"; };
+		C286953D425BE0E6A1E20BA9E78CBCEC /* NMSSHLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NMSSHLogger.m; path = NMSSH/Config/NMSSHLogger.m; sourceTree = "<group>"; };
+		C3A81FE4182FE5FBDC5DCD4BA4F4C55F /* Value.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Value.swift; path = Sources/SQLite/Core/Value.swift; sourceTree = "<group>"; };
+		C473E97454E9E5EAFC9650BCE2589D9B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C93873BDDDACC4ED22D3F4C2E6F8FF66 /* NMSSH.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NMSSH.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAF16531EE72BFDB456C651B1C1D82F0 /* NMSSHSession.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NMSSHSession.h; path = NMSSH/NMSSHSession.h; sourceTree = "<group>"; };
+		CD13C3AE730CD4E3412C14D523C67C96 /* MarqueeLabel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MarqueeLabel-prefix.pch"; sourceTree = "<group>"; };
+		CD674D85B0B5D059363803D229236428 /* SQLite-Bridging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "SQLite-Bridging.h"; path = "Sources/SQLiteObjc/include/SQLite-Bridging.h"; sourceTree = "<group>"; };
+		CDC0D44711249E15809E8012DDC83E4B /* CoreFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CoreFunctions.swift; path = Sources/SQLite/Typed/CoreFunctions.swift; sourceTree = "<group>"; };
+		CEDBB435E99A5BAAA36DF8AD00C14C12 /* MarqueeLabel.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MarqueeLabel.xcconfig; sourceTree = "<group>"; };
+		D0C316B0BDC33560955FCF799FD2A0EA /* Keyboard+LayoutGuide-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Keyboard+LayoutGuide-umbrella.h"; sourceTree = "<group>"; };
+		D332EDECC810182A8578E8C51C1CFB60 /* NMSFTPFile.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NMSFTPFile.h; path = NMSSH/NMSFTPFile.h; sourceTree = "<group>"; };
+		D60977636E980ACB771628622CA88E58 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D60BDBA7B16F6CC00E63BD2FC92AC7A9 /* libssh2.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libssh2.a; path = "NMSSH-iOS/Libraries/lib/libssh2.a"; sourceTree = "<group>"; };
+		DE2269A70645EBAAFEACF985CCD9059A /* libssh2_publickey.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = libssh2_publickey.h; path = "NMSSH-iOS/Libraries/include/libssh2/libssh2_publickey.h"; sourceTree = "<group>"; };
+		DE6CC5BF5657AC0D2F6479968AB04C1F /* NMSSH.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NMSSH.h; path = "NMSSH-iOS/NMSSH.h"; sourceTree = "<group>"; };
+		DE6D08126D94933566BBB589976F99B0 /* SQLite.swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SQLite.swift-umbrella.h"; sourceTree = "<group>"; };
 		E074AA98FA6CCCBF3EDC7315B05E3DEA /* Pods-AquaDoor-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AquaDoor-frameworks.sh"; sourceTree = "<group>"; };
-		E32D4499DE3A88D45B51B1CD2E5CB03B /* AggregateFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AggregateFunctions.swift; path = Sources/SQLite/Typed/AggregateFunctions.swift; sourceTree = "<group>"; };
+		E2B77B70D671701FFA030157D2AC674C /* UITextField+Shake-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UITextField+Shake-umbrella.h"; sourceTree = "<group>"; };
 		E3A2461F96B588543F507AFBA3E6E1A7 /* Pods-AquaDoor-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AquaDoor-acknowledgements.markdown"; sourceTree = "<group>"; };
-		EBAA4CC95CEA54D1E980C715C3095FEF /* NMSSH.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NMSSH.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E42794C87E2F132DF937CCFD5380C3EA /* MarqueeLabel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MarqueeLabel-dummy.m"; sourceTree = "<group>"; };
+		E4BF6CC93F5AE89C4A809ED29EA3CE08 /* SQLite.swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SQLite.swift-dummy.m"; sourceTree = "<group>"; };
+		E59D24B7463545737458DBE831196359 /* libssl.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libssl.a; path = "NMSSH-iOS/Libraries/lib/libssl.a"; sourceTree = "<group>"; };
+		E5C4CD4F36EC03479D9EB6A63ECC2BE9 /* Keyboard+LayoutGuide.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Keyboard+LayoutGuide.swift"; path = "KeyboardLayoutGuide/KeyboardLayoutGuide/Keyboard+LayoutGuide.swift"; sourceTree = "<group>"; };
+		EBB0A19A7969E8411AE656D54F363F02 /* NMSFTPFile.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NMSFTPFile.m; path = NMSSH/NMSFTPFile.m; sourceTree = "<group>"; };
 		EF2A2E833A1CCFDC2804703B1D10A843 /* Pods-AquaDoor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AquaDoor.release.xcconfig"; sourceTree = "<group>"; };
-		EF9AB4D340C5879ACEF07E19547104E5 /* TegKeychainConstants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TegKeychainConstants.swift; path = Sources/TegKeychainConstants.swift; sourceTree = "<group>"; };
-		F1260506EA527974837283D664272C6E /* Expression.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Expression.swift; path = Sources/SQLite/Typed/Expression.swift; sourceTree = "<group>"; };
-		F8FE22C97CC2CD14E2F70D7567DAC058 /* SQLite.swift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SQLite.swift.xcconfig; sourceTree = "<group>"; };
-		FC8F15D579C0F429596D93D892B335C0 /* UITextField+Shake-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UITextField+Shake-dummy.m"; sourceTree = "<group>"; };
-		FDC2EF0DE2D8701A1B5D08C63F0E81FA /* NMSFTPFile.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NMSFTPFile.m; path = NMSSH/NMSFTPFile.m; sourceTree = "<group>"; };
-		FEF84D727C01729F038173A9571B0BB7 /* NMSFTP.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NMSFTP.h; path = NMSSH/NMSFTP.h; sourceTree = "<group>"; };
-		FF6D7031FB893E578D544A0FA5B22056 /* NMSSHChannel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NMSSHChannel.h; path = NMSSH/NMSSHChannel.h; sourceTree = "<group>"; };
+		EF9C4D06679BEBACE090BDD1AF6663FF /* KeychainSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KeychainSwift-prefix.pch"; sourceTree = "<group>"; };
+		F0BCBC86B975DF420813F8DC6AD2630B /* KeychainSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KeychainSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F234E96ADB145B64374D2C520B97CCD4 /* NMSSHConfig.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NMSSHConfig.m; path = NMSSH/NMSSHConfig.m; sourceTree = "<group>"; };
+		F2DC8BBAE51A7B59919FB0475BD7E458 /* SQLite-Bridging.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "SQLite-Bridging.m"; path = "Sources/SQLiteObjc/SQLite-Bridging.m"; sourceTree = "<group>"; };
+		F7B2B1FEBAD6147C2E1682C0926A634A /* NMSSH.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NMSSH.h; path = NMSSH/NMSSH.h; sourceTree = "<group>"; };
+		F80DFF93716C3D801C1B378FCE45E879 /* KeychainSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KeychainSwift-umbrella.h"; sourceTree = "<group>"; };
+		F8BB21BB547BF387DD49ACFC6D20D6DB /* NMSSHSession.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NMSSHSession.m; path = NMSSH/NMSSHSession.m; sourceTree = "<group>"; };
+		FCEC9B81520A8B07FA5E2F2E747E3867 /* NMSSH-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NMSSH-umbrella.h"; sourceTree = "<group>"; };
+		FEE946F53E3DDABCBD0202B70B61C893 /* NMSSH+Protected.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NMSSH+Protected.h"; path = "NMSSH/Config/NMSSH+Protected.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -241,22 +260,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				63E3E54D78ECF2A2C25FB5F202B96D40 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6F4EC7E9008F481BBDA02D0703AB39EC /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				ADF01EDE5F8A21D3858F466A3A67347A /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8E315790DA51DA84C21D1191242C9896 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3242E934FAF93BA944D0CE38D5DC555A /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,11 +272,35 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E4D5A8F5C7E953725FEA955BED707639 /* Frameworks */ = {
+		CEC962C3793BF2F9B05BE6A6CB3F3082 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				31443DCC66DC90B752CF8468FC34D593 /* Foundation.framework in Frameworks */,
+				9A25D4419C48AED40D937744D0AF78AA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D399E671E9973519FB5648010B27AD59 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1485D9ACBFD6699D4DB15FF5E6F179D7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E062F3D3ED06B1830A0F3F15D7355CE3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AA9A185DCE138148403BFEDA306D428 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1253256CE8106244D8DBFDFFC2A30D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBC1293F071163FC62E8E28DB7DA38FE /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,26 +317,51 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0903ACF08C170F59C7A440EDAF029A74 /* Support Files */ = {
+		0184692704814945C2D43B015429D7E8 /* NMSSH */ = {
 			isa = PBXGroup;
 			children = (
-				B4E45B10C6B83A6F0407E80FA291E55D /* Info.plist */,
-				ACFA0351F4777F7770146434A12F8281 /* UITextField+Shake.modulemap */,
-				8D720B6AD728574367A00B94D8ED1C79 /* UITextField+Shake.xcconfig */,
-				FC8F15D579C0F429596D93D892B335C0 /* UITextField+Shake-dummy.m */,
-				545BEA9B4ABAABCBFC32153C228A0218 /* UITextField+Shake-prefix.pch */,
-				6651E1CCA173DD0B5164F0756693E1CF /* UITextField+Shake-umbrella.h */,
+				BA74211E8C57B06306C6963C0CB53CE0 /* libssh2.h */,
+				DE2269A70645EBAAFEACF985CCD9059A /* libssh2_publickey.h */,
+				75BC7DF20BF94AB4CD042DB8A81CB06C /* libssh2_sftp.h */,
+				3E6B14576F4928708F8095E7C7F5C86C /* NMSFTP.h */,
+				A27617B27FDB515EEEC7B2C36F4D25BF /* NMSFTP.m */,
+				D332EDECC810182A8578E8C51C1CFB60 /* NMSFTPFile.h */,
+				EBB0A19A7969E8411AE656D54F363F02 /* NMSFTPFile.m */,
+				DE6CC5BF5657AC0D2F6479968AB04C1F /* NMSSH.h */,
+				F7B2B1FEBAD6147C2E1682C0926A634A /* NMSSH.h */,
+				FEE946F53E3DDABCBD0202B70B61C893 /* NMSSH+Protected.h */,
+				A865758E4B58041497711141148CC1CA /* NMSSHChannel.h */,
+				3FE7D7C2EAA0FAE98A5BB219305A8815 /* NMSSHChannel.m */,
+				297473CFBDC9BC815AB679E14B5A08FD /* NMSSHChannelDelegate.h */,
+				7C42E2A6441366393781A804B8100B5D /* NMSSHConfig.h */,
+				F234E96ADB145B64374D2C520B97CCD4 /* NMSSHConfig.m */,
+				76255394B37E52F9B7F3BF9C39E7AD31 /* NMSSHHostConfig.h */,
+				3887F10AB94005A39591C95ABFC5DA58 /* NMSSHHostConfig.m */,
+				A76DF3ED2B4B71E397570140537B6829 /* NMSSHLogger.h */,
+				C286953D425BE0E6A1E20BA9E78CBCEC /* NMSSHLogger.m */,
+				CAF16531EE72BFDB456C651B1C1D82F0 /* NMSSHSession.h */,
+				F8BB21BB547BF387DD49ACFC6D20D6DB /* NMSSHSession.m */,
+				9EE0F7FCA41E75CB77C8EF0F0A457C9D /* NMSSHSessionDelegate.h */,
+				03EF18B328060955B245B2340FD0D075 /* socket_helper.h */,
+				97940DF297C73A6B601F527881F3FE9B /* socket_helper.m */,
+				E9656D32267AB8CEBDEAAA9D49B4D582 /* Frameworks */,
+				0C777A3D792204F55D4BDFF317C92B27 /* Support Files */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/UITextField+Shake";
+			path = NMSSH;
 			sourceTree = "<group>";
 		};
-		0E075B61DA2CE8FD5C11E8F299D1AD55 /* Swift */ = {
+		0C777A3D792204F55D4BDFF317C92B27 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				243F548970FF7EC5CC345026AD9B9B95 /* MarqueeLabel.swift */,
+				247DF9DED6DD61F370B04648ACA853AB /* Info.plist */,
+				779E1526E436BDE117FC6B07B2EC5EED /* NMSSH.modulemap */,
+				22B6FBD3188DFCC1563F069E588F832E /* NMSSH.xcconfig */,
+				2995745726D9ACE62D831EB0B2526C43 /* NMSSH-dummy.m */,
+				2AADA125743F2BFA4DE2630DC484D031 /* NMSSH-prefix.pch */,
+				FCEC9B81520A8B07FA5E2F2E747E3867 /* NMSSH-umbrella.h */,
 			);
-			name = Swift;
+			name = "Support Files";
+			path = "../Target Support Files/NMSSH";
 			sourceTree = "<group>";
 		};
 		14B8B9B15ECBE87983FF987239AB2D7B /* Frameworks */ = {
@@ -320,86 +372,95 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		1D9CADF0144B89AF6C5B7D2AE65CBB4D /* KeychainSwift */ = {
+		18D3296C5B68A8AA3C144C51139B0718 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				3E946CDDFE1B2C729909058EDB6DAAFB /* KeychainSwift.swift */,
-				856DCB7A4345A49C142BE44AF461CBDA /* KeychainSwiftAccessOptions.swift */,
-				EF9AB4D340C5879ACEF07E19547104E5 /* TegKeychainConstants.swift */,
-				3FC902A69AE6D265C3186641AD5BF60B /* Support Files */,
-			);
-			path = KeychainSwift;
-			sourceTree = "<group>";
-		};
-		2CC66CEFD2218EDBA46FC51B7DA8BB0C /* NMSSH */ = {
-			isa = PBXGroup;
-			children = (
-				CEC4EFA363FFBF4AD0906160083F813C /* libssh2.h */,
-				374CBA2883E657CE9A8365E13BC337A8 /* libssh2_publickey.h */,
-				B7D3FFC9B18346D16D6DD022B1C516E7 /* libssh2_sftp.h */,
-				FEF84D727C01729F038173A9571B0BB7 /* NMSFTP.h */,
-				C944625C5ACC0A3850F98C11EAA2E71C /* NMSFTP.m */,
-				10A555464825610E39D61297EC599C40 /* NMSFTPFile.h */,
-				FDC2EF0DE2D8701A1B5D08C63F0E81FA /* NMSFTPFile.m */,
-				4670446C545CE5DC14292ABCF4CF6171 /* NMSSH.h */,
-				D3F68904A22195C9C6B536C13939494E /* NMSSH.h */,
-				0E4346770B555004C59E845135D9338A /* NMSSH+Protected.h */,
-				FF6D7031FB893E578D544A0FA5B22056 /* NMSSHChannel.h */,
-				453DB02B64F11B6CFD69423C03AA0209 /* NMSSHChannel.m */,
-				1A2DB17BA528C4208F32A3EE54912639 /* NMSSHChannelDelegate.h */,
-				5A3626DD2AC794909B4BFA168C016E41 /* NMSSHConfig.h */,
-				BB00D83FB634FA1DDDEE3F7712FDB638 /* NMSSHConfig.m */,
-				9B96DDAC3BB896CCC1505FD15FB2ED93 /* NMSSHHostConfig.h */,
-				0BCF609392C769FA42864C81F5E9EA0F /* NMSSHHostConfig.m */,
-				9E53C622BD033EF3D66100FA26E15B96 /* NMSSHLogger.h */,
-				A07ADA135AF0D58EC003964AA4617096 /* NMSSHLogger.m */,
-				10F8A9EE7768B19B702D3CC138A86028 /* NMSSHSession.h */,
-				CA9D7D522465122D8AAF4F0A9364A847 /* NMSSHSession.m */,
-				D987A0D848DFC0E6C944129E46D7D2A6 /* NMSSHSessionDelegate.h */,
-				CF8BBF90E8D4C0034E8B10DAFAEBD820 /* socket_helper.h */,
-				B6126527F58F3A0398DD757531164EB4 /* socket_helper.m */,
-				5317C41021E11E3AE68212A76A90E00F /* Frameworks */,
-				9257E85C047B8177453F17890D97C003 /* Support Files */,
-			);
-			path = NMSSH;
-			sourceTree = "<group>";
-		};
-		3FC902A69AE6D265C3186641AD5BF60B /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				6F0318B94115D0E3A9F216D19FA995B1 /* Info.plist */,
-				A3C3050764EEBDF19E93B4019F577334 /* KeychainSwift.modulemap */,
-				B09AE670C9922311B16B966801A21736 /* KeychainSwift.xcconfig */,
-				2D53A3E16EEFFF7A587E2BA90D671AB6 /* KeychainSwift-dummy.m */,
-				3874FE678DF3F5FC1CA0395CF90AC9EC /* KeychainSwift-prefix.pch */,
-				3C3247686524FD520158FD1E96253846 /* KeychainSwift-umbrella.h */,
+				BBE00EC65EEC4137307BD915ABEBA918 /* Info.plist */,
+				2797B47A967B1C9A37713EF42D1398C6 /* UITextField+Shake.modulemap */,
+				0313BD5BEB3E9EECC5191E9FA79C22DA /* UITextField+Shake.xcconfig */,
+				993755C42784449F24035AF39C976197 /* UITextField+Shake-dummy.m */,
+				93F977832C20EF03020286950ECA9865 /* UITextField+Shake-prefix.pch */,
+				E2B77B70D671701FFA030157D2AC674C /* UITextField+Shake-umbrella.h */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/KeychainSwift";
+			path = "../Target Support Files/UITextField+Shake";
 			sourceTree = "<group>";
 		};
-		5317C41021E11E3AE68212A76A90E00F /* Frameworks */ = {
+		2EE73FA77FD3D986CDFAD19784B23B33 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				95154E6DB9DEA80A40216837E6C57292 /* libcrypto.a */,
-				24AAA83C2DBFFD0F84B9AD1E145721E7 /* libssh2.a */,
-				8F25A95A4452047FB6F93711A6E53F23 /* libssl.a */,
+				35C804A640EF2E3017F0C4B1673FF6A5 /* Keyboard+LayoutGuide */,
+				B465384D0660E04CA6A1C7597B2A0992 /* KeychainSwift */,
+				D08DF3D036C4AD95802EE362DF129C07 /* MarqueeLabel */,
+				0184692704814945C2D43B015429D7E8 /* NMSSH */,
+				6412128C23A3AA172269849C43C4D281 /* SQLite.swift */,
+				A30646C18A4796A5698B367F08D4AC17 /* UITextField+Shake */,
 			);
-			name = Frameworks;
+			name = Pods;
 			sourceTree = "<group>";
 		};
-		79968BDE4A6919E5F9E274199EAAF648 /* Support Files */ = {
+		35C804A640EF2E3017F0C4B1673FF6A5 /* Keyboard+LayoutGuide */ = {
 			isa = PBXGroup;
 			children = (
-				13AEB0CED638BD94CC0FF035237E0EB8 /* Info.plist */,
-				82C41684FAE9EF0C15935A2DA32664C2 /* SQLite.swift.modulemap */,
-				F8FE22C97CC2CD14E2F70D7567DAC058 /* SQLite.swift.xcconfig */,
-				504BC456815100BF6DE141062079D14A /* SQLite.swift-dummy.m */,
-				D1E83678E2DE9B9D3675C060316B5A8F /* SQLite.swift-prefix.pch */,
-				98ADC3C6E202BAF194668288BEE26530 /* SQLite.swift-umbrella.h */,
+				E5C4CD4F36EC03479D9EB6A63ECC2BE9 /* Keyboard+LayoutGuide.swift */,
+				7DBDF01642CA1355D52F20C9F08B0284 /* Support Files */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/SQLite.swift";
+			path = "Keyboard+LayoutGuide";
+			sourceTree = "<group>";
+		};
+		398411950678E96A49D58AE2D329DBBC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				379783335F90F4E12368572392E32DD5 /* KeyboardLayoutGuide.framework */,
+				F0BCBC86B975DF420813F8DC6AD2630B /* KeychainSwift.framework */,
+				1B5550AFEDD323BD35926D612C890FB7 /* MarqueeLabel.framework */,
+				C93873BDDDACC4ED22D3F4C2E6F8FF66 /* NMSSH.framework */,
+				B08D24D7A527DC3AC1CF67956B0E8942 /* Pods_AquaDoor.framework */,
+				60A0C733FFA888EE04CBC6AB0A8489C0 /* SQLite.framework */,
+				ADD60256C6FD0BF36CF927D0E71BCA45 /* UITextField_Shake.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5C19DFE2E5ECAACF5B8E6D33631EECDB /* standard */ = {
+			isa = PBXGroup;
+			children = (
+				58F7873140940AF5C0504F9A3C58DF82 /* AggregateFunctions.swift */,
+				6DFB7DDBC1F5AC365846A208389F6B67 /* Blob.swift */,
+				9762337A9F143EF892BDE1649AB7F3E1 /* Coding.swift */,
+				0262258693A7AA86AC7426FFC2CB1952 /* Collation.swift */,
+				89CEB979EC63F8E9C020571DE1142443 /* Connection.swift */,
+				CDC0D44711249E15809E8012DDC83E4B /* CoreFunctions.swift */,
+				9159892BB82C92866A1D9C3FE98DEF13 /* CustomFunctions.swift */,
+				C1EE35DE60056C8392775E20B74D30AF /* DateAndTimeFunctions.swift */,
+				6A224DAC9CCD675C6E0CF19A41396052 /* Errors.swift */,
+				576249EA702EC7D4A6356B7AD88A3D10 /* Expression.swift */,
+				2DDAF2D42DAC843B9D69D0A8AF4D413A /* Foundation.swift */,
+				7ED74E31F8FBC41C1CF8237587723C4C /* fts3_tokenizer.h */,
+				11CEA41177460F15DBB99094BE5BD297 /* FTS4.swift */,
+				B59A587CD186007FFB3DF4B8A76337D0 /* FTS5.swift */,
+				B996A3DCAF8B5147DB4970C8609A0ADE /* Helpers.swift */,
+				4E15E8F2577F9D372D681AE7AEDC7739 /* Operators.swift */,
+				7F4FE0504C0CE5B23B11B85A438A8FDD /* Query.swift */,
+				ABEDBB7BE76D80A1F4B44A21965D9514 /* RTree.swift */,
+				2CB33ECAF5A9678B8ABA2BC1A638AE0E /* Schema.swift */,
+				0827B5D745B9F34C3031BDC95C314714 /* Setter.swift */,
+				AF0DD8440B6D0C777FD99369AF2F1DF5 /* SQLite.h */,
+				CD674D85B0B5D059363803D229236428 /* SQLite-Bridging.h */,
+				F2DC8BBAE51A7B59919FB0475BD7E458 /* SQLite-Bridging.m */,
+				2002CCC1C742EC5FCD95A6DE1CD18438 /* Statement.swift */,
+				C3A81FE4182FE5FBDC5DCD4BA4F4C55F /* Value.swift */,
+			);
+			name = standard;
+			sourceTree = "<group>";
+		};
+		6412128C23A3AA172269849C43C4D281 /* SQLite.swift */ = {
+			isa = PBXGroup;
+			children = (
+				5C19DFE2E5ECAACF5B8E6D33631EECDB /* standard */,
+				F46A657EA09D2FFB4B1CEF8FFC6587F2 /* Support Files */,
+			);
+			path = SQLite.swift;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -407,48 +468,59 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				14B8B9B15ECBE87983FF987239AB2D7B /* Frameworks */,
-				C6460B8D881F0C765A17D14996767D29 /* Pods */,
-				BC024C0E72F4869FE236C177FA95E2E9 /* Products */,
+				2EE73FA77FD3D986CDFAD19784B23B33 /* Pods */,
+				398411950678E96A49D58AE2D329DBBC /* Products */,
 				BA5C40BF05F59E3B8EE80B82DE1CB87F /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		8BD0DA7585C8DB6DE175C09F5857AA83 /* UITextField+Shake */ = {
+		7DBDF01642CA1355D52F20C9F08B0284 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				413288FADA8A33589CE945DF18CA33CA /* UITextField+Shake.h */,
-				680843D4F269964EDFC7E14A6922D221 /* UITextField+Shake.m */,
-				0903ACF08C170F59C7A440EDAF029A74 /* Support Files */,
+				C473E97454E9E5EAFC9650BCE2589D9B /* Info.plist */,
+				B6C37A79915C6C557D81640FABE4D79E /* Keyboard+LayoutGuide.modulemap */,
+				1556ED1A5069E27431A2F153A9C2AB43 /* Keyboard+LayoutGuide.xcconfig */,
+				254F357E314C10BAB18D02E5A5156BCE /* Keyboard+LayoutGuide-dummy.m */,
+				844E7D00B9CA76C8345E4A9ABF9700C5 /* Keyboard+LayoutGuide-prefix.pch */,
+				D0C316B0BDC33560955FCF799FD2A0EA /* Keyboard+LayoutGuide-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Keyboard+LayoutGuide";
+			sourceTree = "<group>";
+		};
+		8B13877EFC3FF7809ECD75263327CA78 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D60977636E980ACB771628622CA88E58 /* Info.plist */,
+				3544939A854CDF383B254124394C81AD /* KeychainSwift.modulemap */,
+				B83C63DD56EB8C8C4A6AC6797BEC093C /* KeychainSwift.xcconfig */,
+				71ACDFEA4C323F03486A3005E7D16072 /* KeychainSwift-dummy.m */,
+				EF9C4D06679BEBACE090BDD1AF6663FF /* KeychainSwift-prefix.pch */,
+				F80DFF93716C3D801C1B378FCE45E879 /* KeychainSwift-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/KeychainSwift";
+			sourceTree = "<group>";
+		};
+		A30646C18A4796A5698B367F08D4AC17 /* UITextField+Shake */ = {
+			isa = PBXGroup;
+			children = (
+				A73F38C1DF3FDA8F324CF3A219723943 /* UITextField+Shake.h */,
+				33227C7DF68406536D3F832504484A8D /* UITextField+Shake.m */,
+				18D3296C5B68A8AA3C144C51139B0718 /* Support Files */,
 			);
 			path = "UITextField+Shake";
 			sourceTree = "<group>";
 		};
-		9257E85C047B8177453F17890D97C003 /* Support Files */ = {
+		B465384D0660E04CA6A1C7597B2A0992 /* KeychainSwift */ = {
 			isa = PBXGroup;
 			children = (
-				2E51E9AF87261AEA2FA8CC3663FB574E /* Info.plist */,
-				357DF5D01D1CF8643CDDD9CDEF5EA4F7 /* NMSSH.modulemap */,
-				ACC340BB46CAD4AF03BCA7438F3A7803 /* NMSSH.xcconfig */,
-				18D45E16B26FFAD4CE5D4C29056F2604 /* NMSSH-dummy.m */,
-				86FD06D4ED175ECBFA9B8084ED62D289 /* NMSSH-prefix.pch */,
-				DF4F2DF4E6FC84C8C3CC9970E3BF4D26 /* NMSSH-umbrella.h */,
+				0814C7A0AF944CA0291D085BFE3462A6 /* KeychainSwift.swift */,
+				652629198843CD294E166B31FDF4372D /* KeychainSwiftAccessOptions.swift */,
+				73947CCBB55E0C1C63C47D98A09AC74D /* TegKeychainConstants.swift */,
+				8B13877EFC3FF7809ECD75263327CA78 /* Support Files */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/NMSSH";
-			sourceTree = "<group>";
-		};
-		94E2836956FE0CE3CFA6934C9E7283B4 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				CC2081B364D11AC7D33013D0BA96249E /* Info.plist */,
-				D1DE1764F10A0975CAA4092880D6889A /* MarqueeLabel.modulemap */,
-				4231D3ED3474DE6C716A453A14B25C4A /* MarqueeLabel.xcconfig */,
-				6C61706EEAEE74919E6138C815089E9C /* MarqueeLabel-dummy.m */,
-				D2FF5C2EC73818133D90A7F1F36C3705 /* MarqueeLabel-prefix.pch */,
-				A0916AD9BFFBBD1472BCA2C2D544295B /* MarqueeLabel-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/MarqueeLabel";
+			path = KeychainSwift;
 			sourceTree = "<group>";
 		};
 		BA5C40BF05F59E3B8EE80B82DE1CB87F /* Targets Support Files */ = {
@@ -459,17 +531,18 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		BC024C0E72F4869FE236C177FA95E2E9 /* Products */ = {
+		BBE3F3CB0FC6957516A263B8807D9F4C /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				53B722E11BB1CF3CA1CACF248CB56154 /* KeychainSwift.framework */,
-				AA39C32AF5505AD2DB8EFE668B4CC3BF /* MarqueeLabel.framework */,
-				EBAA4CC95CEA54D1E980C715C3095FEF /* NMSSH.framework */,
-				C2CC6C8E3BA398BFE4B10CE1D62259F2 /* Pods_AquaDoor.framework */,
-				A592D0F3C9DC1CF449D413056A36ECA6 /* SQLite.framework */,
-				BBEDC0D4BFE05C319D26A59F35231413 /* UITextField_Shake.framework */,
+				613DDF7F3FD1A1F98ABD7136BD9C6959 /* Info.plist */,
+				11AF84D2374D257033334F386CA3908A /* MarqueeLabel.modulemap */,
+				CEDBB435E99A5BAAA36DF8AD00C14C12 /* MarqueeLabel.xcconfig */,
+				E42794C87E2F132DF937CCFD5380C3EA /* MarqueeLabel-dummy.m */,
+				CD13C3AE730CD4E3412C14D523C67C96 /* MarqueeLabel-prefix.pch */,
+				3970130607E7F9FED32ACB8D2557122B /* MarqueeLabel-umbrella.h */,
 			);
-			name = Products;
+			name = "Support Files";
+			path = "../Target Support Files/MarqueeLabel";
 			sourceTree = "<group>";
 		};
 		BD80EA3E1DA36D95F002662E6F1CA2C8 /* iOS */ = {
@@ -483,23 +556,19 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		C6460B8D881F0C765A17D14996767D29 /* Pods */ = {
+		C59FC0074D7F1788E70866B8B26D3AF1 /* Swift */ = {
 			isa = PBXGroup;
 			children = (
-				1D9CADF0144B89AF6C5B7D2AE65CBB4D /* KeychainSwift */,
-				CFD41C004D2A60C9BD148D151217B3C1 /* MarqueeLabel */,
-				2CC66CEFD2218EDBA46FC51B7DA8BB0C /* NMSSH */,
-				F5913A695D77B369E0E385D8B7862AD1 /* SQLite.swift */,
-				8BD0DA7585C8DB6DE175C09F5857AA83 /* UITextField+Shake */,
+				45B67457C48F1D5A019CAB8981F5BDF2 /* MarqueeLabel.swift */,
 			);
-			name = Pods;
+			name = Swift;
 			sourceTree = "<group>";
 		};
-		CFD41C004D2A60C9BD148D151217B3C1 /* MarqueeLabel */ = {
+		D08DF3D036C4AD95802EE362DF129C07 /* MarqueeLabel */ = {
 			isa = PBXGroup;
 			children = (
-				94E2836956FE0CE3CFA6934C9E7283B4 /* Support Files */,
-				0E075B61DA2CE8FD5C11E8F299D1AD55 /* Swift */,
+				BBE3F3CB0FC6957516A263B8807D9F4C /* Support Files */,
+				C59FC0074D7F1788E70866B8B26D3AF1 /* Swift */,
 			);
 			path = MarqueeLabel;
 			sourceTree = "<group>";
@@ -522,66 +591,41 @@
 			path = "Target Support Files/Pods-AquaDoor";
 			sourceTree = "<group>";
 		};
-		EFF62811B62F86438DB60892A33C715E /* standard */ = {
+		E9656D32267AB8CEBDEAAA9D49B4D582 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				E32D4499DE3A88D45B51B1CD2E5CB03B /* AggregateFunctions.swift */,
-				C3300A1981AAC82C2D6467A836A08D75 /* Blob.swift */,
-				0B00D0924DE6DCC564A710CBD8EEF155 /* Coding.swift */,
-				04AAAA72649548C2886F763EBFADD056 /* Collation.swift */,
-				B1B81EA2EDB90EA813739B54879DDBB6 /* Connection.swift */,
-				DAF2821D297D9784D26663348414ACCF /* CoreFunctions.swift */,
-				3F80A62B13A5DF818130F7D5DDE1436F /* CustomFunctions.swift */,
-				3260A62CDFCD285918CFF5E3BB4CE4C6 /* DateAndTimeFunctions.swift */,
-				DB799393FCC2791C3BE8848E7C451161 /* Errors.swift */,
-				F1260506EA527974837283D664272C6E /* Expression.swift */,
-				0FD6C970BEB181B7F8F60AE504FDB396 /* Foundation.swift */,
-				3C406AD28CEAD5FDFB9BA7EF3A573684 /* fts3_tokenizer.h */,
-				0DDB47CF8069834E1BA7D3BDCF5169BD /* FTS4.swift */,
-				D3BE6E01D7B16A42BABE705F9D5CA395 /* FTS5.swift */,
-				D8F9DC9A1F0193BBB3F2FD4A90E6E009 /* Helpers.swift */,
-				2CC9CE5085D06839C9C9D2577D5F9C2B /* Operators.swift */,
-				6AB84F00C96BE9D31FF9490A0DDB78EB /* Query.swift */,
-				5AAD8F853D28C1AAC1D4DA7ECB7DDA16 /* RTree.swift */,
-				32FD5223A0BB140F2A174B9A072F7817 /* Schema.swift */,
-				96BE9ADB83BB7C5FB2C95E6CA8DEA189 /* Setter.swift */,
-				8798A8B5FDB30D2314D4A934C00D993C /* SQLite.h */,
-				B27241FDD3E151A9C90880B43DC42333 /* SQLite-Bridging.h */,
-				5151C076F043D99FBB3C38E0D60B7E9D /* SQLite-Bridging.m */,
-				026B2859B929F43176287F0A4D80A3EE /* Statement.swift */,
-				858ADA0D8639F5E5F24E8FCD0FEA6CED /* Value.swift */,
+				68261201968D3FD944C5E19E8BB876C7 /* libcrypto.a */,
+				D60BDBA7B16F6CC00E63BD2FC92AC7A9 /* libssh2.a */,
+				E59D24B7463545737458DBE831196359 /* libssl.a */,
 			);
-			name = standard;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		F5913A695D77B369E0E385D8B7862AD1 /* SQLite.swift */ = {
+		F46A657EA09D2FFB4B1CEF8FFC6587F2 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				EFF62811B62F86438DB60892A33C715E /* standard */,
-				79968BDE4A6919E5F9E274199EAAF648 /* Support Files */,
+				3311A9AB6C43402EEB987A5281844FAA /* Info.plist */,
+				4D6B1A335275DBCB53969D62DD474756 /* SQLite.swift.modulemap */,
+				8677FAC4C6EACF519BA6515F38474774 /* SQLite.swift.xcconfig */,
+				E4BF6CC93F5AE89C4A809ED29EA3CE08 /* SQLite.swift-dummy.m */,
+				26C2722C1C808F57AB1DB1561191E576 /* SQLite.swift-prefix.pch */,
+				DE6D08126D94933566BBB589976F99B0 /* SQLite.swift-umbrella.h */,
 			);
-			path = SQLite.swift;
+			name = "Support Files";
+			path = "../Target Support Files/SQLite.swift";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		52F4796BDF7802C84212CFB1FC324581 /* Headers */ = {
+		4DD707B6C76AD26604B53FDE90338F6A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4D076EC7044C3A81E77E7D2D4F5FF5F2 /* Pods-AquaDoor-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		760EF32776F38D752BA458F4FF110B9A /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E97ADF23492D5DA94C8B7059775AC796 /* fts3_tokenizer.h in Headers */,
-				4C44C206073B3C57C714DB61921057F5 /* SQLite-Bridging.h in Headers */,
-				A1AC2F79AC6D408C31686D8A17FA9C5C /* SQLite.h in Headers */,
-				F6B850B1698595B56B18D19A974042A7 /* SQLite.swift-umbrella.h in Headers */,
+				E9F596AE3E5A9475E5CF7952D9A39E82 /* fts3_tokenizer.h in Headers */,
+				04A9312A2DC8DD9F6437FB8FF5AE5CED /* SQLite-Bridging.h in Headers */,
+				D74BB8C0768DE181C40E3E4EE315E3DE /* SQLite.h in Headers */,
+				D07CFFCF954DAA2F89986BA5DD6E1B0C /* SQLite.swift-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -593,12 +637,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E10332EBF2C68506B61ABD621043C5DE /* Headers */ = {
+		B9F9EF213560D4A63D1503A7F0E9E552 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ACEC00A871883E648AA2BB17B1FCAE6A /* UITextField+Shake-umbrella.h in Headers */,
-				A1CF6147C39B06C952257A20496C4ED7 /* UITextField+Shake.h in Headers */,
+				E7A712BDF4A05F151B8D38BF0314F5E8 /* UITextField+Shake-umbrella.h in Headers */,
+				6ABA04A67EAE6DFB11223EA621F5062D /* UITextField+Shake.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C855D9586E4C43EB39718E3AE8548C16 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35B92C303EDAC9AA3EE0984C21C33B84 /* Pods-AquaDoor-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC4E6D957051E1A09D558980CF6597B1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA5F5E092DD924192761464FBBE17AEF /* Keyboard+LayoutGuide-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -637,23 +697,6 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		1447AC95C46ED8B6CDD555C61F468E97 /* SQLite.swift */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 617C1ADD0EBE8014B84411AF5BDA0236 /* Build configuration list for PBXNativeTarget "SQLite.swift" */;
-			buildPhases = (
-				C3823DF5D25E2D7BE9C30DF1FB318B3C /* Sources */,
-				8E315790DA51DA84C21D1191242C9896 /* Frameworks */,
-				760EF32776F38D752BA458F4FF110B9A /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = SQLite.swift;
-			productName = SQLite.swift;
-			productReference = A592D0F3C9DC1CF449D413056A36ECA6 /* SQLite.framework */;
-			productType = "com.apple.product-type.framework";
-		};
 		215D3232F1F6549F2E898A121973AED8 /* NMSSH */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = DADA8A63460EDF7A9F989652D6AED71D /* Build configuration list for PBXNativeTarget "NMSSH" */;
@@ -668,7 +711,7 @@
 			);
 			name = NMSSH;
 			productName = NMSSH;
-			productReference = EBAA4CC95CEA54D1E980C715C3095FEF /* NMSSH.framework */;
+			productReference = C93873BDDDACC4ED22D3F4C2E6F8FF66 /* NMSSH.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		320AD47B0C6BA014D301395D3BFC8FB6 /* MarqueeLabel */ = {
@@ -685,7 +728,7 @@
 			);
 			name = MarqueeLabel;
 			productName = MarqueeLabel;
-			productReference = AA39C32AF5505AD2DB8EFE668B4CC3BF /* MarqueeLabel.framework */;
+			productReference = 1B5550AFEDD323BD35926D612C890FB7 /* MarqueeLabel.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		38ACA430605AFB4229712A18BDDF5086 /* KeychainSwift */ = {
@@ -702,38 +745,33 @@
 			);
 			name = KeychainSwift;
 			productName = KeychainSwift;
-			productReference = 53B722E11BB1CF3CA1CACF248CB56154 /* KeychainSwift.framework */;
+			productReference = F0BCBC86B975DF420813F8DC6AD2630B /* KeychainSwift.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		DB5DEF04D56E70FE1F871B59CC7B3FB4 /* Pods-AquaDoor */ = {
+		542753F81CF59DFE31A908D70A8AA9D8 /* Keyboard+LayoutGuide */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AA49E87FF33A4CC2C791A1F90D381083 /* Build configuration list for PBXNativeTarget "Pods-AquaDoor" */;
+			buildConfigurationList = 15A23EC6DE3AE5AD9895433FD1C81F4F /* Build configuration list for PBXNativeTarget "Keyboard+LayoutGuide" */;
 			buildPhases = (
-				B074290AFDCE65C5BB16B8BBA2A566DB /* Sources */,
-				6F4EC7E9008F481BBDA02D0703AB39EC /* Frameworks */,
-				52F4796BDF7802C84212CFB1FC324581 /* Headers */,
+				F8A89438842563CCC728D5AA98AD9692 /* Sources */,
+				E062F3D3ED06B1830A0F3F15D7355CE3 /* Frameworks */,
+				EC4E6D957051E1A09D558980CF6597B1 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				5AF578E5DA31587DC39F652E29EBDD38 /* PBXTargetDependency */,
-				66B1F6B1F5D95DFD9EB487ED8BC1756C /* PBXTargetDependency */,
-				EE1446BA0485D14D98EA11D62B958CDF /* PBXTargetDependency */,
-				88D3116540B4686FA6818E0AAE894595 /* PBXTargetDependency */,
-				E72F05C7ADD0326D280039D0EF8DC675 /* PBXTargetDependency */,
 			);
-			name = "Pods-AquaDoor";
-			productName = "Pods-AquaDoor";
-			productReference = C2CC6C8E3BA398BFE4B10CE1D62259F2 /* Pods_AquaDoor.framework */;
+			name = "Keyboard+LayoutGuide";
+			productName = "Keyboard+LayoutGuide";
+			productReference = 379783335F90F4E12368572392E32DD5 /* KeyboardLayoutGuide.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		FB4943900BA8C32A8F673F63B7A2531D /* UITextField+Shake */ = {
+		67EC4FED4C5DACD13E591B7BB2EF9A80 /* UITextField+Shake */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B7DB54746861198F878C276FA832FE0A /* Build configuration list for PBXNativeTarget "UITextField+Shake" */;
+			buildConfigurationList = 8EE9C9D4190CAD563D1577ACA07505F2 /* Build configuration list for PBXNativeTarget "UITextField+Shake" */;
 			buildPhases = (
-				B6855FB1F8F3976E18445CF1EE346C64 /* Sources */,
-				E4D5A8F5C7E953725FEA955BED707639 /* Frameworks */,
-				E10332EBF2C68506B61ABD621043C5DE /* Headers */,
+				F8449972C0C319382DABFCCBC088C9AF /* Sources */,
+				D399E671E9973519FB5648010B27AD59 /* Frameworks */,
+				B9F9EF213560D4A63D1503A7F0E9E552 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -741,7 +779,47 @@
 			);
 			name = "UITextField+Shake";
 			productName = "UITextField+Shake";
-			productReference = BBEDC0D4BFE05C319D26A59F35231413 /* UITextField_Shake.framework */;
+			productReference = ADD60256C6FD0BF36CF927D0E71BCA45 /* UITextField_Shake.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		74C7133190A1B718048C3F838EA18FA8 /* Pods-AquaDoor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3ED9B5D3B44EFB6F0AC460EC015B40B0 /* Build configuration list for PBXNativeTarget "Pods-AquaDoor" */;
+			buildPhases = (
+				12FCFE0486D8CBEA3F486C022428A590 /* Sources */,
+				E1253256CE8106244D8DBFDFFC2A30D5 /* Frameworks */,
+				C855D9586E4C43EB39718E3AE8548C16 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9CFC7C83EE7F275BCE5C5183DB0D5319 /* PBXTargetDependency */,
+				6F68E4524A52614B5D479DCAA54D44FD /* PBXTargetDependency */,
+				98D0216E7FCEB3EDB593FC05A4F45211 /* PBXTargetDependency */,
+				F551642C0A8A17534218B22F830DCB8C /* PBXTargetDependency */,
+				C8252BA75B9F58DD1EB04512D61CE40C /* PBXTargetDependency */,
+				8F5CEB6D2EB87EBEC7ACECBF47D86565 /* PBXTargetDependency */,
+			);
+			name = "Pods-AquaDoor";
+			productName = "Pods-AquaDoor";
+			productReference = B08D24D7A527DC3AC1CF67956B0E8942 /* Pods_AquaDoor.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DF340FC3CF0FD3F13D5C2010510F96C5 /* SQLite.swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 474A1795CBBBCA9C8C9FA7BD10786A34 /* Build configuration list for PBXNativeTarget "SQLite.swift" */;
+			buildPhases = (
+				2022316AFA17558F841B2B2361CF897B /* Sources */,
+				CEC962C3793BF2F9B05BE6A6CB3F3082 /* Frameworks */,
+				4DD707B6C76AD26604B53FDE90338F6A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SQLite.swift;
+			productName = SQLite.swift;
+			productReference = 60A0C733FFA888EE04CBC6AB0A8489C0 /* SQLite.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -761,21 +839,60 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = BC024C0E72F4869FE236C177FA95E2E9 /* Products */;
+			productRefGroup = 398411950678E96A49D58AE2D329DBBC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				542753F81CF59DFE31A908D70A8AA9D8 /* Keyboard+LayoutGuide */,
 				38ACA430605AFB4229712A18BDDF5086 /* KeychainSwift */,
 				320AD47B0C6BA014D301395D3BFC8FB6 /* MarqueeLabel */,
 				215D3232F1F6549F2E898A121973AED8 /* NMSSH */,
-				DB5DEF04D56E70FE1F871B59CC7B3FB4 /* Pods-AquaDoor */,
-				1447AC95C46ED8B6CDD555C61F468E97 /* SQLite.swift */,
-				FB4943900BA8C32A8F673F63B7A2531D /* UITextField+Shake */,
+				74C7133190A1B718048C3F838EA18FA8 /* Pods-AquaDoor */,
+				DF340FC3CF0FD3F13D5C2010510F96C5 /* SQLite.swift */,
+				67EC4FED4C5DACD13E591B7BB2EF9A80 /* UITextField+Shake */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		12FCFE0486D8CBEA3F486C022428A590 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACF3DC33FEF64BCC3D305541BB50699A /* Pods-AquaDoor-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2022316AFA17558F841B2B2361CF897B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA551826E329F502D066158067059F97 /* AggregateFunctions.swift in Sources */,
+				D0070633C01E7754C47F8618A80C395D /* Blob.swift in Sources */,
+				18CC54952347E2D45740BA3463AC4173 /* Coding.swift in Sources */,
+				FB30A75A4B4598D4216BD364D46E507E /* Collation.swift in Sources */,
+				87C20837E7BB8F6503318EC4C8FEFF10 /* Connection.swift in Sources */,
+				5187857987D77B3412F188C15A86CAE9 /* CoreFunctions.swift in Sources */,
+				DF84F0DFDCDE2DF12929757861B5EA7F /* CustomFunctions.swift in Sources */,
+				1A392C508212090F99379B040EE5CCA5 /* DateAndTimeFunctions.swift in Sources */,
+				C3931D0B984033AC29712176B3999863 /* Errors.swift in Sources */,
+				C44F7FED68E574BC72B3395C2DF14DE4 /* Expression.swift in Sources */,
+				C109A6B41297856D3B260E6BCABBB5EC /* Foundation.swift in Sources */,
+				0D231C4DF999107591B440747F35B8DC /* FTS4.swift in Sources */,
+				917A7EDAD61332B26132C085E4B68881 /* FTS5.swift in Sources */,
+				2F149FFD3E06A0019ADD5A41F1FC1633 /* Helpers.swift in Sources */,
+				071D3B0519C65AF22B81EC65EF5577B7 /* Operators.swift in Sources */,
+				B7D8B6DE674BE406A1D27ABF84E520F4 /* Query.swift in Sources */,
+				F87B40B39D62F1F5C4FC58C8A9010DE3 /* RTree.swift in Sources */,
+				814FCE38DF8037067CD6B221C41B4900 /* Schema.swift in Sources */,
+				4024C0E04E64E6FC3501CA440713589A /* Setter.swift in Sources */,
+				3003927196CFDE501C29B193AEA24BD3 /* SQLite-Bridging.m in Sources */,
+				0E05DFEC7BDA07BA914354A99F099BEF /* SQLite.swift-dummy.m in Sources */,
+				04D28652B377F08E5FCAAB42CD468B3D /* Statement.swift in Sources */,
+				F5E4D95731770C7E4C034085733DCB07 /* Value.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		75BE7FF602B9E1E506A9298D07B8E4E0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -792,23 +909,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B074290AFDCE65C5BB16B8BBA2A566DB /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7E6A3D9B0ABC84B21B3C5A46DFFEB0A4 /* Pods-AquaDoor-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B6855FB1F8F3976E18445CF1EE346C64 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E60800DAEAC29E4608FAA1B87E8F5821 /* UITextField+Shake-dummy.m in Sources */,
-				6B739BF0D8A41E2F7A11DC0C65C4B535 /* UITextField+Shake.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		BA64D531146693E66BF1C1CEE1D81BC5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -817,36 +917,6 @@
 				CCBE57237E9F0DBAAF02A5575244F3BE /* KeychainSwift.swift in Sources */,
 				EBA8B955A11296BD7AA307752FE82ED4 /* KeychainSwiftAccessOptions.swift in Sources */,
 				7C0F17488B3552EAAFC074CFC4491DD5 /* TegKeychainConstants.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C3823DF5D25E2D7BE9C30DF1FB318B3C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AD1AB85EB7D93EC8C57E155CD47818DC /* AggregateFunctions.swift in Sources */,
-				57D91B6D9B862978E52565D33F8FCBEF /* Blob.swift in Sources */,
-				E736E0B5E05E143CC1AF42D21FF3B695 /* Coding.swift in Sources */,
-				88BBD4CEE5FAAF363AFC903326752285 /* Collation.swift in Sources */,
-				3953E5E5B87B0DC728263D7E8EB25DA0 /* Connection.swift in Sources */,
-				D2BCE653114367E7DA5DDCF122C10C86 /* CoreFunctions.swift in Sources */,
-				6C3F8B6354D298F01F300D05F8322893 /* CustomFunctions.swift in Sources */,
-				0B0B71DDB4B5A31F6B0BCCA53779BA80 /* DateAndTimeFunctions.swift in Sources */,
-				4DB42BAC2F55B72DD3DF5105E021F608 /* Errors.swift in Sources */,
-				F4A51BE9918E2947CB51A36F6041E53E /* Expression.swift in Sources */,
-				79170C34CD3FD85CA45CBB3DA7AC46F4 /* Foundation.swift in Sources */,
-				3014724009F4E05BFFCDC9E56BDFAF74 /* FTS4.swift in Sources */,
-				6939375257BC8421D9238BD5A6D04495 /* FTS5.swift in Sources */,
-				7D4F79610AD450FB8160B1D2903C6522 /* Helpers.swift in Sources */,
-				754404FB000330D5A0F9F78C1E93A276 /* Operators.swift in Sources */,
-				76B264D29AEFD72817E4958CF15578A9 /* Query.swift in Sources */,
-				6E1E4C6667889F677F6A1CC7C0D66FE1 /* RTree.swift in Sources */,
-				69612E6DF2B759DDBA0234EFD94B0A49 /* Schema.swift in Sources */,
-				F35E5B12B7147BA6561903BA05C38E06 /* Setter.swift in Sources */,
-				26CA7B69A74106A07B78FA1990F7FE88 /* SQLite-Bridging.m in Sources */,
-				A895CDB443513D0B2181752D1D0C4876 /* SQLite.swift-dummy.m in Sources */,
-				B39B270DD03752F5028E6A056831032C /* Statement.swift in Sources */,
-				21DF99E5732E1C6E7F6E284135F6099D /* Value.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -859,45 +929,135 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F8449972C0C319382DABFCCBC088C9AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20FF8525692D756C9C4E33039FE80CB5 /* UITextField+Shake-dummy.m in Sources */,
+				31C7E240A146E6F25D0767D9921E67EC /* UITextField+Shake.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8A89438842563CCC728D5AA98AD9692 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42C8A8DCC5266CB6FDC0E64BAF5C370D /* Keyboard+LayoutGuide-dummy.m in Sources */,
+				D5B6D40354CBCD1B4F9C2C63B0B318E4 /* Keyboard+LayoutGuide.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		5AF578E5DA31587DC39F652E29EBDD38 /* PBXTargetDependency */ = {
+		6F68E4524A52614B5D479DCAA54D44FD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = KeychainSwift;
 			target = 38ACA430605AFB4229712A18BDDF5086 /* KeychainSwift */;
-			targetProxy = 82D747ED921062D51C591C5641D4516E /* PBXContainerItemProxy */;
+			targetProxy = F95491DE31DDFE857784EB7D65C30503 /* PBXContainerItemProxy */;
 		};
-		66B1F6B1F5D95DFD9EB487ED8BC1756C /* PBXTargetDependency */ = {
+		8F5CEB6D2EB87EBEC7ACECBF47D86565 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "UITextField+Shake";
+			target = 67EC4FED4C5DACD13E591B7BB2EF9A80 /* UITextField+Shake */;
+			targetProxy = C952E8F18849217B6A4434CE393D9564 /* PBXContainerItemProxy */;
+		};
+		98D0216E7FCEB3EDB593FC05A4F45211 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = MarqueeLabel;
 			target = 320AD47B0C6BA014D301395D3BFC8FB6 /* MarqueeLabel */;
-			targetProxy = 8E48485477186499730C9482608EFC8C /* PBXContainerItemProxy */;
+			targetProxy = 6BAEF84BC57B6DE9CF12E9557711A99C /* PBXContainerItemProxy */;
 		};
-		88D3116540B4686FA6818E0AAE894595 /* PBXTargetDependency */ = {
+		9CFC7C83EE7F275BCE5C5183DB0D5319 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Keyboard+LayoutGuide";
+			target = 542753F81CF59DFE31A908D70A8AA9D8 /* Keyboard+LayoutGuide */;
+			targetProxy = 82C4CB31113289E8EE47E94D24E078A6 /* PBXContainerItemProxy */;
+		};
+		C8252BA75B9F58DD1EB04512D61CE40C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SQLite.swift;
-			target = 1447AC95C46ED8B6CDD555C61F468E97 /* SQLite.swift */;
-			targetProxy = 6D1A7D8FAECD087A7F4EE5AACC32F429 /* PBXContainerItemProxy */;
+			target = DF340FC3CF0FD3F13D5C2010510F96C5 /* SQLite.swift */;
+			targetProxy = A4F9135355293BF46DDFA8DFC11E7DA5 /* PBXContainerItemProxy */;
 		};
-		E72F05C7ADD0326D280039D0EF8DC675 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "UITextField+Shake";
-			target = FB4943900BA8C32A8F673F63B7A2531D /* UITextField+Shake */;
-			targetProxy = F67B6A42ADC44FA8BDD9079E129B60EF /* PBXContainerItemProxy */;
-		};
-		EE1446BA0485D14D98EA11D62B958CDF /* PBXTargetDependency */ = {
+		F551642C0A8A17534218B22F830DCB8C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = NMSSH;
 			target = 215D3232F1F6549F2E898A121973AED8 /* NMSSH */;
-			targetProxy = 195FBB690EB33F9FFC0F7706F937DFD7 /* PBXContainerItemProxy */;
+			targetProxy = CE687F806CE79F4D5AC958601846F0A9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		0F9B016DE9153316289A8D3879ED0454 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1556ED1A5069E27431A2F153A9C2AB43 /* Keyboard+LayoutGuide.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Keyboard+LayoutGuide/Keyboard+LayoutGuide-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Keyboard+LayoutGuide/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Keyboard+LayoutGuide/Keyboard+LayoutGuide.modulemap";
+				PRODUCT_NAME = KeyboardLayoutGuide;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		13FD07F3463ECB020CFD94DD65A4186F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B065CC6D01DD908DC3EBC3325FCDAAB /* Pods-AquaDoor.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AquaDoor/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AquaDoor/Pods-AquaDoor.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_AquaDoor;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		14142F59291C095B97AA1810CAAE7C33 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = ACC340BB46CAD4AF03BCA7438F3A7803 /* NMSSH.xcconfig */;
+			baseConfigurationReference = 22B6FBD3188DFCC1563F069E588F832E /* NMSSH.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -925,9 +1085,9 @@
 			};
 			name = Debug;
 		};
-		18A655D40A3E64585C20F910F7D7B1AF /* Release */ = {
+		142225DE9D7A51368F9ACBE3066207EF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8D720B6AD728574367A00B94D8ED1C79 /* UITextField+Shake.xcconfig */;
+			baseConfigurationReference = 1556ED1A5069E27431A2F153A9C2AB43 /* Keyboard+LayoutGuide.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -938,27 +1098,27 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/UITextField+Shake/UITextField+Shake-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/UITextField+Shake/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/Keyboard+LayoutGuide/Keyboard+LayoutGuide-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Keyboard+LayoutGuide/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/UITextField+Shake/UITextField+Shake.modulemap";
-				PRODUCT_NAME = UITextField_Shake;
+				MODULEMAP_FILE = "Target Support Files/Keyboard+LayoutGuide/Keyboard+LayoutGuide.modulemap";
+				PRODUCT_NAME = KeyboardLayoutGuide;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 		1BF162ECB23784C0E7C5C62CA7011FF2 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B09AE670C9922311B16B966801A21736 /* KeychainSwift.xcconfig */;
+			baseConfigurationReference = B83C63DD56EB8C8C4A6AC6797BEC093C /* KeychainSwift.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -987,39 +1147,9 @@
 			};
 			name = Debug;
 		};
-		1BF5E81C1A7FF6F956E6413ACDC958E5 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8D720B6AD728574367A00B94D8ED1C79 /* UITextField+Shake.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/UITextField+Shake/UITextField+Shake-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/UITextField+Shake/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/UITextField+Shake/UITextField+Shake.modulemap";
-				PRODUCT_NAME = UITextField_Shake;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		2511EE2FF6B2A27D44E80BFB5C439F57 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B09AE670C9922311B16B966801A21736 /* KeychainSwift.xcconfig */;
+			baseConfigurationReference = B83C63DD56EB8C8C4A6AC6797BEC093C /* KeychainSwift.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1049,9 +1179,43 @@
 			};
 			name = Release;
 		};
+		449FAAA56D4D5D6B29DFF577C581676D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF2A2E833A1CCFDC2804703B1D10A843 /* Pods-AquaDoor.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AquaDoor/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AquaDoor/Pods-AquaDoor.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_AquaDoor;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		519D82157D747F1AD9246C6AAD4643B1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4231D3ED3474DE6C716A453A14B25C4A /* MarqueeLabel.xcconfig */;
+			baseConfigurationReference = CEDBB435E99A5BAAA36DF8AD00C14C12 /* MarqueeLabel.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1080,9 +1244,39 @@
 			};
 			name = Debug;
 		};
+		51A22703FA203B9CC8BC962BB4E59847 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0313BD5BEB3E9EECC5191E9FA79C22DA /* UITextField+Shake.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/UITextField+Shake/UITextField+Shake-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/UITextField+Shake/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/UITextField+Shake/UITextField+Shake.modulemap";
+				PRODUCT_NAME = UITextField_Shake;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		590C9D58200CC874D82CCA0CA383DDF0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4231D3ED3474DE6C716A453A14B25C4A /* MarqueeLabel.xcconfig */;
+			baseConfigurationReference = CEDBB435E99A5BAAA36DF8AD00C14C12 /* MarqueeLabel.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1170,7 +1364,7 @@
 		};
 		635E5E568BCBBA604A616A54D519EB5A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = ACC340BB46CAD4AF03BCA7438F3A7803 /* NMSSH.xcconfig */;
+			baseConfigurationReference = 22B6FBD3188DFCC1563F069E588F832E /* NMSSH.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1199,9 +1393,9 @@
 			};
 			name = Release;
 		};
-		8A8F12DF9A9DB5D67216ABC30E7DA4C8 /* Release */ = {
+		7644538FC76840FBEA5642EBC2FC7327 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EF2A2E833A1CCFDC2804703B1D10A843 /* Pods-AquaDoor.release.xcconfig */;
+			baseConfigurationReference = 8677FAC4C6EACF519BA6515F38474774 /* SQLite.swift.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1212,20 +1406,18 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-AquaDoor/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/SQLite.swift/SQLite.swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SQLite.swift/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-AquaDoor/Pods-AquaDoor.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_AquaDoor;
+				MODULEMAP_FILE = "Target Support Files/SQLite.swift/SQLite.swift.modulemap";
+				PRODUCT_NAME = SQLite;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1233,43 +1425,9 @@
 			};
 			name = Release;
 		};
-		AA9B3A1277A776500DF127654AFA8729 /* Debug */ = {
+		A83B4B3CB5E7E1983526D0C4F45E4C32 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8B065CC6D01DD908DC3EBC3325FCDAAB /* Pods-AquaDoor.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-AquaDoor/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-AquaDoor/Pods-AquaDoor.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_AquaDoor;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		B359EC034F0ACD9E9F0A6C6674ED9376 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F8FE22C97CC2CD14E2F70D7567DAC058 /* SQLite.swift.xcconfig */;
+			baseConfigurationReference = 8677FAC4C6EACF519BA6515F38474774 /* SQLite.swift.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1297,6 +1455,37 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
+		};
+		A88C2474AB655C5FE8471E9A43EFDA79 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0313BD5BEB3E9EECC5191E9FA79C22DA /* UITextField+Shake.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/UITextField+Shake/UITextField+Shake-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/UITextField+Shake/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/UITextField+Shake/UITextField+Shake.modulemap";
+				PRODUCT_NAME = UITextField_Shake;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 		B57C09D404C607DDE283C5C44183B2A1 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -1358,41 +1547,18 @@
 			};
 			name = Debug;
 		};
-		E8A0C577593A05A743200B71986BBC37 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F8FE22C97CC2CD14E2F70D7567DAC058 /* SQLite.swift.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SQLite.swift/SQLite.swift-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SQLite.swift/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SQLite.swift/SQLite.swift.modulemap";
-				PRODUCT_NAME = SQLite;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		15A23EC6DE3AE5AD9895433FD1C81F4F /* Build configuration list for PBXNativeTarget "Keyboard+LayoutGuide" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				142225DE9D7A51368F9ACBE3066207EF /* Debug */,
+				0F9B016DE9153316289A8D3879ED0454 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		16C5D5A8E6CDB4211B0732F819F55A47 /* Build configuration list for PBXNativeTarget "KeychainSwift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1411,20 +1577,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		617C1ADD0EBE8014B84411AF5BDA0236 /* Build configuration list for PBXNativeTarget "SQLite.swift" */ = {
+		3ED9B5D3B44EFB6F0AC460EC015B40B0 /* Build configuration list for PBXNativeTarget "Pods-AquaDoor" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B359EC034F0ACD9E9F0A6C6674ED9376 /* Debug */,
-				E8A0C577593A05A743200B71986BBC37 /* Release */,
+				13FD07F3463ECB020CFD94DD65A4186F /* Debug */,
+				449FAAA56D4D5D6B29DFF577C581676D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AA49E87FF33A4CC2C791A1F90D381083 /* Build configuration list for PBXNativeTarget "Pods-AquaDoor" */ = {
+		474A1795CBBBCA9C8C9FA7BD10786A34 /* Build configuration list for PBXNativeTarget "SQLite.swift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AA9B3A1277A776500DF127654AFA8729 /* Debug */,
-				8A8F12DF9A9DB5D67216ABC30E7DA4C8 /* Release */,
+				A83B4B3CB5E7E1983526D0C4F45E4C32 /* Debug */,
+				7644538FC76840FBEA5642EBC2FC7327 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8EE9C9D4190CAD563D1577ACA07505F2 /* Build configuration list for PBXNativeTarget "UITextField+Shake" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				51A22703FA203B9CC8BC962BB4E59847 /* Debug */,
+				A88C2474AB655C5FE8471E9A43EFDA79 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1434,15 +1609,6 @@
 			buildConfigurations = (
 				519D82157D747F1AD9246C6AAD4643B1 /* Debug */,
 				590C9D58200CC874D82CCA0CA383DDF0 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B7DB54746861198F878C276FA832FE0A /* Build configuration list for PBXNativeTarget "UITextField+Shake" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1BF5E81C1A7FF6F956E6413ACDC958E5 /* Debug */,
-				18A655D40A3E64585C20F910F7D7B1AF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

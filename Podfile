@@ -6,6 +6,7 @@ target 'AquaDoor' do
 	pod 'NMSSH'
 	pod 'KeychainSwift'
 	pod 'UITextField+Shake'
+	pod 'Keyboard+LayoutGuide'
 	pod 'MarqueeLabel/Swift'
 	pod 'SQLite.swift'
     

@@ -16,8 +16,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		// Override point for customization after application launch.
 		let darkSelectedView = UIView()
 		darkSelectedView.backgroundColor = .darkGray
-		UITableViewCell.appearance().selectedBackgroundView = darkSelectedView
-		UITableViewCell.appearance().backgroundColor = UIColor(red:0.09, green:0.09, blue:0.09, alpha:1.0)
+		let cellAppearance = UITableViewCell.appearance()
+		cellAppearance.selectedBackgroundView = darkSelectedView
+		cellAppearance.backgroundColor = UIColor(red:0.09, green:0.09, blue:0.09, alpha:1.0)
 
 		return true
 	}

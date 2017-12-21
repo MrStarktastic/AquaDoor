@@ -12,7 +12,6 @@ import SQLite
 class Database {
 	public static let shared = Database()
 
-	private let dbPath: String
 	private let db: Connection
 
 	private let table = Table("favoriteDoors")
@@ -23,8 +22,8 @@ class Database {
 	public var count: Int { get { return (try? db.scalar(table.count)) ?? 0 }}
 
 	private init() {
-		dbPath = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first! + "/db.sqlite3"
-		db = try! Connection(dbPath)
+		db = try! Connection(NSSearchPathForDirectoriesInDomains(
+			.documentDirectory, .userDomainMask, true).first! + "/db.sqlite3")
 
 		try! db.run(table.create(ifNotExists: true) { t in
 			t.column(doorIdExp, primaryKey: true)

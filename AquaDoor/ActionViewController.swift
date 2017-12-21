@@ -8,8 +8,10 @@
 
 import UIKit
 import UITextField_Shake
+import KeyboardLayoutGuide
 
-class ActionViewController: UIViewController, UITextFieldDelegate, ProgressButtonDelegate, LeaveDoorOpenDelegate {
+class ActionViewController: UIViewController, UITextFieldDelegate, ProgressButtonDelegate, LeaveDoorOpenDelegate,
+UIGestureRecognizerDelegate {
 	fileprivate let animationDuration = 0.3
 	fileprivate let flexibleAutoresizingMask: UIViewAutoresizing = [.flexibleWidth, .flexibleHeight]
 
@@ -18,15 +20,11 @@ class ActionViewController: UIViewController, UITextFieldDelegate, ProgressButto
 	@IBOutlet weak var statusButton: UIButton!
 	@IBOutlet var progressButtons: [RoundProgressButton]!
 	@IBOutlet weak var actionArea: UIView!
-	@IBOutlet var voidViews: [UIView]!
 
 	private var durationPickerOverlay: DurationPickerOverlay!
 
 	/// True while there is no task in progress.
 	private var isIdle = true
-
-	/// True when this VC is about to be dismissed.
-	private var isFinishing = false
 
 	private var database: Database = .shared
 
@@ -38,8 +36,6 @@ class ActionViewController: UIViewController, UITextFieldDelegate, ProgressButto
 		super.viewDidLoad()
 
 		setupBackground()
-		setupVoidViews()
-		addKeyboardObservers()
 		progressButtons.forEach { $0.delegate = self }
 
 		durationPickerOverlay = DurationPickerOverlay(within: view.frame, autoresizingMask: flexibleAutoresizingMask)
@@ -75,19 +71,26 @@ class ActionViewController: UIViewController, UITextFieldDelegate, ProgressButto
 		return isIdle && finish()
 	}
 
-	func progressAnimationDidStop(_ sender: RoundProgressButton) {
-		toggleEnabilityOfViews(to: true, exceptFor: sender)
+	func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldReceive touch: UITouch) -> Bool {
+		return isIdle && !actionArea.frame.contains(touch.location(in: view))
 	}
 
-	private func addKeyboardObservers() {
-		let notifCenter = NotificationCenter.default
-		notifCenter.addObserver(self, selector: #selector(keyboardWillShow), name: .UIKeyboardWillShow, object: nil)
-		notifCenter.addObserver(self, selector: #selector(keyboardWillHide), name: .UIKeyboardWillHide, object: nil)
+	func progressAnimationDidStop(_ sender: RoundProgressButton) {
+		toggleEnabilityOfViews(to: true, exceptFor: sender)
 	}
 
 	/// Sets dimmed background and blur for action area.
 	private func setupBackground() {
 		view.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.5)
+
+		let finishSelector = #selector(finish)
+		let tapRecognizer = UITapGestureRecognizer(target: self, action: finishSelector)
+		tapRecognizer.delegate = self
+		let swipeDownRecognizer = UISwipeGestureRecognizer(target: self, action: finishSelector)
+		swipeDownRecognizer.direction = .down
+		swipeDownRecognizer.delegate = self
+		view.addGestureRecognizer(tapRecognizer)
+		view.addGestureRecognizer(swipeDownRecognizer)
 
 		let actionAreaBlur = UIVisualEffectView(effect: UIBlurEffect(style: .dark))
 		actionAreaBlur.frame = actionArea.bounds
@@ -95,18 +98,8 @@ class ActionViewController: UIViewController, UITextFieldDelegate, ProgressButto
 		actionAreaBlur.layer.cornerRadius = 10
 		actionAreaBlur.clipsToBounds = true
 		actionArea.insertSubview(actionAreaBlur, at: 0)
-	}
-
-	// UIViews surrounding the interactive area can be used for dismissal of DoorActionView
-	private func setupVoidViews() {
-		let selector = #selector(finish)
-
-		for voidView in voidViews {
-			let swipeDownRecognizer = UISwipeGestureRecognizer(target: self, action: selector)
-			swipeDownRecognizer.direction = .down
-			voidView.addGestureRecognizer(swipeDownRecognizer)
-			voidView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: selector))
-		}
+		actionAreaBlur.bottomAnchor.constraint(equalTo: view.keyboardLayoutGuide.topAnchor,
+																					 constant: -15).isActive = true
 	}
 
 	// All destructive views are disabled except for the button that led to this,
@@ -116,7 +109,6 @@ class ActionViewController: UIViewController, UITextFieldDelegate, ProgressButto
 		isIdle = enabled
 		addToFavoritesButton.isUserInteractionEnabled = enabled
 		statusButton.isUserInteractionEnabled = enabled
-		voidViews.isUserInteractionEnabled = enabled
 
 		for button in progressButtons where button != buttonToExclude {
 			button.isUserInteractionEnabled = enabled
@@ -203,7 +195,7 @@ class ActionViewController: UIViewController, UITextFieldDelegate, ProgressButto
 				delegate.didAddToFavorites(doorId: doorId)
 			} else {
 				presentAlertController(withTitle: "Error Adding Door to Favorites",
-				                       andMessage: "Door with ID \(doorId) has already been added to favorites.")
+															 andMessage: "Door with ID \(doorId) has already been added to favorites.")
 			}
 		} else {
 			doorIdTextField.shake()
@@ -213,7 +205,7 @@ class ActionViewController: UIViewController, UITextFieldDelegate, ProgressButto
 	func needsDurationToLeaveDoorOpen(_ pendingTask: DoorTask.PendingLeaveOpen) {
 		if !DoorUtil.isCorridorOrTraklin(pendingTask.doorId) {
 			presentAlertController(withTitle: "Door Cannot Be Left Open",
-				andMessage: "Only doors that belong to corridors or traklins can be opened for longer than the default.")
+														 andMessage: "Only doors that belong to corridors or traklins can be opened for longer than the default.")
 			return
 		}
 
@@ -245,29 +237,11 @@ class ActionViewController: UIViewController, UITextFieldDelegate, ProgressButto
 		durationPickerOverlay.pendingTask.leaveOpen(for: Int(durationPickerOverlay.picker.countDownDuration / 60))
 	}
 
-	@objc func keyboardWillShow(notification: NSNotification) {
-		if let keyboardHeight = (notification.userInfo?[UIKeyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue.height,
-			keyboardHeight != 0 && keyboardHeight != -actionArea.transform.ty {
-			let translationY = CGAffineTransform(translationX: 0, y: -keyboardHeight)
-			self.actionArea.transform = translationY
-			self.voidViews.forEach { $0.transform = translationY }
-		}
-	}
-
-	@objc func keyboardWillHide(notification: NSNotification) {
-		if isFinishing {
-			actionArea.transform = .identity
-			voidViews.forEach { $0.transform = .identity }
-		}
-	}
-
 	@objc func finish() -> Bool {
-		isFinishing = true
 		doorIdTextField.resignFirstResponder()
 
 		UIView.animate(withDuration: animationDuration, animations: { self.view.alpha = 0 })
 		{ _ in
-			NotificationCenter.default.removeObserver(self)
 			self.view.removeFromSuperview()
 			self.removeFromParentViewController()
 		}
@@ -335,8 +309,8 @@ class ActionViewController: UIViewController, UITextFieldDelegate, ProgressButto
 			let flexibleSpace = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
 
 			toolbar.setItems([UIBarButtonItem(barButtonSystemItem: .cancel, target: nil, action: nil), flexibleSpace,
-			                  UIBarButtonItem(customView: setDurationLabel), flexibleSpace,
-			                  UIBarButtonItem(barButtonSystemItem: .done, target: nil, action: nil)], animated: false)
+												UIBarButtonItem(customView: setDurationLabel), flexibleSpace,
+												UIBarButtonItem(barButtonSystemItem: .done, target: nil, action: nil)], animated: false)
 			toolbar.sizeToFit()
 		}
 
